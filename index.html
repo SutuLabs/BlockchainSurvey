@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>近年区块链研究热点调查</title>
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="stylesheet" href="./buefy.min.css" />
+</head>
+
+<body>
+  <div id="app">
+    <div class="container">
+      <b-table :data="papers" :narrowed="true" :paginated="true" :per-page="10">
+        <template v-for="column in columns">
+          <b-table-column :key="column.id" v-bind="column">
+              <template
+                  v-if="column.searchable && column.options"
+                  #searchable="props">
+                  <b-input
+                      v-model="props.filters[props.column.field]"
+                      placeholder="Search..."
+                      icon="magnify"
+                      size="is-small" 
+                      />
+                      <b-select 
+                      v-model="props.filters[props.column.field]"
+                      size="is-small" 
+                      placeholder="Select a name">
+                        <option
+                            v-for="option in column.options"
+                            :value="option.value"
+                            >
+                            {{ option.name }}
+                        </option>
+                    </b-select>
+              </template>
+              <template v-slot="props">
+                  {{ props.row[column.field] }}
+              </template>
+          </b-table-column>
+
+      </template>
+      </b-table>
+    </div>
+
+  </div>
+  <!-- <script src="vue.global.prod.js"></script> -->
+  <!-- <script src="vue.global.js"></script> -->
+  <script src="vue.js"></script>
+  <script src="buefy.min.js"></script>
+  <script src="papers.js"></script>
+  <script src="ccfcats.js"></script>
+  <script src="app.js"></script>
+</body>
+
+</html>
