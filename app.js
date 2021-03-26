@@ -82,7 +82,6 @@ var app = new Vue({
         search(word) {
             let col = this.columns.find(_ => _.field == 'title');
             Vue.set(col, 'filter', word);
-            console.log(col, word)
         }
     },
     computed: {
