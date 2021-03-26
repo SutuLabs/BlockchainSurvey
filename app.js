@@ -11,6 +11,7 @@ var app = new Vue({
         return {
             papers,
             ccfcats,
+            words,
             columns: [{
                     field: 'title',
                     label: 'Title',
@@ -76,7 +77,13 @@ var app = new Vue({
             ],
         }
     },
-    methods: {},
+    methods: {
+        search(word) {
+            let col = this.columns.find(_ => _.field == 'title');
+            Vue.set(col, 'filter', word);
+            console.log(col, word)
+        }
+    },
     computed: {
         filterPapers() {
             return this.papers.filter(item => {

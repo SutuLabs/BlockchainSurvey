@@ -28,6 +28,8 @@
             </template>
           </template>
         </template>
+
+        <b-tag>{{filterPapers.length}}</b-tag>
       </b-field>
 
       <b-table :data="filterPapers" :narrowed="true" :paginated="true" :per-page="10">
@@ -53,6 +55,29 @@
 
         </template>
       </b-table>
+
+      <b-collapse class="card" animation="slide">
+        <template #trigger="props">
+          <div class="card-header" role="button" aria-controls="contentIdForA11y3">
+            <p class="card-header-title">
+              Keywords
+            </p>
+            <a class="card-header-icon">
+              <b-icon :icon="props.open ? 'menu-down' : 'menu-up'">
+              </b-icon>
+            </a>
+          </div>
+        </template>
+
+        <div class="card-content">
+          <div class="buttons">
+            <b-button v-for="word in words" :key="word.Word" type="is-light" size="is-small" @click="search(word.Word)">
+              {{word.Word}}
+              <b-tag type="is-light is-info">{{word.Count}}</b-tag>
+            </b-button>
+          </div>
+        </div>
+      </b-collapse>
     </div>
 
   </div>
@@ -62,6 +87,7 @@
   <script src="buefy.min.js"></script>
   <script src="papers.js"></script>
   <script src="ccfcats.js"></script>
+  <script src="words.js"></script>
   <script src="app.js"></script>
 </body>
 
