@@ -12,6 +12,30 @@
 <body>
   <div id="app">
     <div class="container">
+
+      <b-collapse class="card" :open="false" animation="slide">
+        <template #trigger="props">
+          <div class="card-header" role="button" aria-controls="contentIdForA11y3">
+            <p class="card-header-title">
+              Keywords
+            </p>
+            <a class="card-header-icon">
+              <b-icon :icon="props.open ? 'menu-down' : 'menu-up'">
+              </b-icon>
+            </a>
+          </div>
+        </template>
+
+        <div class="card-content">
+          <div class="buttons">
+            <b-button v-for="word in words" :key="word.Word" type="is-light" size="is-small" @click="search(word.Word)">
+              {{word.Word}}
+              <b-tag type="is-light is-info">{{word.Count}}</b-tag>
+            </b-button>
+          </div>
+        </div>
+      </b-collapse>
+
       <b-field grouped group-multiline>
         <template v-for="column in columns">
           <template v-if="column.isSearchable">
@@ -30,9 +54,16 @@
         </template>
 
         <b-tag>{{filterPapers.length}}</b-tag>
+
+        <b-select v-model="perPage" size="is-small">
+          <option value="10">10 per page</option>
+          <option value="20">20 per page</option>
+          <option value="50">50 per page</option>
+          <option value="90">90 per page</option>
+        </b-select>
       </b-field>
 
-      <b-table :data="filterPapers" :narrowed="true" :paginated="true" :per-page="10">
+      <b-table :data="filterPapers" :narrowed="true" :paginated="true" :per-page="perPage">
         <template v-for="column in columns">
           <b-table-column :key="column.id" v-bind="column">
             <template v-slot="props">
@@ -55,29 +86,6 @@
 
         </template>
       </b-table>
-
-      <b-collapse class="card" animation="slide">
-        <template #trigger="props">
-          <div class="card-header" role="button" aria-controls="contentIdForA11y3">
-            <p class="card-header-title">
-              Keywords
-            </p>
-            <a class="card-header-icon">
-              <b-icon :icon="props.open ? 'menu-down' : 'menu-up'">
-              </b-icon>
-            </a>
-          </div>
-        </template>
-
-        <div class="card-content">
-          <div class="buttons">
-            <b-button v-for="word in words" :key="word.Word" type="is-light" size="is-small" @click="search(word.Word)">
-              {{word.Word}}
-              <b-tag type="is-light is-info">{{word.Count}}</b-tag>
-            </b-button>
-          </div>
-        </div>
-      </b-collapse>
     </div>
 
   </div>

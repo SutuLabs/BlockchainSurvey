@@ -12,6 +12,7 @@ var app = new Vue({
             papers,
             ccfcats,
             words,
+            perPage: 10,
             columns: [{
                     field: 'title',
                     label: 'Title',
