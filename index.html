@@ -7,6 +7,7 @@
   <title>近年区块链研究热点调查</title>
   <link rel="stylesheet" href="./style.css" />
   <link rel="stylesheet" href="./buefy.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@5.8.55/css/materialdesignicons.min.css">
 </head>
 
 <body>
@@ -69,7 +70,7 @@
             <template v-slot="props">
               <template v-if="column.field == 'title'">
                 {{ props.row[column.field] }}
-                <a :href="'https://dblp.uni-trier.de/search?q=' + props.row[column.field]" target="_blank">🔍</a>
+                <a :href="'https://dblp.uni-trier.de/search?q=' + props.row[column.field]" target="_blank"><b-icon icon="select-search" size="is-small"></b-icon></a>
               </template>
               <template v-else-if="column.field == 'category'">
                 <template v-if="props.row[column.field] && ccfcats[props.row[column.field]-1]">
