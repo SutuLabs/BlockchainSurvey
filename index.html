@@ -14,34 +14,33 @@
     <div class="container">
       <b-table :data="papers" :narrowed="true" :paginated="true" :per-page="10">
         <template v-for="column in columns">
-          <b-table-column :key="column.id" v-bind="column">
-              <template
-                  v-if="column.searchable && column.options"
-                  #searchable="props">
-                  <b-input
-                      v-model="props.filters[props.column.field]"
-                      placeholder="Search..."
-                      icon="magnify"
-                      size="is-small" 
-                      />
-                      <b-select 
-                      v-model="props.filters[props.column.field]"
-                      size="is-small" 
-                      placeholder="Select a name">
-                        <option
-                            v-for="option in column.options"
-                            :value="option.value"
-                            >
-                            {{ option.name }}
-                        </option>
-                    </b-select>
+          <b-table-column :key="column.id" v-bind="column" v-bind:custom-search="column.search">
+            <template v-if="column.searchable && column.options" #searchable="props">
+              <b-select v-model="props.filters[props.column.field]" size="is-small">
+                <option v-for="option in column.options" :value="option.value">
+                  {{ option.name }}
+                </option>
+              </b-select>
+            </template>
+            <template v-slot="props">
+              <template v-if="column.field == 'title'">
+                {{ props.row[column.field] }}
+                <a :href="'https://dblp.uni-trier.de/search?q=' + props.row[column.field]" target="_blank">🔍</a>
               </template>
-              <template v-slot="props">
-                  {{ props.row[column.field] }}
+              <template v-else-if="column.field == 'category'">
+                <template v-if="props.row[column.field] && ccfcats[props.row[column.field]]">
+                  <span :title="ccfcats[props.row[column.field]].title">
+                    {{ ccfcats[props.row[column.field]].icon }}
+                  </span>
+                </template>
               </template>
+              <template v-else>
+                {{ props.row[column.field] }}
+              </template>
+            </template>
           </b-table-column>
 
-      </template>
+        </template>
       </b-table>
     </div>
 
