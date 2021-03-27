@@ -49,7 +49,8 @@
               </b-select>
             </template>
             <template v-else>
-              <b-input :placeholder="column.label" v-model="column.filter" size="is-small"></b-input>
+              <b-input :placeholder="column.label" v-model="column.filter" size="is-small"
+              icon-right="close-circle" icon-right-clickable @icon-right-click="column.filter = ''"></b-input>
             </template>
           </template>
         </template>
