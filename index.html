@@ -82,9 +82,9 @@
               </template>
               <template v-else-if="column.field == 'category'">
                 <template v-if="props.row[column.field] && ccfcats[props.row[column.field]-1]">
-                  <span :title="ccfcats[props.row[column.field]-1].title">
+                  <b-tooltip :label="ccfcats[props.row[column.field]-1].title">
                     {{ ccfcats[props.row[column.field]-1].icon }}
-                  </span>
+                  </b-tooltip>
                 </template>
               </template>
               <template v-else>
