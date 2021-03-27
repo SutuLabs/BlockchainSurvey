@@ -69,7 +69,7 @@
           <b-table-column :key="column.id" v-bind="column">
             <template v-slot="props">
               <template v-if="column.field == 'title'">
-                {{ props.row[column.field] }}
+                <span v-html="props.row['highlight']"></span>
                 <b-tooltip :label="props.row['publisher']">
                   <b-tag type="is-light is-info">{{props.row['pub']}}</b-tag>
                 </b-tooltip>

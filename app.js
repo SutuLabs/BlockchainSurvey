@@ -29,10 +29,14 @@ var app = new Vue({
                     customSearch: function (a, input) {
                         input = input || '';
                         let ss = input.split(' ');
+                        a.highlight = a.title;
                         for (let i = 0; i < ss.length; i++) {
                             const str = ss[i];
+                            if (str == '') continue;
                             if (a.title.search(new RegExp(str, "i")) == -1)
                                 return false;
+
+                            a.highlight = a.highlight.replace(new RegExp(`(${str})`, 'ig'), '<mark>$1</mark>');
                         }
                         return true;
                     },
