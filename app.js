@@ -8,8 +8,16 @@ var app = new Vue({
             }));
         };
         let years = generateOptions(papers.map(_ => _.year).filter((val, idx, self) => self.indexOf(val) === idx).sort().reverse());
+        let simplifyPublisher = function (name) {
+            if (!name) return name;
+            let ss = name.split(' ');
+            return ss.map(_ => _[0]).join('');
+        };
+        let pps = papers.map(_ => Object.assign({}, {
+            pub: simplifyPublisher(_.publisher)
+        }, _))
         return {
-            papers,
+            papers: pps,
             ccfcats,
             words,
             perPage: 10,

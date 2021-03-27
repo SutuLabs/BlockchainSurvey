@@ -70,7 +70,15 @@
             <template v-slot="props">
               <template v-if="column.field == 'title'">
                 {{ props.row[column.field] }}
-                <a :href="'https://dblp.uni-trier.de/search?q=' + props.row[column.field]" target="_blank"><b-icon icon="select-search" size="is-small"></b-icon></a>
+                <b-tooltip :label="props.row['publisher']">
+                  <b-tag type="is-light is-info">{{props.row['pub']}}</b-tag>
+                </b-tooltip>
+                <a :href="'https://dblp.uni-trier.de/search?q=' + props.row[column.field]" target="_blank">
+                  <b-icon icon="select-search" size="is-small"></b-icon>
+                </a>
+                <a :href="props.row['doi']" target="_blank">
+                  <b-icon icon="file-document-outline" size="is-small"></b-icon>
+                </a>
               </template>
               <template v-else-if="column.field == 'category'">
                 <template v-if="props.row[column.field] && ccfcats[props.row[column.field]-1]">
