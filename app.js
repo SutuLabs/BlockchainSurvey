@@ -19,8 +19,8 @@ var app = new Vue({
         return {
             papers: pps,
             ccfcats,
-            words,
             perPage: 10,
+            isKeywordOpen: false,
             columns: [{
                     field: 'title',
                     label: 'Title',
@@ -90,7 +90,7 @@ var app = new Vue({
         search(word) {
             let col = this.columns.find(_ => _.field == 'title');
             Vue.set(col, 'filter', word);
-        }
+        },
     },
     computed: {
         filterPapers() {
@@ -110,36 +110,33 @@ var app = new Vue({
                 return true;
             });
         },
+        words() {
+            const NotCountWords = ["based", "using", "enabled", "via", "novel", ];
+            const NonLexicalWords = ["the", "of", "and", "to", "a", "in", "for", "is", "on", "that", "by", "this", "with", "i", "you", "it", "not", "or", "be", "are", "from", "at", "as", "your", "all", "have", "new", "more", "an", "was", "we", "will", "home", "can", "us", "about", "if", "page", "my", "has", "free", "but", "our", "one", "other", "do", "no", "information", "time", "they", "site", "he", "up", "may", "what", "which", "their", "news", "out", "use", "any", "there", "see", "only", "so", "his", "when", "contact", "here", "business", "who", "web", "also", "now", "help", "get", "pm", "view", "online", "c", "e", "first", "am", "been", "would", "how", "were", "me", "s", "services", "some", "these", "click", "its", "like", "service", "x", "than", "find", "price", "date", "back", "top", "people", "had", "list", "name", "just", "over", "state", "year", "day", "into", "email", "two", "health", "n", "world", "re", "next", "used", "go", "b", "work", "last", "most", "products", "music", "buy", "make", "them", "should", "product", "post", "her", "city", "t", "add", "policy", "number", "such", "please", "available", "copyright", "support", "message", "after", "best", "software", "then", "jan", "good", "video", "well", "d", "where", "info", "rights", "public", "books", "high", "school", "through", "m", "each", "links", "she", "review", "years", "order", "very", "privacy", "book", "items", "company", "r", "read", "group", "sex", "need", "many", "user", "said", "de", "does", "set", "under", "general", "research", "university", "january", "mail", "full", "map", "reviews", "program", "life"];
+            let split = (input) => input.match(/\b[\w']+\b/g);
+            let ws = this.filterPapers.map(_ => split(_.title)).reduce((a, b) => a.concat(b));
+            let groupBy = function (xs) {
+                return xs.reduce(function (rv, x) {
+                    (rv[x] = rv[x] || []).push(x);
+                    return rv;
+                }, {});
+            };
+            let cleanWords = ws.map(_ => _.toLowerCase())
+                .filter(_ => _)
+                .filter(_ => NonLexicalWords.indexOf(_) == -1)
+                .filter(_ => NotCountWords.indexOf(_) == -1)
+                .filter(_ => _.indexOf('blockchain') == -1);
+            let groups = groupBy(cleanWords);
+            let wordsStats = Object.keys(groups)
+                .map(_ => ({
+                    Word: _,
+                    Count: groups[_].length
+                }))
+                .filter(_ => _.Count > 1)
+                .sort((a, b) => a.Count > b.Count ? -1 : 1)
+                .slice(0, 40);
+
+            return wordsStats;
+        }
     },
 })
-// const App = {
-//     data() {
-//         return {
-//             papers,
-//             columns: [{
-//                     field: 'title',
-//                     label: 'tt',
-//                 },
-//                 {
-//                     field: 'year',
-//                     label: 'yy',
-//                     numeric: true
-//                 },
-//                 {
-//                     field: 'rank',
-//                     label: 'rk',
-//                     centered: true
-//                 },
-//                 {
-//                     field: 'category',
-//                     label: 'c',
-//                     centered: true
-//                 },
-//             ]
-//         };
-//     },
-//     methods: {},
-//     computed: {}
-// }
-
-// Vue.createApp(App).mount('#app')

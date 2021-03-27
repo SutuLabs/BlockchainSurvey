@@ -14,9 +14,9 @@
   <div id="app">
     <div class="container">
 
-      <b-collapse class="card" :open="false" animation="slide">
+      <b-collapse class="card" v-model="isKeywordOpen" animation="slide">
         <template #trigger="props">
-          <div class="card-header" role="button" aria-controls="contentIdForA11y3">
+          <div class="card-header" role="button">
             <p class="card-header-title">
               Keywords
             </p>
@@ -28,7 +28,7 @@
         </template>
 
         <div class="card-content">
-          <div class="buttons">
+          <div v-if="isKeywordOpen" class="buttons">
             <b-button v-for="word in words" :key="word.Word" type="is-light" size="is-small" @click="search(word.Word)">
               {{word.Word}}
               <b-tag type="is-light is-info">{{word.Count}}</b-tag>
@@ -104,7 +104,6 @@
   <script src="buefy.min.js"></script>
   <script src="papers.js"></script>
   <script src="ccfcats.js"></script>
-  <script src="words.js"></script>
   <script src="app.js"></script>
 </body>
 
