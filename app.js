@@ -23,6 +23,7 @@ var app = new Vue({
             isKeywordOpen: false,
             isOutputOpen: false,
             notes: {},
+            tags: [],
             columns: [{
                     field: 'title',
                     label: 'Title',
@@ -122,7 +123,30 @@ var app = new Vue({
             for (b = 1; b < d.length; b++) a = d[b].charCodeAt(0), a = h > a ? d[b] : e[a] ? e[a] : f + c, g.push(a), c = a.charAt(0), e[o] = f + c, o++, f = a;
             return g.join("")
         },
-
+        expandNote(row) {
+            this.notes[row.doi] = this.notes[row.doi] || {}
+            this.tags = this.getTags();
+        },
+        getTags() {
+            let groupBy = function (xs) {
+                return xs.reduce(function (rv, x) {
+                    (rv[x] = rv[x] || []).push(x);
+                    return rv;
+                }, {});
+            };
+            let ts = Object.values(this.notes)
+                .map(_ => _.tags || [])
+                .reduce((a, b) => a.concat(b));
+            let groups = groupBy(ts);
+            let fts = Object.keys(groups)
+                .map(_ => ({
+                    tag: _,
+                    count: groups[_].length
+                }))
+                .sort((a, b) => a.count > b.count ? -1 : 1)
+                .slice(0, 8);
+            return fts;
+        },
     },
     computed: {
         filterPapers() {
@@ -169,6 +193,6 @@ var app = new Vue({
                 .slice(0, 40);
 
             return wordsStats;
-        }
+        },
     },
 })

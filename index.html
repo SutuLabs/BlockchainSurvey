@@ -77,7 +77,7 @@
                 <a :href="'https://dblp.uni-trier.de/search?q=' + props.row[column.field]" target="_blank">
                   <b-icon icon="select-search" size="is-small"></b-icon>
                 </a>
-                <a @click="notes[props.row.doi]=notes[props.row.doi]||{};props.toggleDetails(props.row)">
+                <a @click="expandNote(props.row);props.toggleDetails(props.row)">
                   <b-icon icon="details" size="is-small"></b-icon>
                 </a>
                 <span v-html="props.row['highlight']"></span>
@@ -115,6 +115,16 @@
             <b-field label="Note" label-position="on-border">
               <b-input v-model="notes[props.row.doi].note" type="textarea" size="is-small"></b-input>
             </b-field>
+            <b-field label="Tags" label-position="on-border">
+              <b-taginput v-model="notes[props.row.doi].tags" ellipsis icon="label" size="is-small"
+                placeholder="Add a tag" aria-close-label="Delete this tag">
+              </b-taginput>
+            </b-field>
+            <b-taglist>
+              <template v-for="tag in tags">
+                <b-tag type="is-info is-light">{{tag.tag}}</b-tag>
+              </template>
+            </b-taglist>
           </div>
         </template>
       </b-table>
