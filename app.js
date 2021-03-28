@@ -27,85 +27,95 @@ var app = new Vue({
         let pps = papers.map(_ => Object.assign({}, {
             pub: simplifyPublisher(_.publisher)
         }, _))
+        let notes = JSON.parse(localStorage.getItem("NOTES") || JSON.stringify({}));
+        let search = JSON.parse(localStorage.getItem("SEARCH") || JSON.stringify({
+            perPage: 10,
+            filters: [],
+        }));
+        let columns = [{
+                field: 'title',
+                label: 'Title',
+                width: 100,
+                isSearchable: true,
+                sortable: true,
+                customSearch: function (a, input) {
+                    input = input || '';
+                    let ss = input.split(' ');
+                    a.highlight = a.title;
+                    for (let i = 0; i < ss.length; i++) {
+                        const str = ss[i];
+                        if (str == '') continue;
+                        if (a.title.search(new RegExp(str, "i")) == -1)
+                            return false;
+
+                        a.highlight = a.highlight.replace(new RegExp(`(${str})`, 'ig'), '<mark>$1</mark>');
+                    }
+                    return true;
+                },
+            },
+            {
+                field: 'year',
+                label: 'Year',
+                centered: true,
+                numeric: true,
+                width: 20,
+                isSearchable: true,
+                sortable: true,
+                options: years,
+            },
+            {
+                field: 'rank',
+                label: 'Rank',
+                centered: true,
+                width: 20,
+                isSearchable: true,
+                sortable: true,
+                options: generateOptions(['Any', 'ABC', 'A', 'B', 'C', 'NotABC']),
+                customSearch: function (a, input) {
+                    if (input == "A" || input == "B" || input == "C") {
+                        if (a.rank == input) return true;
+                        return false;
+                    } else if (input == "Any") {
+                        return true;
+                    } else if (input == "NotABC") {
+                        return !a.rank;
+                    } else if (input == "ABC") {
+                        return a.rank ? true : false;
+                    } else {
+                        return true;
+                    }
+                },
+            },
+            {
+                field: 'category',
+                label: 'Category',
+                centered: true,
+                width: 20,
+                isSearchable: true,
+                sortable: true,
+                options: ccfcats.map(_ => ({
+                    value: _.id.toString(),
+                    name: _.title,
+                })),
+                customSearch: function (a, input) {
+                    if (!input) return true;
+                    return a.category == input;
+                },
+            },
+        ];
+        search.filters.forEach(f => {
+            columns.find(_ => _.field === f.field).filter = f.filter;
+        });
+
         return {
             papers: pps,
             ccfcats,
-            perPage: 10,
+            perPage: search.perPage,
             isKeywordOpen: false,
             isOutputOpen: false,
-            notes: {},
+            notes,
             tags: [],
-            columns: [{
-                    field: 'title',
-                    label: 'Title',
-                    width: 100,
-                    isSearchable: true,
-                    sortable: true,
-                    customSearch: function (a, input) {
-                        input = input || '';
-                        let ss = input.split(' ');
-                        a.highlight = a.title;
-                        for (let i = 0; i < ss.length; i++) {
-                            const str = ss[i];
-                            if (str == '') continue;
-                            if (a.title.search(new RegExp(str, "i")) == -1)
-                                return false;
-
-                            a.highlight = a.highlight.replace(new RegExp(`(${str})`, 'ig'), '<mark>$1</mark>');
-                        }
-                        return true;
-                    },
-                },
-                {
-                    field: 'year',
-                    label: 'Year',
-                    centered: true,
-                    numeric: true,
-                    width: 20,
-                    isSearchable: true,
-                    sortable: true,
-                    options: years,
-                },
-                {
-                    field: 'rank',
-                    label: 'Rank',
-                    centered: true,
-                    width: 20,
-                    isSearchable: true,
-                    sortable: true,
-                    options: generateOptions(['Any', 'ABC', 'A', 'B', 'C', 'NotABC']),
-                    customSearch: function (a, input) {
-                        if (input == "A" || input == "B" || input == "C") {
-                            if (a.rank == input) return true;
-                            return false;
-                        } else if (input == "Any") {
-                            return true;
-                        } else if (input == "NotABC") {
-                            return !a.rank;
-                        } else if (input == "ABC") {
-                            return a.rank ? true : false;
-                        } else {
-                            return true;
-                        }
-                    },
-                },
-                {
-                    field: 'category',
-                    label: 'Category',
-                    centered: true,
-                    width: 20,
-                    isSearchable: true,
-                    sortable: true,
-                    options: ccfcats.map(_ => ({
-                        value: _.id.toString(),
-                        name: _.title,
-                    })),
-                    customSearch: function (a, input) {
-                        if (!input) return true;
-                        return a.category == input;
-                    },
-                },
-            ],
+            columns,
         }
     },
     methods: {
@@ -137,6 +147,20 @@ var app = new Vue({
         expandNote(row) {
             this.notes[row.doi] = this.notes[row.doi] || {}
             this.tags = this.getTags();
+            this.saveNotes();
+        },
+        saveNotes() {
+            localStorage.setItem("NOTES", JSON.stringify(this.notes));
+        },
+        saveSearch() {
+            const search = {
+                perPage: this.perPage,
+                filters: this.columns.map(_ => ({
+                    field: _.field,
+                    filter: _.filter
+                })),
+            };
+            localStorage.setItem("SEARCH", JSON.stringify(search));
         },
         getTags() {
             let ts = Object.values(this.notes)
@@ -155,6 +179,7 @@ var app = new Vue({
     },
     computed: {
         filterPapers() {
+            this.saveSearch();
             return this.papers.filter(item => {
                 for (let i = 0; i < this.columns.length; i++) {
                     const col = this.columns[i];
