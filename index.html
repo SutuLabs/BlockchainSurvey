@@ -106,6 +106,12 @@
               <strong>{{ props.row.title }}</strong>
               <small>@{{ props.row.year }}</small>
             </p>
+            <b-taglist>
+              <b-tag v-for="author in props.row.authors" type="is-primary is-light">
+                <b-icon icon="human-male" size="is-small"></b-icon>
+                {{author}}
+              </b-tag>
+            </b-taglist>
             <b-field label="Title" label-position="on-border">
               <b-input v-model="notes[props.row.doi].title" size="is-small"></b-input>
             </b-field>
