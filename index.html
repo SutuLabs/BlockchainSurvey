@@ -49,8 +49,8 @@
               </b-select>
             </template>
             <template v-else>
-              <b-input :placeholder="column.label" v-model="column.filter" size="is-small"
-              icon-right="close-circle" icon-right-clickable @icon-right-click="column.filter = ''"></b-input>
+              <b-input :placeholder="column.label" v-model="column.filter" size="is-small" icon-right="close-circle"
+                icon-right-clickable @icon-right-click="column.filter = ''"></b-input>
             </template>
           </template>
         </template>
@@ -65,7 +65,8 @@
         </b-select>
       </b-field>
 
-      <b-table :data="filterPapers" :narrowed="true" :paginated="true" :per-page="perPage">
+      <b-table :data="filterPapers" :narrowed="true" :paginated="true" :per-page="perPage" detailed
+        :show-detail-icon="false">
         <template v-for="column in columns">
           <b-table-column :key="column.id" v-bind="column">
             <template v-slot="props">
@@ -75,6 +76,9 @@
                 </a>
                 <a :href="'https://dblp.uni-trier.de/search?q=' + props.row[column.field]" target="_blank">
                   <b-icon icon="select-search" size="is-small"></b-icon>
+                </a>
+                <a @click="notes[props.row.doi]=notes[props.row.doi]||{};props.toggleDetails(props.row)">
+                  <b-icon icon="details" size="is-small"></b-icon>
                 </a>
                 <span v-html="props.row['highlight']"></span>
                 <b-tooltip :label="props.row['publisher']">
@@ -95,7 +99,47 @@
           </b-table-column>
 
         </template>
+
+        <template #detail="props">
+          <div class="content">
+            <p>
+              <strong>{{ props.row.title }}</strong>
+              <small>@{{ props.row.year }}</small>
+            </p>
+            <b-field label="Title" label-position="on-border">
+              <b-input v-model="notes[props.row.doi].title" size="is-small"></b-input>
+            </b-field>
+            <b-field label="Highlight" label-position="on-border">
+              <b-input v-model="notes[props.row.doi].highlight" type="textarea" size="is-small"></b-input>
+            </b-field>
+            <b-field label="Note" label-position="on-border">
+              <b-input v-model="notes[props.row.doi].note" type="textarea" size="is-small"></b-input>
+            </b-field>
+          </div>
+        </template>
       </b-table>
+
+      <b-collapse class="card" v-model="isOutputOpen" animation="slide">
+        <template #trigger="props">
+          <div class="card-header" role="button">
+            <p class="card-header-title">
+              Output
+            </p>
+            <a class="card-header-icon">
+              <b-icon :icon="props.open ? 'menu-down' : 'menu-up'">
+              </b-icon>
+            </a>
+          </div>
+        </template>
+
+        <div class="card-content">
+          <div v-if="isOutputOpen">
+            <b-field label="Output" label-position="on-border">
+              <b-input type="textarea" readonly :value="compress(JSON.stringify(notes))"></b-input>
+            </b-field>
+          </div>
+        </div>
+      </b-collapse>
     </div>
 
   </div>
