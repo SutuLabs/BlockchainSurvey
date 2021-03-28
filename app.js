@@ -26,6 +26,7 @@ var app = new Vue({
                     label: 'Title',
                     width: 100,
                     isSearchable: true,
+                    sortable: true,
                     customSearch: function (a, input) {
                         input = input || '';
                         let ss = input.split(' ');
@@ -48,6 +49,7 @@ var app = new Vue({
                     numeric: true,
                     width: 20,
                     isSearchable: true,
+                    sortable: true,
                     options: years,
                 },
                 {
@@ -56,6 +58,7 @@ var app = new Vue({
                     centered: true,
                     width: 20,
                     isSearchable: true,
+                    sortable: true,
                     options: generateOptions(['Any', 'ABC', 'A', 'B', 'C', 'NotABC']),
                     customSearch: function (a, input) {
                         if (input == "A" || input == "B" || input == "C") {
@@ -78,6 +81,7 @@ var app = new Vue({
                     centered: true,
                     width: 20,
                     isSearchable: true,
+                    sortable: true,
                     options: ccfcats.map(_ => ({
                         value: _.id.toString(),
                         name: _.title,
