@@ -77,10 +77,7 @@
                 <a :href="'https://dblp.uni-trier.de/search?q=' + props.row[column.field]" target="_blank">
                   <b-icon icon="select-search" size="is-small"></b-icon>
                 </a>
-                <a @click="expandNote(props.row);props.toggleDetails(props.row)">
-                  <b-icon icon="details" size="is-small"></b-icon>
-                </a>
-                <span v-html="props.row['highlight']"></span>
+                <span v-html="props.row['highlight']" @click="expandNote(props.row);props.toggleDetails(props.row)"></span>
                 <b-tooltip :label="props.row['publisher']">
                   <b-tag type="is-light is-info">{{props.row['pub']}}</b-tag>
                 </b-tooltip>
