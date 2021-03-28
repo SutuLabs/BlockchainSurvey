@@ -148,7 +148,7 @@
         <div class="card-content">
           <div v-if="isOutputOpen">
             <b-field label="Output" label-position="on-border">
-              <b-input type="textarea" readonly :value="compress(JSON.stringify(notes))"></b-input>
+              <b-input type="textarea" readonly :value="JSON.stringify(notes)"></b-input>
             </b-field>
           </div>
         </div>
