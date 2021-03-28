@@ -1,3 +1,14 @@
+Array.prototype.groupBy = function () {
+    let dict = this.reduce(function (rv, x) {
+        (rv[x] = rv[x] || []).push(x);
+        return rv;
+    }, {});
+    return Object.keys(dict)
+        .map(_ => ({
+            key: _,
+            values: dict[_]
+        }))
+};
 var app = new Vue({
     el: '#app',
     data: function () {
@@ -128,20 +139,14 @@ var app = new Vue({
             this.tags = this.getTags();
         },
         getTags() {
-            let groupBy = function (xs) {
-                return xs.reduce(function (rv, x) {
-                    (rv[x] = rv[x] || []).push(x);
-                    return rv;
-                }, {});
-            };
             let ts = Object.values(this.notes)
                 .map(_ => _.tags || [])
                 .reduce((a, b) => a.concat(b));
-            let groups = groupBy(ts);
-            let fts = Object.keys(groups)
+            let fts = ts
+                .groupBy()
                 .map(_ => ({
-                    tag: _,
-                    count: groups[_].length
+                    tag: _.key,
+                    count: _.values.length
                 }))
                 .sort((a, b) => a.count > b.count ? -1 : 1)
                 .slice(0, 8);
@@ -171,22 +176,16 @@ var app = new Vue({
             const NonLexicalWords = ["the", "of", "and", "to", "a", "in", "for", "is", "on", "that", "by", "this", "with", "i", "you", "it", "not", "or", "be", "are", "from", "at", "as", "your", "all", "have", "new", "more", "an", "was", "we", "will", "home", "can", "us", "about", "if", "page", "my", "has", "free", "but", "our", "one", "other", "do", "no", "information", "time", "they", "site", "he", "up", "may", "what", "which", "their", "news", "out", "use", "any", "there", "see", "only", "so", "his", "when", "contact", "here", "business", "who", "web", "also", "now", "help", "get", "pm", "view", "online", "c", "e", "first", "am", "been", "would", "how", "were", "me", "s", "services", "some", "these", "click", "its", "like", "service", "x", "than", "find", "price", "date", "back", "top", "people", "had", "list", "name", "just", "over", "state", "year", "day", "into", "email", "two", "health", "n", "world", "re", "next", "used", "go", "b", "work", "last", "most", "products", "music", "buy", "make", "them", "should", "product", "post", "her", "city", "t", "add", "policy", "number", "such", "please", "available", "copyright", "support", "message", "after", "best", "software", "then", "jan", "good", "video", "well", "d", "where", "info", "rights", "public", "books", "high", "school", "through", "m", "each", "links", "she", "review", "years", "order", "very", "privacy", "book", "items", "company", "r", "read", "group", "sex", "need", "many", "user", "said", "de", "does", "set", "under", "general", "research", "university", "january", "mail", "full", "map", "reviews", "program", "life"];
             let split = (input) => input.match(/\b[\w']+\b/g);
             let ws = this.filterPapers.map(_ => split(_.title)).reduce((a, b) => a.concat(b));
-            let groupBy = function (xs) {
-                return xs.reduce(function (rv, x) {
-                    (rv[x] = rv[x] || []).push(x);
-                    return rv;
-                }, {});
-            };
             let cleanWords = ws.map(_ => _.toLowerCase())
                 .filter(_ => _)
                 .filter(_ => NonLexicalWords.indexOf(_) == -1)
                 .filter(_ => NotCountWords.indexOf(_) == -1)
                 .filter(_ => _.indexOf('blockchain') == -1);
-            let groups = groupBy(cleanWords);
-            let wordsStats = Object.keys(groups)
+            let wordsStats = cleanWords
+                .groupBy()
                 .map(_ => ({
-                    Word: _,
-                    Count: groups[_].length
+                    Word: _.key,
+                    Count: _.values.length
                 }))
                 .filter(_ => _.Count > 1)
                 .sort((a, b) => a.Count > b.Count ? -1 : 1)
