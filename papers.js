@@ -52,6 +52,16 @@ var papers = {
     },
     {
       "type": "phdthesis",
+      "key": "phd/dnb/Spiegel20",
+      "title": "Blockchain-basiertes virtuelles Geld.",
+      "year": "2020",
+      "publisher": "University of Marburg, Germany",
+      "authors": [
+        "Alexandra Spiegel"
+      ]
+    },
+    {
+      "type": "phdthesis",
       "key": "phd/dnb/Eckey20",
       "title": "Blockchain Scalability through Secure Optimistic Protocols.",
       "year": "2020",
@@ -68,6 +78,16 @@ var papers = {
       "publisher": "University of Zurich, Zürich, Switzerland",
       "authors": [
         "Nicolas Jacquemart"
+      ]
+    },
+    {
+      "type": "phdthesis",
+      "key": "phd/dnb/Rodrigues21",
+      "title": "Blockchain Signaling System.",
+      "year": "2021",
+      "publisher": "University of Zurich, Zürich, Switzerland",
+      "authors": [
+        "Bruno Rodrigues 0001"
       ]
     },
     {
@@ -1034,6 +1054,21 @@ var papers = {
     },
     {
       "type": "inproceedings",
+      "key": "conf/elinfocom/FanKK0C21",
+      "title": "Performance Analyses for Applying Machine Learning on Bitcoin Miners.",
+      "year": "2021",
+      "doi": "https://doi.org/10.1109/ICEIC51217.2021.9369776",
+      "publisher": "ICEIC",
+      "authors": [
+        "Wenjun Fan",
+        "Jinoh Kim",
+        "Ikkyun Kim",
+        "Xiaobo Zhou 0002",
+        "Sang-Yoon Chang"
+      ]
+    },
+    {
+      "type": "inproceedings",
       "key": "conf/elinfocom/ChoL19",
       "title": "Survey on the Application of BlockChain to IoT.",
       "year": "2019",
@@ -1917,7 +1952,7 @@ var papers = {
         "Joe Feller",
         "Philip O'Reilly",
         "Shanping Li",
-        "Jerry Cristiforo"
+        "Jerry Cristoforo"
       ]
     },
     {
@@ -3125,6 +3160,23 @@ var papers = {
     },
     {
       "type": "inproceedings",
+      "key": "conf/icaart/SeewaldGWPSHP21",
+      "title": "Cycle4Value: A Blockchain-based Reward System to Promote Cycling and Reduce CO2 Footprint.",
+      "year": "2021",
+      "doi": "https://doi.org/10.5220/0010318010821089",
+      "publisher": "ICAART (2)",
+      "authors": [
+        "Alexander K. Seewald",
+        "Mihai Ghete",
+        "Thomas Wernbacher",
+        "Mario Platzer",
+        "Josefine Schneider",
+        "Dietmar Hofer",
+        "Alexander Pfeiffer"
+      ]
+    },
+    {
+      "type": "inproceedings",
       "key": "conf/icaart/MoergestelBKDP18",
       "title": "Using Blockchains for Agent-based Auctions.",
       "year": "2018",
@@ -3136,6 +3188,34 @@ var papers = {
         "Bianca Krieger",
         "Martijn van Dijk",
         "Erik Puik"
+      ]
+    },
+    {
+      "type": "inproceedings",
+      "key": "conf/icaart/JahlJBAG21",
+      "title": "Blockchain-based Task-centric Team Building.",
+      "year": "2021",
+      "doi": "https://doi.org/10.5220/0010227402500257",
+      "publisher": "ICAART (1)",
+      "authors": [
+        "Alexander Jahl",
+        "Stefan Jakob",
+        "Harun Baraki",
+        "Yasin Alhamwy",
+        "Kurt Geihs"
+      ]
+    },
+    {
+      "type": "inproceedings",
+      "key": "conf/icaart/GharbiHZ21",
+      "title": "A Secure Integrated Fog Cloud-IoT Architecture based on Multi-Agents System and Blockchain.",
+      "year": "2021",
+      "doi": "https://doi.org/10.5220/0010345111841191",
+      "publisher": "ICAART (2)",
+      "authors": [
+        "Chaima Gharbi",
+        "Lobna Hsairi",
+        "Ezzeddine Zagrouba"
       ]
     },
     {
@@ -3176,7 +3256,7 @@ var papers = {
       "doi": "https://doi.org/10.1145/3297280.3297312",
       "publisher": "SAC",
       "authors": [
-        "Alejandro Ranchal Pedrosa",
+        "Alejandro Ranchal-Pedrosa",
         "Maria Potop-Butucaru",
         "Sara Tucci Piergiovanni"
       ]
@@ -3589,6 +3669,19 @@ var papers = {
     },
     {
       "type": "inproceedings",
+      "key": "conf/icpads/AiLW20",
+      "title": "ABC: An Auction-Based Blockchain Consensus-Incentive Mechanism.",
+      "year": "2020",
+      "doi": "https://doi.org/10.1109/ICPADS51040.2020.00085",
+      "publisher": "ICPADS",
+      "authors": [
+        "Zhengpeng Ai",
+        "Yuan Liu 0002",
+        "Xingwei Wang 0001"
+      ]
+    },
+    {
+      "type": "inproceedings",
       "key": "conf/icpads/ChenZ17",
       "title": "Extending Blockchain Functionality with Statechain.",
       "year": "2017",
@@ -3610,6 +3703,21 @@ var papers = {
         "Nguyen Van Toan",
         "Ung Park",
         "Geunwoong Ryu"
+      ]
+    },
+    {
+      "type": "inproceedings",
+      "key": "conf/icpads/WuXZPW20",
+      "title": "A Solution to Data Accessibility Across Heterogeneous Blockchains.",
+      "year": "2020",
+      "doi": "https://doi.org/10.1109/ICPADS51040.2020.00062",
+      "publisher": "ICPADS",
+      "authors": [
+        "Zhihui Wu",
+        "Yang Xiao",
+        "Enyuan Zhou",
+        "Qingqi Pei",
+        "Quan Wang"
       ]
     },
     {
@@ -3824,6 +3932,19 @@ var papers = {
     },
     {
       "type": "inproceedings",
+      "key": "conf/icpads/ZhaoRJ20",
+      "title": "A Trustworthy Blockchain-based Decentralised Resource Management System in the Cloud.",
+      "year": "2020",
+      "doi": "https://doi.org/10.1109/ICPADS51040.2020.00086",
+      "publisher": "ICPADS",
+      "authors": [
+        "Zhiming Zhao",
+        "Chunming Rong",
+        "Martin Gilje Jaatun"
+      ]
+    },
+    {
+      "type": "inproceedings",
       "key": "conf/icpads/JinXLL0M19",
       "title": "Toward Secure, Privacy-Preserving, and Interoperable Medical Data Sharing via Blockchain.",
       "year": "2019",
@@ -3877,6 +3998,20 @@ var papers = {
         "Abhishek Dubey",
         "Gabor Karsai",
         "Karla Kvaternik"
+      ]
+    },
+    {
+      "type": "inproceedings",
+      "key": "conf/icpads/ZhuZJZ20",
+      "title": "Enabling Generic Verifiable Aggregate Query on Blockchain Systems.",
+      "year": "2020",
+      "doi": "https://doi.org/10.1109/ICPADS51040.2020.00066",
+      "publisher": "ICPADS",
+      "authors": [
+        "Yanchao Zhu",
+        "Zhao Zhang",
+        "Cheqing Jin",
+        "Aoying Zhou"
       ]
     },
     {
@@ -6603,7 +6738,7 @@ var papers = {
       "authors": [
         "Hyunsu Mun",
         "Soohyun Kim",
-        "Youngseok Lee"
+        "Youngseok Lee 0002"
       ]
     },
     {
@@ -7193,7 +7328,7 @@ var papers = {
         "Yiwen Du",
         "Jianwei Liu 0001",
         "Zhenyu Guan",
-        "Hanwen Feng"
+        "Hanwen Feng 0001"
       ]
     },
     {
@@ -8844,7 +8979,7 @@ var papers = {
       "doi": "https://doi.org/10.1109/WF-IoT.2019.8767315",
       "publisher": "WF-IoT",
       "authors": [
-        "Konrad Wrona",
+        "Konrad S. Wrona",
         "Michal Jarosz"
       ]
     },
@@ -9089,7 +9224,7 @@ var papers = {
       "doi": "https://doi.org/10.1007/978-981-33-6835-4_5",
       "publisher": "ACeS",
       "authors": [
-        "Salam Al-E'mari",
+        "Salam Al-Emari",
         "Mohammed Anbar",
         "Yousef K. Sanjalawe",
         "Selvakumar Manickam"
@@ -10863,7 +10998,7 @@ var papers = {
       "doi": "https://doi.org/10.1109/ICC40277.2020.9148820",
       "publisher": "ICC",
       "authors": [
-        "Tharaka Hewa",
+        "Tharaka Mawanane Hewa",
         "An Bracken",
         "Mika Ylianttila",
         "Madhusanka Liyanage"
@@ -12043,6 +12178,19 @@ var papers = {
     },
     {
       "type": "inproceedings",
+      "key": "conf/iconference/PalmerRL21",
+      "title": "Multidisciplinary Blockchain Research and Design: A Case Study in Moving from Theory to Pedagogy to Practice.",
+      "year": "2021",
+      "doi": "https://doi.org/10.1007/978-3-030-71292-1_46",
+      "publisher": "iConference (1)",
+      "authors": [
+        "Chelsea K. Palmer",
+        "Chris Rowell",
+        "Victoria L. Lemieux"
+      ]
+    },
+    {
+      "type": "inproceedings",
       "key": "conf/fuzzIEEE/HuitzilFB20",
       "title": "I Can Get Some Satisfaction: Fuzzy Ontologies for Partial Agreements in Blockchain Smart Contracts.",
       "year": "2020",
@@ -12519,7 +12667,7 @@ var papers = {
       "authors": [
         "Diogo Serranito",
         "André Vasconcelos",
-        "Sérgio Guerreiro",
+        "Sérgio Guerreiro 0001",
         "Miguel Correia 0001"
       ]
     },
@@ -13043,6 +13191,42 @@ var papers = {
     },
     {
       "type": "inproceedings",
+      "key": "conf/intcompsymp/HuangH20",
+      "title": "An efficient data structure for distributed ledger in blockchain systems.",
+      "year": "2020",
+      "doi": "https://doi.org/10.1109/ICS51289.2020.00043",
+      "publisher": "ICS",
+      "authors": [
+        "Tzu-Lun Huang",
+        "Jason Huang"
+      ]
+    },
+    {
+      "type": "inproceedings",
+      "key": "conf/intcompsymp/HuangH20a",
+      "title": "Design and analysis of a distributed consensus protocol for real-time blockchain systems.",
+      "year": "2020",
+      "doi": "https://doi.org/10.1109/ICS51289.2020.00044",
+      "publisher": "ICS",
+      "authors": [
+        "Tzu-Lun Huang",
+        "Jason Huang"
+      ]
+    },
+    {
+      "type": "inproceedings",
+      "key": "conf/intcompsymp/LinL20a",
+      "title": "User-Managed Access Delegation for Blockchain-driven IoT Services.",
+      "year": "2020",
+      "doi": "https://doi.org/10.1109/ICS51289.2020.00097",
+      "publisher": "ICS",
+      "authors": [
+        "Chun-An Lin",
+        "Chun-Feng Liao"
+      ]
+    },
+    {
+      "type": "inproceedings",
       "key": "conf/IEEEcloud/KaanicheL18a",
       "title": "BDUA: Blockchain-Based Data Usage Auditing.",
       "year": "2018",
@@ -13420,7 +13604,7 @@ var papers = {
         "Konstantinos Votis",
         "Dimosthenis Ioannidis",
         "Dimitrios Tzovaras",
-        "Pankai Pandey",
+        "Pankaj Pandey",
         "Sokratis K. Katsikas",
         "Evangelos Kotsakis",
         "Raúl García-Castro"
@@ -13692,7 +13876,7 @@ var papers = {
       "authors": [
         "F. Rizal Batubara",
         "Jolien Ubacht",
-        "Marijn Janssen"
+        "Marijn Janssen 0001"
       ]
     },
     {
@@ -13752,7 +13936,7 @@ var papers = {
       "authors": [
         "F. Rizal Batubara",
         "Jolien Ubacht",
-        "Marijn Janssen"
+        "Marijn Janssen 0001"
       ]
     },
     {
@@ -13818,7 +14002,7 @@ var papers = {
       "authors": [
         "Jolien Ubacht",
         "Yao-Hua Tan",
-        "Marijn Janssen",
+        "Marijn Janssen 0001",
         "Boriana Rukanova"
       ]
     },
@@ -14631,6 +14815,17 @@ var papers = {
       "publisher": "WICON",
       "authors": [
         "Hsing-Chung Chen"
+      ]
+    },
+    {
+      "type": "inproceedings",
+      "key": "conf/edbt/Istvan21",
+      "title": "Tutorial on the Internals of Permissioned Blockchains and on How to Build Applications with Hyperledger Fabric.",
+      "year": "2021",
+      "doi": "https://doi.org/10.5441/002/edbt.2021.89",
+      "publisher": "EDBT",
+      "authors": [
+        "Zsolt István"
       ]
     },
     {
@@ -16333,6 +16528,19 @@ var papers = {
     },
     {
       "type": "inproceedings",
+      "key": "conf/icmla/SunEO20",
+      "title": "Blockchain-Based Federated Learning Against End-Point Adversarial Data Corruption.",
+      "year": "2020",
+      "doi": "https://doi.org/10.1109/ICMLA51294.2020.00119",
+      "publisher": "ICMLA",
+      "authors": [
+        "Yuwei Sun",
+        "Hiroshi Esaki",
+        "Hideya Ochiai"
+      ]
+    },
+    {
+      "type": "inproceedings",
       "key": "conf/pkdd/SandersL20",
       "title": "Knowledge Discovery on Blockchains: Challenges and Opportunities for Distributed Event Detection Under Constraints.",
       "year": "2020",
@@ -16351,6 +16559,33 @@ var papers = {
       "publisher": "CIDR",
       "authors": [
         "Olamide Timothy Tawose"
+      ]
+    },
+    {
+      "type": "inproceedings",
+      "key": "conf/cidr/MaDKS021",
+      "title": "Fraud Buster: Tracking IRSF Using Blockchain While Protecting Business Confidentiality.",
+      "year": "2021",
+      "publisher": "CIDR",
+      "authors": [
+        "Shuaicheng Ma",
+        "Tamraparni Dasu",
+        "Yaron Kanza",
+        "Divesh Srivastava",
+        "Li Xiong 0001"
+      ]
+    },
+    {
+      "type": "inproceedings",
+      "key": "conf/cidr/Schuhknecht0DA21",
+      "title": "chainifyDB: How to get rid of your Blockchain and use your DBMS instead.",
+      "year": "2021",
+      "publisher": "CIDR",
+      "authors": [
+        "Felix Martin Schuhknecht",
+        "Ankur Sharma 0002",
+        "Jens Dittrich",
+        "Divya Agrawal"
       ]
     },
     {
@@ -17625,6 +17860,18 @@ var papers = {
     },
     {
       "type": "inproceedings",
+      "key": "conf/fps/FuG20",
+      "title": "Pisces: A New Zero-Knowledge Protocol for Blockchain Privacy.",
+      "year": "2020",
+      "doi": "https://doi.org/10.1007/978-3-030-70881-8_12",
+      "publisher": "FPS",
+      "authors": [
+        "Shihui Fu",
+        "Guang Gong"
+      ]
+    },
+    {
+      "type": "inproceedings",
       "key": "conf/gil/FerdinandR20",
       "title": "Blockchain in der Verfahrensdokumentation von landwirtschaftlichen Betrieben.",
       "year": "2020",
@@ -18204,6 +18451,28 @@ var papers = {
     },
     {
       "type": "inproceedings",
+      "key": "conf/csia/Zhang21d",
+      "title": "Development Trend of Blockchain Technology in Large-Scale Sports Events in the Information Age.",
+      "year": "2021",
+      "doi": "https://doi.org/10.1007/978-3-030-69999-4_27",
+      "publisher": "CSIA (2)",
+      "authors": [
+        "Qian Zhang"
+      ]
+    },
+    {
+      "type": "inproceedings",
+      "key": "conf/csia/Peng21",
+      "title": "Research and Application of Equity System Development of Rural Joint Stock Cooperative Economic Association Oriented to Big Data Technology (Blockchain Technology).",
+      "year": "2021",
+      "doi": "https://doi.org/10.1007/978-3-030-70042-3_1",
+      "publisher": "CSIA (1)",
+      "authors": [
+        "Kanghua Peng"
+      ]
+    },
+    {
+      "type": "inproceedings",
       "key": "conf/csia/WuW20",
       "title": "Application of Blockchain Technology in the Integration of Management Accounting and Financial Accounting.",
       "year": "2020",
@@ -18216,6 +18485,18 @@ var papers = {
     },
     {
       "type": "inproceedings",
+      "key": "conf/csia/HanM21",
+      "title": "Blockchain Technology in Inclusive Finance Under the Background of Big Data.",
+      "year": "2021",
+      "doi": "https://doi.org/10.1007/978-3-030-69999-4_30",
+      "publisher": "CSIA (2)",
+      "authors": [
+        "Jiayi Han",
+        "Yuze Ma"
+      ]
+    },
+    {
+      "type": "inproceedings",
       "key": "conf/csia/Liu20",
       "title": "The Construction and Research of the Enterprise Financial Ecosystem Model Based on Blockchain.",
       "year": "2020",
@@ -18223,6 +18504,52 @@ var papers = {
       "publisher": "CSIA (2)",
       "authors": [
         "Quan Liu"
+      ]
+    },
+    {
+      "type": "inproceedings",
+      "key": "conf/csia/Fu21",
+      "title": "The Influence of Blockchain Technology on the Development of Animation Design.",
+      "year": "2021",
+      "doi": "https://doi.org/10.1007/978-3-030-69999-4_19",
+      "publisher": "CSIA (2)",
+      "authors": [
+        "Qiang Fu"
+      ]
+    },
+    {
+      "type": "inproceedings",
+      "key": "conf/csia/ZhangLG21",
+      "title": "Research on Agricultural Product Supply Chain Based on Internet of Things and Blockchain Technology.",
+      "year": "2021",
+      "doi": "https://doi.org/10.1007/978-3-030-69999-4_2",
+      "publisher": "CSIA (2)",
+      "authors": [
+        "Ying Zhang",
+        "Jiajun Li",
+        "Li Ge"
+      ]
+    },
+    {
+      "type": "inproceedings",
+      "key": "conf/csia/Li21c",
+      "title": "Optimization Strategy of Supply Chain Financial Platform Based on Blockchain.",
+      "year": "2021",
+      "doi": "https://doi.org/10.1007/978-3-030-69999-4_17",
+      "publisher": "CSIA (2)",
+      "authors": [
+        "Yingying Li"
+      ]
+    },
+    {
+      "type": "inproceedings",
+      "key": "conf/csia/Cui21",
+      "title": "Systematic Research on Art Appreciation Based on Blockchain Technology.",
+      "year": "2021",
+      "doi": "https://doi.org/10.1007/978-3-030-69999-4_18",
+      "publisher": "CSIA (2)",
+      "authors": [
+        "Changcheng Cui"
       ]
     },
     {
@@ -20303,7 +20630,7 @@ var papers = {
         "Wout Hofman",
         "Jolien Ubacht",
         "Yao-Hua Tan",
-        "Marijn Janssen"
+        "Marijn Janssen 0001"
       ]
     },
     {
@@ -20758,6 +21085,20 @@ var papers = {
     },
     {
       "type": "inproceedings",
+      "key": "conf/iccsp/Dauden-EsmelCVD21",
+      "title": "Lightweight Blockchain-based Platform for GDPR-Compliant Personal Data Management.",
+      "year": "2021",
+      "doi": "https://doi.org/10.1109/CSP51677.2021.9357602",
+      "publisher": "CSP",
+      "authors": [
+        "Cristòfol Daudén-Esmel",
+        "Jordi Castellà-Roca",
+        "Alexandre Viejo",
+        "Josep Domingo-Ferrer"
+      ]
+    },
+    {
+      "type": "inproceedings",
       "key": "conf/iccsp/XiongD19",
       "title": "Electronic evidence preservation model based on blockchain.",
       "year": "2019",
@@ -20819,6 +21160,18 @@ var papers = {
     },
     {
       "type": "inproceedings",
+      "key": "conf/iccsp/PoelmanI21",
+      "title": "Investigating the Compliance of the GDPR: Processing Personal Data On A Blockchain.",
+      "year": "2021",
+      "doi": "https://doi.org/10.1109/CSP51677.2021.9357590",
+      "publisher": "CSP",
+      "authors": [
+        "Michelle Poelman",
+        "Sarfraz Iqbal"
+      ]
+    },
+    {
+      "type": "inproceedings",
       "key": "conf/iccsp/LaiL20",
       "title": "Static Analysis of Integer Overflow of Smart Contracts in Ethereum.",
       "year": "2020",
@@ -20867,6 +21220,33 @@ var papers = {
         "Hongman Wang",
         "Yongbin Yuan",
         "Fangchun Yang"
+      ]
+    },
+    {
+      "type": "inproceedings",
+      "key": "conf/iccsp/PirkerFWS21",
+      "title": "velink - A Blockchain-based Shared Mobility Platform for Private and Commercial Vehicles utilizing ERC-721 Tokens.",
+      "year": "2021",
+      "doi": "https://doi.org/10.1109/CSP51677.2021.9357605",
+      "publisher": "CSP",
+      "authors": [
+        "Dominic Pirker",
+        "Thomas Fischer",
+        "Harald Witschnig",
+        "Christian Steger"
+      ]
+    },
+    {
+      "type": "inproceedings",
+      "key": "conf/iccsp/LinTL21",
+      "title": "A Blockchain-based Privacy-Preserving Recommendation Mechanism.",
+      "year": "2021",
+      "doi": "https://doi.org/10.1109/CSP51677.2021.9357604",
+      "publisher": "CSP",
+      "authors": [
+        "Liangjie Lin",
+        "Yuchen Tian",
+        "Yang Liu"
       ]
     },
     {
@@ -21280,7 +21660,7 @@ var papers = {
       "publisher": "Blockchain",
       "authors": [
         "Viktor Vasylkovskyi",
-        "Sérgio Guerreiro",
+        "Sérgio Guerreiro 0001",
         "João Silva Sequeira"
       ]
     },
@@ -21876,7 +22256,7 @@ var papers = {
       "doi": "https://doi.org/10.1109/Blockchain50366.2020.00048",
       "publisher": "Blockchain",
       "authors": [
-        "Yuchiro Chinen",
+        "Yuichiro Chinen",
         "Naoto Yanai",
         "Jason Paul Cruz",
         "Shingo Okamura"
@@ -23259,7 +23639,7 @@ var papers = {
       "authors": [
         "Sabbir Ahmed",
         "Soaibuzzaman",
-        "Mohammad Saidur Rahman",
+        "Mohammad Saidur Rahman 0001",
         "Mohammad Saiedur Rahaman"
       ]
     },
@@ -25051,6 +25431,20 @@ var papers = {
     },
     {
       "type": "inproceedings",
+      "key": "conf/cloudtech/LahmiriSMN20",
+      "title": "An Artificial Neural Networks Based Ensemble System to Forecast Bitcoin Daily Trading Volume.",
+      "year": "2020",
+      "doi": "https://doi.org/10.1109/CloudTech49835.2020.9365913",
+      "publisher": "Cloudtech",
+      "authors": [
+        "Salim Lahmiri",
+        "Raafat George Saadé",
+        "Danielle Morin",
+        "Fassil Nebebe"
+      ]
+    },
+    {
+      "type": "inproceedings",
       "key": "conf/cloudtech/AzbegOJFS18",
       "title": "Blockchain and IoT for Security and Privacy: A Platform for Diabetes Self-management.",
       "year": "2018",
@@ -25062,6 +25456,19 @@ var papers = {
         "Said Jai-Andaloussi",
         "Leila Fetjah",
         "Abderrahim Sekkaki"
+      ]
+    },
+    {
+      "type": "inproceedings",
+      "key": "conf/cloudtech/MajdoubiBS20",
+      "title": "Towards Smart Blockchain-Based System for Privacy and Security in a Smart City environment.",
+      "year": "2020",
+      "doi": "https://doi.org/10.1109/CloudTech49835.2020.9365905",
+      "publisher": "Cloudtech",
+      "authors": [
+        "Driss El Majdoubi",
+        "Hanan El Bakkali",
+        "Souad Sadki"
       ]
     },
     {
@@ -25113,7 +25520,7 @@ var papers = {
       "doi": "https://doi.org/10.1145/3327960.3332392",
       "publisher": "BSCI",
       "authors": [
-        "Mohammad Saidur Rahman",
+        "Mohammad Saidur Rahman 0001",
         "Ibrahim Khalil",
         "Mahawaga Arachchige Pathum Chamikara",
         "Abdelaziz Bouras",
@@ -25564,11 +25971,11 @@ var papers = {
       "publisher": "IWCMC",
       "authors": [
         "Jiaqi Yuan",
-        "Hui Yang",
+        "Hui Yang 0006",
         "Yongshen Liang",
         "Qiuyan Yao",
         "Libin Jiao",
-        "Jie Zhang"
+        "Jie Zhang 0006"
       ]
     },
     {
@@ -25596,11 +26003,11 @@ var papers = {
       "publisher": "IWCMC",
       "authors": [
         "Jiaqi Yuan",
-        "Hui Yang",
+        "Hui Yang 0006",
         "Shuai Dong",
         "Qiuyan Yao",
         "Libin Jiao",
-        "Jie Zhang"
+        "Jie Zhang 0006"
       ]
     },
     {
@@ -25672,7 +26079,7 @@ var papers = {
       "publisher": "IWCMC",
       "authors": [
         "Shuai Dong",
-        "Hui Yang",
+        "Hui Yang 0006",
         "Jiaqi Yuan",
         "Libin Jiao",
         "Ao Yu",
@@ -27392,6 +27799,38 @@ var papers = {
     },
     {
       "type": "inproceedings",
+      "key": "conf/cisc/LiX0YWC20",
+      "title": "Blockchain-Based Efficient Public Integrity Auditing for Cloud Storage Against Malicious Auditors.",
+      "year": "2020",
+      "doi": "https://doi.org/10.1007/978-3-030-71852-7_14",
+      "publisher": "Inscrypt",
+      "authors": [
+        "Shanshan Li",
+        "Chunxiang Xu",
+        "Yuan Zhang 0006",
+        "Anjia Yang",
+        "Xinsheng Wen",
+        "Kefei Chen"
+      ]
+    },
+    {
+      "type": "inproceedings",
+      "key": "conf/cisc/SongWLOWL20",
+      "title": "P2A: Privacy Preserving Anonymous Authentication Based on Blockchain and SGX.",
+      "year": "2020",
+      "doi": "https://doi.org/10.1007/978-3-030-71852-7_17",
+      "publisher": "Inscrypt",
+      "authors": [
+        "Tianlin Song",
+        "Wei Wang",
+        "Fan Lang",
+        "Wenyi Ouyang",
+        "Qiongxiao Wang",
+        "Jingqiang Lin"
+      ]
+    },
+    {
+      "type": "inproceedings",
       "key": "conf/cisc/GuoYLY18",
       "title": "Using Blockchain to Control Access to Cloud Data.",
       "year": "2018",
@@ -27412,9 +27851,9 @@ var papers = {
       "doi": "https://doi.org/10.1109/IEEM45057.2020.9309979",
       "publisher": "IEEM",
       "authors": [
-        "L. Herrgoß",
+        "Laura Herrgoß",
         "Jacob Lohmer",
-        "G. Schneider",
+        "Germar Schneider",
         "Rainer Lasch"
       ]
     },
@@ -27440,9 +27879,9 @@ var papers = {
       "doi": "https://doi.org/10.1109/IEEM45057.2020.9309869",
       "publisher": "IEEM",
       "authors": [
-        "F. Högberg",
-        "M. A. Rashid Othman",
-        "C. Große"
+        "Fredrik Högberg",
+        "Muhammad Al Amin Rashid Othman",
+        "Christine Große"
       ]
     },
     {
@@ -27951,7 +28390,7 @@ var papers = {
       "doi": "https://doi.org/10.1109/MILCOM.2018.8599845",
       "publisher": "MILCOM",
       "authors": [
-        "Konrad Wrona",
+        "Konrad S. Wrona",
         "Michal Jarosz"
       ]
     },
@@ -28060,6 +28499,18 @@ var papers = {
     },
     {
       "type": "inproceedings",
+      "key": "conf/bench/TruongR20",
+      "title": "Benchmarking Blockchain Interactions in Mobile Edge Cloud Software Systems.",
+      "year": "2020",
+      "doi": "https://doi.org/10.1007/978-3-030-71058-3_13",
+      "publisher": "Bench",
+      "authors": [
+        "Hong-Linh Truong 0001",
+        "Filip Rydzi"
+      ]
+    },
+    {
+      "type": "inproceedings",
       "key": "conf/ic3k/PaniIMPPTV19",
       "title": "Blockchain Certification and Granular Editing Permissions in Document Management System.",
       "year": "2019",
@@ -28110,7 +28561,7 @@ var papers = {
       "publisher": "KEOD",
       "authors": [
         "Marta Aparício",
-        "Sérgio Guerreiro",
+        "Sérgio Guerreiro 0001",
         "Pedro Sousa"
       ]
     },
@@ -28122,7 +28573,7 @@ var papers = {
       "doi": "https://doi.org/10.5220/0006517502530260",
       "publisher": "KEOD",
       "authors": [
-        "Sérgio Guerreiro",
+        "Sérgio Guerreiro 0001",
         "Wided Guédria",
         "Robert Lagerström",
         "Steven J. H. van Kervel"
@@ -28872,6 +29323,34 @@ var papers = {
     },
     {
       "type": "inproceedings",
+      "key": "conf/globecom/LiFPD20",
+      "title": "Deep Reinforcement Learning for Blockchain-Enabled Mobile Edge Computing Systems.",
+      "year": "2020",
+      "doi": "https://doi.org/10.1109/GCWkshps50303.2020.9367474",
+      "publisher": "GLOBECOM (Workshops)",
+      "authors": [
+        "Jie Li",
+        "Jie Feng",
+        "Qingqi Pei",
+        "Jianbo Du"
+      ]
+    },
+    {
+      "type": "inproceedings",
+      "key": "conf/globecom/SinglaDKT20",
+      "title": "Blockchain-based Efficient Energy Trading Scheme for Smart-Grid Systems.",
+      "year": "2020",
+      "doi": "https://doi.org/10.1109/GCWkshps50303.2020.9367401",
+      "publisher": "GLOBECOM (Workshops)",
+      "authors": [
+        "Sahil Singla 0004",
+        "Amit Dua",
+        "Neeraj Kumar 0001",
+        "Sudeep Tanwar"
+      ]
+    },
+    {
+      "type": "inproceedings",
       "key": "conf/globecom/AlsharifN20",
       "title": "A Blockchain-based Medical Data Marketplace with Trustless Fair Exchange and Access Control.",
       "year": "2020",
@@ -28880,6 +29359,22 @@ var papers = {
       "authors": [
         "Ahmad Alsharif",
         "Mahmoud Nabil"
+      ]
+    },
+    {
+      "type": "inproceedings",
+      "key": "conf/globecom/SomayajiAKBCG20",
+      "title": "A Framework for Prediction and Storage of Battery Life in IoT Devices using DNN and Blockchain.",
+      "year": "2020",
+      "doi": "https://doi.org/10.1109/GCWkshps50303.2020.9367413",
+      "publisher": "GLOBECOM (Workshops)",
+      "authors": [
+        "Siva Rama Krishnan Somayaji",
+        "Mamoun Alazab",
+        "Manoj M. K",
+        "Antonio Bucchiarone",
+        "Chiranji Lal Chowdhary",
+        "Thippa Reddy Gadekallu"
       ]
     },
     {
@@ -29170,6 +29665,20 @@ var papers = {
     },
     {
       "type": "inproceedings",
+      "key": "conf/globecom/ChenTZZ20",
+      "title": "A Blockchain-Based Authentication and Service Provision Scheme for Intemet of Things.",
+      "year": "2020",
+      "doi": "https://doi.org/10.1109/GCWkshps50303.2020.9367565",
+      "publisher": "GLOBECOM (Workshops)",
+      "authors": [
+        "Meijuan Chen",
+        "Chen Tan",
+        "Xiaorong Zhu",
+        "Xiuxian Zhang"
+      ]
+    },
+    {
+      "type": "inproceedings",
       "key": "conf/globecom/ShuklaGTKR20",
       "title": "Block-RAS: A P2P Resource Allocation Scheme in 6G Environment with Public Blockchains.",
       "year": "2020",
@@ -29314,6 +29823,20 @@ var papers = {
     },
     {
       "type": "inproceedings",
+      "key": "conf/globecom/YazdinejadPSD20",
+      "title": "Making Sense of Blockchain for AI Deepfakes Technology.",
+      "year": "2020",
+      "doi": "https://doi.org/10.1109/GCWkshps50303.2020.9367545",
+      "publisher": "GLOBECOM (Workshops)",
+      "authors": [
+        "Abbas Yazdinejad",
+        "Reza M. Parizi",
+        "Gautam Srivastava",
+        "Ali Dehghantanha"
+      ]
+    },
+    {
+      "type": "inproceedings",
       "key": "conf/globecom/LeeYBLLKSM19",
       "title": "Multi-Batch Scheduling for Improving Performance of Hyperledger Fabric Based IoT Applications.",
       "year": "2019",
@@ -29328,6 +29851,21 @@ var papers = {
         "Sangjun Kang",
         "Kiwoon Sung",
         "Seungjai Min"
+      ]
+    },
+    {
+      "type": "inproceedings",
+      "key": "conf/globecom/AlhosaniRSLS20",
+      "title": "Blockchain-Based Solution for Multiple Operator Spectrum Sharing (MOSS) in 5G Networks.",
+      "year": "2020",
+      "doi": "https://doi.org/10.1109/GCWkshps50303.2020.9367561",
+      "publisher": "GLOBECOM (Workshops)",
+      "authors": [
+        "Hend Alhosani",
+        "Muhammad Habib Ur Rehman",
+        "Khaled Salah",
+        "Claudio Lima",
+        "Davor Svetinovic"
       ]
     },
     {
@@ -29402,6 +29940,24 @@ var papers = {
         "Adia Khalid",
         "Muhammad Imran",
         "Nidal Nasser"
+      ]
+    },
+    {
+      "type": "inproceedings",
+      "key": "conf/globecom/SomayajiKGKMBSP20",
+      "title": "A Blockchain-Based Credibility Scoring Framework for Electronic Medical Records.",
+      "year": "2020",
+      "doi": "https://doi.org/10.1109/GCWkshps50303.2020.9367459",
+      "publisher": "GLOBECOM (Workshops)",
+      "authors": [
+        "Siva Rama Krishnan Somayaji",
+        "Manoj M. K",
+        "Thippa Reddy Gadekallu",
+        "Neeraj Kumar 0001",
+        "Praveen Kumar Reddy Maddikunta",
+        "Sweta Bhattacharya",
+        "Doug Young Suh",
+        "Md. Jalil Piran"
       ]
     },
     {
@@ -29493,7 +30049,7 @@ var papers = {
       "doi": "https://doi.org/10.1109/GLOBECOM42002.2020.9348125",
       "publisher": "GLOBECOM",
       "authors": [
-        "Tharaka Hewa",
+        "Tharaka Mawanane Hewa",
         "An Braeken",
         "Mika Ylianttila",
         "Madhusanka Liyanage"
@@ -29786,6 +30342,22 @@ var papers = {
         "Safa Otoum",
         "Ismaeel Al Ridhawi",
         "Hussein T. Mouftah"
+      ]
+    },
+    {
+      "type": "inproceedings",
+      "key": "conf/globecom/KSSGMB20",
+      "title": "An Incentive Based Approach for COVID-19 planning using Blockchain Technology.",
+      "year": "2020",
+      "doi": "https://doi.org/10.1109/GCWkshps50303.2020.9367469",
+      "publisher": "GLOBECOM (Workshops)",
+      "authors": [
+        "Manoj M. K",
+        "Gautam Srivastava",
+        "Siva Rama Krishnan Somayaji",
+        "Thippa Reddy Gadekallu",
+        "Praveen Kumar Reddy Maddikunta",
+        "Sweta Bhattacharya"
       ]
     },
     {
@@ -30332,6 +30904,48 @@ var papers = {
     },
     {
       "type": "inproceedings",
+      "key": "conf/mass/LahiriDMBC20",
+      "title": "A Trustworthy Blockchain based framework for Impregnable IoV in Edge Computing.",
+      "year": "2020",
+      "doi": "https://doi.org/10.1109/MASS50613.2020.00013",
+      "publisher": "MASS",
+      "authors": [
+        "Pralay Kumar Lahiri",
+        "Debashis Das",
+        "Wathiq Mansoor",
+        "Sourav Banerjee",
+        "Pushpita Chatterjee"
+      ]
+    },
+    {
+      "type": "inproceedings",
+      "key": "conf/mass/Jiang020",
+      "title": "Game Theoretic Storage Outsourcing in the Mobile Blockchain Mining Network.",
+      "year": "2020",
+      "doi": "https://doi.org/10.1109/MASS50613.2020.00045",
+      "publisher": "MASS",
+      "authors": [
+        "Suhan Jiang",
+        "Jie Wu 0001"
+      ]
+    },
+    {
+      "type": "inproceedings",
+      "key": "conf/mass/DwivediSDSP20",
+      "title": "Tracing the Source of Fake News using a Scalable Blockchain Distributed Network.",
+      "year": "2020",
+      "doi": "https://doi.org/10.1109/MASS50613.2020.00015",
+      "publisher": "MASS",
+      "authors": [
+        "Ashutosh Dhar Dwivedi",
+        "Rajani Singh",
+        "Sakshi Dhall",
+        "Gautam Srivastava",
+        "Saibal K. Pal"
+      ]
+    },
+    {
+      "type": "inproceedings",
       "key": "conf/mass/ShahidPNAP19",
       "title": "Demo: Towards the Development of a Differentially Private Lightweight and Scalable Blockchain for IoT.",
       "year": "2019",
@@ -30362,6 +30976,21 @@ var papers = {
     },
     {
       "type": "inproceedings",
+      "key": "conf/mass/PappaSBKB20",
+      "title": "Spectrum Sharing in CBRS Using Blockchain.",
+      "year": "2020",
+      "doi": "https://doi.org/10.1109/MASS50613.2020.00082",
+      "publisher": "MASS",
+      "authors": [
+        "Pavithra Chidambaram Pappa",
+        "Aarushi Sarbhai",
+        "Aniqua Baset",
+        "Sneha Kumar Kasera",
+        "Milind M. Buddhikot"
+      ]
+    },
+    {
+      "type": "inproceedings",
       "key": "conf/mass/DongCFLHW18",
       "title": "A Privacy-User-Friendly Scheme for Wearable Smart Sensing Devices Based on Blockchain.",
       "year": "2018",
@@ -30374,6 +31003,46 @@ var papers = {
         "Dijun Liu",
         "Yao Hao",
         "Zhen Wang"
+      ]
+    },
+    {
+      "type": "inproceedings",
+      "key": "conf/mass/KaushikDSD20",
+      "title": "Role of Blockchain in Forestalling Pandemics.",
+      "year": "2020",
+      "doi": "https://doi.org/10.1109/MASS50613.2020.00014",
+      "publisher": "MASS",
+      "authors": [
+        "Keshav Kaushik",
+        "Susheela Dahiya",
+        "Rajani Singh",
+        "Ashutosh Dhar Dwivedi"
+      ]
+    },
+    {
+      "type": "inproceedings",
+      "key": "conf/mass/WangSWZ20",
+      "title": "A Blockchain-based System for Secure Image Protection Using Zero-watermark.",
+      "year": "2020",
+      "doi": "https://doi.org/10.1109/MASS50613.2020.00018",
+      "publisher": "MASS",
+      "authors": [
+        "Baowei Wang",
+        "Jiawei Shi",
+        "Weishen Wang",
+        "Peng Zhao"
+      ]
+    },
+    {
+      "type": "inproceedings",
+      "key": "conf/mass/AgarwalP20",
+      "title": "Blockchain meets IoT: A Scalable Architecture for Security and Maintenance.",
+      "year": "2020",
+      "doi": "https://doi.org/10.1109/MASS50613.2020.00017",
+      "publisher": "MASS",
+      "authors": [
+        "Vidushi Agarwal",
+        "Sujata Pal"
       ]
     },
     {
@@ -32224,7 +32893,7 @@ var papers = {
       "doi": "https://doi.org/10.1007/978-3-030-59016-1_15",
       "publisher": "WASA (1)",
       "authors": [
-        "Qin Hu",
+        "Qin Hu 0001",
         "Minghui Xu 0001",
         "Shengling Wang 0001",
         "Shaoyong Guo"
@@ -32285,7 +32954,7 @@ var papers = {
       "authors": [
         "Qianwen Wei",
         "Shujun Li",
-        "Wei Li",
+        "Wei Li 0059",
         "Hong Li 0004",
         "Mingsheng Wang"
       ]
@@ -33648,7 +34317,7 @@ var papers = {
         "Xiangyu Chen",
         "Ximeng Li 0003",
         "Qianying Zhang",
-        "Zhiping Shi 0001",
+        "Zhiping Shi 0002",
         "Yong Guan"
       ]
     },
@@ -34387,7 +35056,7 @@ var papers = {
       "authors": [
         "Shenglan Ma",
         "Chaonian Guo",
-        "Hao Wang",
+        "Hao Wang 0003",
         "Hong Xiao",
         "Botong Xu",
         "Hong-Ning Dai",
@@ -34766,7 +35435,7 @@ var papers = {
         "Iago Sestrem Ochôa",
         "Gabriel de Mello",
         "Luis Augusto Silva",
-        "Abel J. P. Gomes",
+        "Abel João Padrão Gomes",
         "Anita M. R. Fernandes",
         "Valderi Reis Quietinho Leithardt"
       ]
@@ -34802,6 +35471,20 @@ var papers = {
     },
     {
       "type": "inproceedings",
+      "key": "conf/complexnetworks/OskarsdottirMAS20",
+      "title": "Analysis of Tainted Transactions in the Bitcoin Blockchain Transaction Network.",
+      "year": "2020",
+      "doi": "https://doi.org/10.1007/978-3-030-65351-4_46",
+      "publisher": "COMPLEX NETWORKS (2)",
+      "authors": [
+        "María Óskarsdóttir",
+        "Jacky Mallett",
+        "Arnþór Logi Arnarson",
+        "Alexander Snær Stefánsson"
+      ]
+    },
+    {
+      "type": "inproceedings",
       "key": "conf/complexnetworks/MaesaMR16",
       "title": "An analysis of the Bitcoin users graph: inferring unusual behaviours.",
       "year": "2016",
@@ -34824,6 +35507,20 @@ var papers = {
         "Rémy Cazabet",
         "Rym Baccour",
         "Matthieu Latapy"
+      ]
+    },
+    {
+      "type": "inproceedings",
+      "key": "conf/complexnetworks/BaZG020",
+      "title": "The Effect of Cryptocurrency Price on a Blockchain-Based Social Network.",
+      "year": "2020",
+      "doi": "https://doi.org/10.1007/978-3-030-65347-7_48",
+      "publisher": "COMPLEX NETWORKS (1)",
+      "authors": [
+        "Cheick Tidiane Ba",
+        "Matteo Zignani",
+        "Sabrina Gaito",
+        "Gian Paolo Rossi 0001"
       ]
     },
     {
@@ -37732,6 +38429,32 @@ var papers = {
     },
     {
       "type": "inproceedings",
+      "key": "conf/icissp/DahdahLKLDG21",
+      "title": "Enabling Monetization of Depreciating Data on Blockchains.",
+      "year": "2021",
+      "doi": "https://doi.org/10.5220/0010252105000507",
+      "publisher": "ICISSP",
+      "authors": [
+        "Christian Dahdah",
+        "Coline Van Leeuwen",
+        "Ziad Kheil",
+        "Jérôme Lacan",
+        "Jonathan Detchart",
+        "Thibault Gateau"
+      ]
+    },
+    {
+      "type": "inproceedings",
+      "key": "conf/icissp/Maffei21",
+      "title": "Practical and Provably Sound Static Analysis of Ethereum Smart Contracts.",
+      "year": "2021",
+      "publisher": "ICISSP",
+      "authors": [
+        "Matteo Maffei"
+      ]
+    },
+    {
+      "type": "inproceedings",
       "key": "conf/icissp/MarellaMMD18",
       "title": "GenVote: Blockchain-Based Customizable and Secure Voting Platform.",
       "year": "2018",
@@ -37756,6 +38479,21 @@ var papers = {
     },
     {
       "type": "inproceedings",
+      "key": "conf/icissp/0002E0SE21",
+      "title": "Who Stores the Private Key? An Exploratory Study about User Preferences of Key Management for Blockchain-based Applications.",
+      "year": "2021",
+      "doi": "https://doi.org/10.5220/0010173200230032",
+      "publisher": "ICISSP",
+      "authors": [
+        "Clemens Brunner 0002",
+        "Günther Eibl",
+        "Peter Fröhlich 0003",
+        "Andreas Sackl",
+        "Dominik Engel"
+      ]
+    },
+    {
+      "type": "inproceedings",
       "key": "conf/icissp/PlessingO20",
       "title": "Revisiting Privacy-aware Blockchain Public Key Infrastructure.",
       "year": "2020",
@@ -37764,6 +38502,18 @@ var papers = {
       "authors": [
         "Paul Plessing",
         "Olamide Omolola"
+      ]
+    },
+    {
+      "type": "inproceedings",
+      "key": "conf/icissp/OlssonT21",
+      "title": "A Permissioned Blockchain-based System for Collaborative Drug Discovery.",
+      "year": "2021",
+      "doi": "https://doi.org/10.5220/0010236901210132",
+      "publisher": "ICISSP",
+      "authors": [
+        "Christoffer Olsson",
+        "Mohsen Toorani"
       ]
     },
     {
@@ -37778,6 +38528,19 @@ var papers = {
         "Fabian Knirsch",
         "Andreas Unterweger",
         "Dominik Engel"
+      ]
+    },
+    {
+      "type": "inproceedings",
+      "key": "conf/icissp/BasuKB21",
+      "title": "Blockchain based Secured Virtual Machine Image Monitor.",
+      "year": "2021",
+      "doi": "https://doi.org/10.5220/0010228804320439",
+      "publisher": "ICISSP",
+      "authors": [
+        "Srijita Basu",
+        "Sandip Karmakar",
+        "Debasish Bera"
       ]
     },
     {
@@ -37865,6 +38628,20 @@ var papers = {
     },
     {
       "type": "inproceedings",
+      "key": "conf/europar/MoncadaFFF20",
+      "title": "Next Generation Blockchain-Based Financial Services.",
+      "year": "2020",
+      "doi": "https://doi.org/10.1007/978-3-030-71593-9_3",
+      "publisher": "Euro-Par Workshops",
+      "authors": [
+        "Roberto Moncada",
+        "Enrico Ferro",
+        "Alfredo Favenza",
+        "Pierluigi Freni"
+      ]
+    },
+    {
+      "type": "inproceedings",
       "key": "conf/europar/Filippova19",
       "title": "Blockchain Materialization as a General Purpose Technology: A Research Framework.",
       "year": "2019",
@@ -37913,6 +38690,30 @@ var papers = {
       "authors": [
         "Carsten Maple",
         "Jack Jackson"
+      ]
+    },
+    {
+      "type": "inproceedings",
+      "key": "conf/europar/TrovoM20",
+      "title": "Ants-Review: A Privacy-Oriented Protocol for Incentivized Open Peer Reviews on Ethereum.",
+      "year": "2020",
+      "doi": "https://doi.org/10.1007/978-3-030-71593-9_2",
+      "publisher": "Euro-Par Workshops",
+      "authors": [
+        "Bianca Trovò",
+        "Nazzareno Massari"
+      ]
+    },
+    {
+      "type": "inproceedings",
+      "key": "conf/europar/KoensP20",
+      "title": "Blockchain Utility in Use Cases: Observations, Red Flags, and Requirements.",
+      "year": "2020",
+      "doi": "https://doi.org/10.1007/978-3-030-71593-9_1",
+      "publisher": "Euro-Par Workshops",
+      "authors": [
+        "Tommy Koens",
+        "Erik Poll"
       ]
     },
     {
@@ -38013,6 +38814,18 @@ var papers = {
         "Michele Marchesi",
         "Roberto Tonelli",
         "Sebastiano Missineo"
+      ]
+    },
+    {
+      "type": "inproceedings",
+      "key": "conf/europar/GajekL20",
+      "title": "Trustless, Censorship-Resilient and Scalable Votings in the Permission-Based Blockchain Model.",
+      "year": "2020",
+      "doi": "https://doi.org/10.1007/978-3-030-71593-9_5",
+      "publisher": "Euro-Par Workshops",
+      "authors": [
+        "Sebastian Gajek",
+        "Marco Lewandowsky"
       ]
     },
     {
@@ -38382,7 +39195,7 @@ var papers = {
         "Lucas Borges Monteiro",
         "Camila Bassetto",
         "Alexandre de Barros Barreto",
-        "Vinicius R. Pereira Borges",
+        "Vinicius Ruela Pereira Borges",
         "Li Weigang 0001"
       ]
     },
@@ -39905,6 +40718,20 @@ var papers = {
     },
     {
       "type": "inproceedings",
+      "key": "conf/acomp/LeNLK20",
+      "title": "Reinforcing Service Level Agreements in Tourism Sector The Role of Blockchain and Mobile Computing.",
+      "year": "2020",
+      "doi": "https://doi.org/10.1109/ACOMP50827.2020.00032",
+      "publisher": "ACOMP",
+      "authors": [
+        "Dinh-Thuan Le",
+        "Trung-Viet Nguyen",
+        "Lam-Son Lê",
+        "Tri A. Kurniawan"
+      ]
+    },
+    {
+      "type": "inproceedings",
       "key": "conf/acomp/DangN18",
       "title": "An Approach to Data Privacy in Smart Home using Blockchain Technology.",
       "year": "2018",
@@ -40232,7 +41059,7 @@ var papers = {
       "title": "When Machine Learning Meets Blockchain: A Decentralized, Privacy-preserving and Secure Design.",
       "year": "2018",
       "doi": "https://doi.org/10.1109/BigData.2018.8622598",
-      "publisher": "BigData",
+      "publisher": "IEEE BigData",
       "authors": [
         "Xuhui Chen",
         "Jinlong Ji",
@@ -40247,7 +41074,7 @@ var papers = {
       "title": "Sustainable blockchain-enabled services: Smart contracts.",
       "year": "2017",
       "doi": "https://doi.org/10.1109/BigData.2017.8258452",
-      "publisher": "BigData",
+      "publisher": "IEEE BigData",
       "authors": [
         "Craig S. Wright",
         "Antoaneta Serguieva"
@@ -40259,7 +41086,7 @@ var papers = {
       "title": "Privacy-Preserving Statistical Analysis of Health Data Using Paillier Homomorphic Encryption and Permissioned Blockchain.",
       "year": "2019",
       "doi": "https://doi.org/10.1109/BigData47090.2019.9006231",
-      "publisher": "BigData",
+      "publisher": "IEEE BigData",
       "authors": [
         "Mahdi Ghadamyari",
         "Saeed Samet"
@@ -40271,7 +41098,7 @@ var papers = {
       "title": "Do Bitcoin Users Really Care About Anonymity? An Analysis of the Bitcoin Transaction Graph.",
       "year": "2018",
       "doi": "https://doi.org/10.1109/BigData.2018.8622442",
-      "publisher": "BigData",
+      "publisher": "IEEE BigData",
       "authors": [
         "Anil Gaihre",
         "Yan Luo",
@@ -40284,7 +41111,7 @@ var papers = {
       "title": "A Unified Analytical Framework for Trustable Machine Learning and Automation Running with Blockchain.",
       "year": "2018",
       "doi": "https://doi.org/10.1109/BigData.2018.8622262",
-      "publisher": "BigData",
+      "publisher": "IEEE BigData",
       "authors": [
         "Tao Wang"
       ]
@@ -40295,7 +41122,7 @@ var papers = {
       "title": "Blockchain Based Log System.",
       "year": "2018",
       "doi": "https://doi.org/10.1109/BigData.2018.8622204",
-      "publisher": "BigData",
+      "publisher": "IEEE BigData",
       "authors": [
         "Jiansen Huang",
         "Hui Li",
@@ -40308,7 +41135,7 @@ var papers = {
       "title": "Privacy in IoT Blockchains: with Big Data comes Big Responsibility.",
       "year": "2019",
       "doi": "https://doi.org/10.1109/BigData47090.2019.9006341",
-      "publisher": "BigData",
+      "publisher": "IEEE BigData",
       "authors": [
         "Steven A. Wright 0002"
       ]
@@ -40319,7 +41146,7 @@ var papers = {
       "title": "Scalability Analysis of Blockchain on a Serverless Cloud.",
       "year": "2019",
       "doi": "https://doi.org/10.1109/BigData47090.2019.9005529",
-      "publisher": "BigData",
+      "publisher": "IEEE BigData",
       "authors": [
         "Alex Kaplunovich",
         "Karuna P. Joshi",
@@ -40332,7 +41159,7 @@ var papers = {
       "title": "The Internet of Responsibilities - Connecting Human Responsibilities using Big Data and Blockchain.",
       "year": "2019",
       "doi": "https://doi.org/10.1109/BigData47090.2019.9006521",
-      "publisher": "BigData",
+      "publisher": "IEEE BigData",
       "authors": [
         "Xuejiao Tang",
         "Jiong Qiu",
@@ -40351,7 +41178,7 @@ var papers = {
       "title": "Asynchronous Blockchain-based Privacy-preserving Training Framework for Disease Diagnosis.",
       "year": "2019",
       "doi": "https://doi.org/10.1109/BigData47090.2019.9006173",
-      "publisher": "BigData",
+      "publisher": "IEEE BigData",
       "authors": [
         "Xuhui Chen",
         "Xufei Wang",
@@ -40364,7 +41191,7 @@ var papers = {
       "title": "Review : The Potential Use of Blockchain Technology in Railway Applications: An Introduction of a Mobility and Speech Recognition Prototype.",
       "year": "2018",
       "doi": "https://doi.org/10.1109/BigData.2018.8622234",
-      "publisher": "BigData",
+      "publisher": "IEEE BigData",
       "authors": [
         "Feras Naser"
       ]
@@ -40375,7 +41202,7 @@ var papers = {
       "title": "Evaluating Sentiment C1assifiers for Bitcoin Tweets in Price Prediction Task.",
       "year": "2019",
       "doi": "https://doi.org/10.1109/BigData47090.2019.9006140",
-      "publisher": "BigData",
+      "publisher": "IEEE BigData",
       "authors": [
         "Ahmed M. Balfagih",
         "Vlado Keselj"
@@ -40387,7 +41214,7 @@ var papers = {
       "title": "Mechanism Design for An Incentive-aware Blockchain-enabled Federated Learning Platform.",
       "year": "2019",
       "doi": "https://doi.org/10.1109/BigData47090.2019.9006344",
-      "publisher": "BigData",
+      "publisher": "IEEE BigData",
       "authors": [
         "Kentaroh Toyoda",
         "Allan N. Zhang"
@@ -40399,7 +41226,7 @@ var papers = {
       "title": "The blockchain litmus test.",
       "year": "2017",
       "doi": "https://doi.org/10.1109/BigData.2017.8258183",
-      "publisher": "BigData",
+      "publisher": "IEEE BigData",
       "authors": [
         "T. D. Smith"
       ]
@@ -40410,7 +41237,7 @@ var papers = {
       "title": "In-memory Blockchain: Toward Efficient and Trustworthy Data Provenance for HPC Systems.",
       "year": "2018",
       "doi": "https://doi.org/10.1109/BigData.2018.8621897",
-      "publisher": "BigData",
+      "publisher": "IEEE BigData",
       "authors": [
         "Abdullah Al-Mamun 0001",
         "Tonglin Li",
@@ -40424,7 +41251,7 @@ var papers = {
       "title": "Blockchain Technology as a Mechanism for Digital Railway Ticketing.",
       "year": "2019",
       "doi": "https://doi.org/10.1109/BigData47090.2019.9006293",
-      "publisher": "BigData",
+      "publisher": "IEEE BigData",
       "authors": [
         "J. D. Preece",
         "J. M. Easton"
@@ -40436,7 +41263,7 @@ var papers = {
       "title": "Blockchain and IoT for Delivery Assurance on Supply Chain (BIDAS).",
       "year": "2019",
       "doi": "https://doi.org/10.1109/BigData47090.2019.9006277",
-      "publisher": "BigData",
+      "publisher": "IEEE BigData",
       "authors": [
         "Mehmet Demir",
         "Ozgur Turetken",
@@ -40449,7 +41276,7 @@ var papers = {
       "title": "Kratos: A secure, authenticated and publicly verifiable system for educational data using the blockchain.",
       "year": "2019",
       "doi": "https://doi.org/10.1109/BigData47090.2019.9006190",
-      "publisher": "BigData",
+      "publisher": "IEEE BigData",
       "authors": [
         "Velislava Hillman",
         "Varunram Ganesh"
@@ -40461,7 +41288,7 @@ var papers = {
       "title": "Link before you share: Managing privacy policies through blockchain.",
       "year": "2017",
       "doi": "https://doi.org/10.1109/BigData.2017.8258482",
-      "publisher": "BigData",
+      "publisher": "IEEE BigData",
       "authors": [
         "Agniva Banerjee",
         "Karuna Pande Joshi"
@@ -40473,7 +41300,7 @@ var papers = {
       "title": "A first estimation of the proportion of cybercriminal entities in the bitcoin ecosystem using supervised machine learning.",
       "year": "2017",
       "doi": "https://doi.org/10.1109/BigData.2017.8258365",
-      "publisher": "BigData",
+      "publisher": "IEEE BigData",
       "authors": [
         "Haohua Sun Yin",
         "Ravi Vatrapu"
@@ -40485,7 +41312,7 @@ var papers = {
       "title": "Performance Evaluation of Ethereum-based On-chain Sensor Data Management Platform for Industrial IoT.",
       "year": "2019",
       "doi": "https://doi.org/10.1109/BigData47090.2019.9005582",
-      "publisher": "BigData",
+      "publisher": "IEEE BigData",
       "authors": [
         "Kentaroh Toyoda",
         "Mojtaba Shakeri",
@@ -40499,7 +41326,7 @@ var papers = {
       "title": "Predicting Transaction Latency with Deep Learning in Proof-of-Work Blockchains.",
       "year": "2019",
       "doi": "https://doi.org/10.1109/BigData47090.2019.9006228",
-      "publisher": "BigData",
+      "publisher": "IEEE BigData",
       "authors": [
         "Enrico Tedeschi",
         "Tor-Arne S. Nordmo",
@@ -40513,7 +41340,7 @@ var papers = {
       "title": "BRICS: Blockchain-based Resilient Information Control System.",
       "year": "2018",
       "doi": "https://doi.org/10.1109/BigData.2018.8621993",
-      "publisher": "BigData",
+      "publisher": "IEEE BigData",
       "authors": [
         "Tiffany Hyun-Jin Kim",
         "Joshua Lampkins"
@@ -40525,7 +41352,7 @@ var papers = {
       "title": "An improved P2P file system scheme based on IPFS and Blockchain.",
       "year": "2017",
       "doi": "https://doi.org/10.1109/BigData.2017.8258226",
-      "publisher": "BigData",
+      "publisher": "IEEE BigData",
       "authors": [
         "Yongle Chen",
         "Hui Li",
@@ -40539,7 +41366,7 @@ var papers = {
       "title": "Converging Blockchain and Social Business for Socio-Economic Development.",
       "year": "2018",
       "doi": "https://doi.org/10.1109/BigData.2018.8622238",
-      "publisher": "BigData",
+      "publisher": "IEEE BigData",
       "authors": [
         "Raghava Rao Mukkamala",
         "Ravi Vatrapu",
@@ -40554,7 +41381,7 @@ var papers = {
       "title": "Blockchain Evolution: from Bitcoin to Forensic in Smart Grids.",
       "year": "2018",
       "doi": "https://doi.org/10.1109/BigData.2018.8622232",
-      "publisher": "BigData",
+      "publisher": "IEEE BigData",
       "authors": [
         "Igor Kotsiuba",
         "Artem Velykzhanin",
@@ -40571,7 +41398,7 @@ var papers = {
       "title": "Mystiko - Blockchain Meets Big Data.",
       "year": "2018",
       "doi": "https://doi.org/10.1109/BigData.2018.8622341",
-      "publisher": "BigData",
+      "publisher": "IEEE BigData",
       "authors": [
         "Eranga Bandara",
         "Wee Keong Ng",
@@ -40588,7 +41415,7 @@ var papers = {
       "title": "A typology of blockchain recordkeeping solutions and some reflections on their implications for the future of archival preservation.",
       "year": "2017",
       "doi": "https://doi.org/10.1109/BigData.2017.8258180",
-      "publisher": "BigData",
+      "publisher": "IEEE BigData",
       "authors": [
         "Victoria L. Lemieux"
       ]
@@ -40599,7 +41426,7 @@ var papers = {
       "title": "Blockchain Based Provenance Sharing of Scientific Workflows.",
       "year": "2018",
       "doi": "https://doi.org/10.1109/BigData.2018.8622237",
-      "publisher": "BigData",
+      "publisher": "IEEE BigData",
       "authors": [
         "Wanghu Chen",
         "Xiaoyan Liang",
@@ -41516,6 +42343,238 @@ var papers = {
         "Shuhan Cheng",
         "Ruihua Yi",
         "Tongsen Wang"
+      ]
+    },
+    {
+      "type": "inproceedings",
+      "key": "conf/bcca/KilicOS20",
+      "title": "A Cluster Based System for Analyzing Ethereum Blockchain Transaction Data.",
+      "year": "2020",
+      "doi": "https://doi.org/10.1109/BCCA50787.2020.9274081",
+      "publisher": "BCCA",
+      "authors": [
+        "Baran Kiliç",
+        "Can C. Özturan",
+        "Alper Sen 0001"
+      ]
+    },
+    {
+      "type": "inproceedings",
+      "key": "conf/bcca/MartinARA20",
+      "title": "Combining Blockchain and Machine Learning to Forecast Cryptocurrency Prices.",
+      "year": "2020",
+      "doi": "https://doi.org/10.1109/BCCA50787.2020.9274454",
+      "publisher": "BCCA",
+      "authors": [
+        "Kevin Martin",
+        "Izzat Alsmadi",
+        "Mohamed Rahouti",
+        "Moussa Ayyash"
+      ]
+    },
+    {
+      "type": "inproceedings",
+      "key": "conf/bcca/PeloneroFT20",
+      "title": "A Blockchain handling Data in a Waste Recycling Scenario and Fostering Participation.",
+      "year": "2020",
+      "doi": "https://doi.org/10.1109/BCCA50787.2020.9274083",
+      "publisher": "BCCA",
+      "authors": [
+        "Leonardo Pelonero",
+        "Andrea Fornaia",
+        "Emiliano Tramontana"
+      ]
+    },
+    {
+      "type": "inproceedings",
+      "key": "conf/bcca/LatahK20",
+      "title": "DPSec: A blockchain-based data plane authentication protocol for SDNs.",
+      "year": "2020",
+      "doi": "https://doi.org/10.1109/BCCA50787.2020.9274449",
+      "publisher": "BCCA",
+      "authors": [
+        "Majd Latah",
+        "Kübra Kalkan"
+      ]
+    },
+    {
+      "type": "inproceedings",
+      "key": "conf/bcca/JarjisK20",
+      "title": "Blockchain Authentication for AODV Routing Protocol.",
+      "year": "2020",
+      "doi": "https://doi.org/10.1109/BCCA50787.2020.9274452",
+      "publisher": "BCCA",
+      "authors": [
+        "Alend Jarjis",
+        "Govand Kadir"
+      ]
+    },
+    {
+      "type": "inproceedings",
+      "key": "conf/bcca/NazL20",
+      "title": "Why the new consensus mechanism is needed in blockchain technology?",
+      "year": "2020",
+      "doi": "https://doi.org/10.1109/BCCA50787.2020.9274461",
+      "publisher": "BCCA",
+      "authors": [
+        "Sana Naz",
+        "Scott Uk-Jin Lee"
+      ]
+    },
+    {
+      "type": "inproceedings",
+      "key": "conf/bcca/DurandHTMA20",
+      "title": "The StakeCube blockchain : Instantiation, Evaluation &amp; Applications.",
+      "year": "2020",
+      "doi": "https://doi.org/10.1109/BCCA50787.2020.9274084",
+      "publisher": "BCCA",
+      "authors": [
+        "Antoine Durand",
+        "Guillaume Hébert",
+        "Khalifa Toumi",
+        "Gérard Memmi",
+        "Emmanuelle Anceaume"
+      ]
+    },
+    {
+      "type": "inproceedings",
+      "key": "conf/bcca/StaderiniPB20",
+      "title": "Classification of Ethereum Vulnerabilities and their Propagations.",
+      "year": "2020",
+      "doi": "https://doi.org/10.1109/BCCA50787.2020.9274458",
+      "publisher": "BCCA",
+      "authors": [
+        "Mirko Staderini",
+        "Caterina Palli",
+        "Andrea Bondavalli"
+      ]
+    },
+    {
+      "type": "inproceedings",
+      "key": "conf/bcca/PandeyC20",
+      "title": "Employing SABRE relay network for Country-Wide Blockchain network.",
+      "year": "2020",
+      "doi": "https://doi.org/10.1109/BCCA50787.2020.9274465",
+      "publisher": "BCCA",
+      "authors": [
+        "Aman Pandey",
+        "Hakima Chaouchi"
+      ]
+    },
+    {
+      "type": "proceedings",
+      "key": "conf/bcca/2020",
+      "title": "2020 Second International Conference on Blockchain Computing and Applications, BCCA 2020, Antalya, Turkey, November 2-5, 2020",
+      "year": "2020",
+      "doi": "https://doi.org/10.1109/BCCA50787.2020",
+      "publisher": "BCCA",
+      "authors": [
+        "Mohammad A. Alsmirat",
+        "Yaser Jararweh",
+        "Moayad Aloqaily",
+        "Öznur Özkasap"
+      ]
+    },
+    {
+      "type": "inproceedings",
+      "key": "conf/bcca/ThakurB20",
+      "title": "Coordinated Landmark-based Routing for Blockchain Offline Channels.",
+      "year": "2020",
+      "doi": "https://doi.org/10.1109/BCCA50787.2020.9274462",
+      "publisher": "BCCA",
+      "authors": [
+        "Subhasis Thakur",
+        "John G. Breslin"
+      ]
+    },
+    {
+      "type": "inproceedings",
+      "key": "conf/bcca/OmoteSS20",
+      "title": "A New Method of Assigning Trust to User Addresses in Bitcoin.",
+      "year": "2020",
+      "doi": "https://doi.org/10.1109/BCCA50787.2020.9274463",
+      "publisher": "BCCA",
+      "authors": [
+        "Kazumasa Omote",
+        "Asuka Suzuki",
+        "Teppei Sato"
+      ]
+    },
+    {
+      "type": "inproceedings",
+      "key": "conf/bcca/Kanhere20",
+      "title": "Keynote Speech: Blockchain for Cyber Physical Systems.",
+      "year": "2020",
+      "doi": "https://doi.org/10.1109/BCCA50787.2020.9274453",
+      "publisher": "BCCA",
+      "authors": [
+        "Salil S. Kanhere"
+      ]
+    },
+    {
+      "type": "inproceedings",
+      "key": "conf/bcca/VergouwenKP20",
+      "title": "Drivers and Impediments: Experts Opinions on Blockchain Adoption in the Netherlands.",
+      "year": "2020",
+      "doi": "https://doi.org/10.1109/BCCA50787.2020.9274086",
+      "publisher": "BCCA",
+      "authors": [
+        "Maarten Vergouwen",
+        "Tommy Koens",
+        "Erik Poll"
+      ]
+    },
+    {
+      "type": "inproceedings",
+      "key": "conf/bcca/ChristodoulouC20",
+      "title": "Developing more Reliable News Sources by utilizing the Blockchain technology to combat Fake News.",
+      "year": "2020",
+      "doi": "https://doi.org/10.1109/BCCA50787.2020.9274460",
+      "publisher": "BCCA",
+      "authors": [
+        "Panayiotis Christodoulou",
+        "Klitos Christodoulou"
+      ]
+    },
+    {
+      "type": "inproceedings",
+      "key": "conf/bcca/ThakurB20a",
+      "title": "A Model of Decentralized Social Internet of Things using Blockchain Offline Channels.",
+      "year": "2020",
+      "doi": "https://doi.org/10.1109/BCCA50787.2020.9274459",
+      "publisher": "BCCA",
+      "authors": [
+        "Subhasis Thakur",
+        "John G. Breslin"
+      ]
+    },
+    {
+      "type": "inproceedings",
+      "key": "conf/bcca/KorkmazKUMOA20",
+      "title": "Chain FL: Decentralized Federated Machine Learning via Blockchain.",
+      "year": "2020",
+      "doi": "https://doi.org/10.1109/BCCA50787.2020.9274451",
+      "publisher": "BCCA",
+      "authors": [
+        "Caner Korkmaz",
+        "Halil Eralp Kocas",
+        "Ahmet Uysal",
+        "Ahmed Masry",
+        "Öznur Özkasap",
+        "Baris Akgün"
+      ]
+    },
+    {
+      "type": "inproceedings",
+      "key": "conf/bcca/MutheSS20",
+      "title": "A Blockchain Based Decentralized Computing And NFT Infrastructure For Game Networks.",
+      "year": "2020",
+      "doi": "https://doi.org/10.1109/BCCA50787.2020.9274085",
+      "publisher": "BCCA",
+      "authors": [
+        "Koushik Bhargav Muthe",
+        "Khushboo Sharma",
+        "Karthik Epperla Nagendra Sri"
       ]
     },
     {
@@ -42600,6 +43659,21 @@ var papers = {
     },
     {
       "type": "inproceedings",
+      "key": "conf/ccwc/ChenXKLC21",
+      "title": "Blockchain Simulation: A Web Application for IT Education.",
+      "year": "2021",
+      "doi": "https://doi.org/10.1109/CCWC51732.2021.9375934",
+      "publisher": "CCWC",
+      "authors": [
+        "Xingyu Chen",
+        "Zexi Xing",
+        "Bishwodeep Karki",
+        "Yimin Li",
+        "Zhengxin Chen"
+      ]
+    },
+    {
+      "type": "inproceedings",
       "key": "conf/ccwc/BadshaVS20",
       "title": "BloCyNfo-Share: Blockchain based Cybersecurity Information Sharing with Fine Grained Access Control.",
       "year": "2020",
@@ -42609,6 +43683,19 @@ var papers = {
         "Shahriar Badsha",
         "Iman Vakilinia",
         "Shamik Sengupta"
+      ]
+    },
+    {
+      "type": "inproceedings",
+      "key": "conf/ccwc/SamyAR21",
+      "title": "Towards a Secured Blockchain-based Smart Grid.",
+      "year": "2021",
+      "doi": "https://doi.org/10.1109/CCWC51732.2021.9376089",
+      "publisher": "CCWC",
+      "authors": [
+        "Salma Samy",
+        "Mohamed Azab",
+        "Mohamed R. M. Rizk"
       ]
     },
     {
@@ -44290,6 +45377,18 @@ var papers = {
     },
     {
       "type": "inproceedings",
+      "key": "conf/isita/SatoYF20",
+      "title": "A Construction of Robustly Reusable Fuzzy Extractors over Blockchains.",
+      "year": "2020",
+      "publisher": "ISITA",
+      "authors": [
+        "Kodai Sato",
+        "Kenji Yasunaga",
+        "Toru Fujiwara"
+      ]
+    },
+    {
+      "type": "inproceedings",
       "key": "conf/isita/EharaT18",
       "title": "How to generate transparent random numbers using blockchain.",
       "year": "2018",
@@ -44327,6 +45426,20 @@ var papers = {
         "Nishio Yamada",
         "Takayuki Suzuki",
         "Noboru Kunihiro"
+      ]
+    },
+    {
+      "type": "inproceedings",
+      "key": "conf/isita/MienoYOFA20",
+      "title": "Formal Verification of Merkle-Damgård Construction in ProVerif.",
+      "year": "2020",
+      "publisher": "ISITA",
+      "authors": [
+        "Takehiko Mieno",
+        "Togo Yoshimura",
+        "Hiroyuki Okazaki",
+        "Yuichi Futa",
+        "Kenichi Arai"
       ]
     },
     {
@@ -45718,6 +46831,18 @@ var papers = {
     },
     {
       "type": "inproceedings",
+      "key": "conf/ieeesec/HuangH20",
+      "title": "BEAF: A Blockchain and Edge Assistant Framework with Data Sharing for IoT Networks.",
+      "year": "2020",
+      "doi": "https://doi.org/10.1109/SEC50012.2020.00054",
+      "publisher": "SEC",
+      "authors": [
+        "Chanying Huang",
+        "Yingxun Hu"
+      ]
+    },
+    {
+      "type": "inproceedings",
       "key": "conf/emcis/SarantisACLL20",
       "title": "Blockchain in Digital Government: Research Needs Identification.",
       "year": "2020",
@@ -46283,7 +47408,7 @@ var papers = {
       "doi": "https://doi.org/10.1109/6GSUMMIT49458.2020.9083784",
       "publisher": "6G SUMMIT",
       "authors": [
-        "Tharaka Hewa",
+        "Tharaka Mawanane Hewa",
         "Gürkan Gür",
         "Anshuman Kalla",
         "Mika Ylianttila",
@@ -46906,7 +48031,7 @@ var papers = {
       "doi": "https://doi.org/10.1145/3419394.3423628",
       "publisher": "Internet Measurement Conference",
       "authors": [
-        "Daniel Pérez 0002",
+        "Daniel Perez 0001",
         "Jiahua Xu",
         "Benjamin Livshits"
       ]
@@ -47108,6 +48233,20 @@ var papers = {
     },
     {
       "type": "inproceedings",
+      "key": "conf/isgt/SaniYMD21",
+      "title": "DIACS: A Blockchain-based Model for Systematic Data Integrity Assessment and Control.",
+      "year": "2021",
+      "doi": "https://doi.org/10.1109/ISGT49243.2021.9372235",
+      "publisher": "ISGT",
+      "authors": [
+        "Abubakar Sadiq Sani",
+        "Dong Yuan",
+        "Ke Mens",
+        "Zhao Yang Dong"
+      ]
+    },
+    {
+      "type": "inproceedings",
       "key": "conf/isgt/DimobiPR20",
       "title": "A Transactive Grid with Microgrids Using Blockchain for the Energy Internet.",
       "year": "2020",
@@ -47143,6 +48282,33 @@ var papers = {
         "Kiyoshi Nakayama",
         "Ramin Moslemi",
         "Ratnesh Sharma"
+      ]
+    },
+    {
+      "type": "inproceedings",
+      "key": "conf/isgt/MachacekBM21",
+      "title": "Proof of X: Experimental Insights on Blockchain Consensus Algorithms in Energy Markets.",
+      "year": "2021",
+      "doi": "https://doi.org/10.1109/ISGT49243.2021.9372194",
+      "publisher": "ISGT",
+      "authors": [
+        "Travis Machacek",
+        "Milan Biswal",
+        "Satyajayant Misra"
+      ]
+    },
+    {
+      "type": "inproceedings",
+      "key": "conf/isgt/GowdaENG21",
+      "title": "Assessment and Tracking Electric Vehicle Battery Degradation Cost using Blockchain.",
+      "year": "2021",
+      "doi": "https://doi.org/10.1109/ISGT49243.2021.9372218",
+      "publisher": "ISGT",
+      "authors": [
+        "Shashank Narayana Gowda",
+        "Basem A. Eraqi",
+        "Hamidreza Nazaripouya",
+        "Rajit Gadh"
       ]
     },
     {
@@ -47483,6 +48649,18 @@ var papers = {
     },
     {
       "type": "inproceedings",
+      "key": "conf/iotais/MishraK20",
+      "title": "Smart Voltage Monitoring: Centralised and Blockchain-based Decentralised Approach.",
+      "year": "2020",
+      "doi": "https://doi.org/10.1109/IoTaIS50849.2021.9359715",
+      "publisher": "IoTaIS",
+      "authors": [
+        "Shailesh Mishra",
+        "Shivam Kumar"
+      ]
+    },
+    {
+      "type": "inproceedings",
       "key": "conf/meco/BaouyaCBB20",
       "title": "Fog Computing and Blockchain for Massive IoT Deployment.",
       "year": "2020",
@@ -47610,7 +48788,7 @@ var papers = {
       "publisher": "EEWC",
       "authors": [
         "Diogo Silva",
-        "Sérgio Guerreiro",
+        "Sérgio Guerreiro 0001",
         "Pedro Sousa"
       ]
     },
@@ -50438,7 +51616,7 @@ var papers = {
         "Jingyu Zhang",
         "Siqi Zhong",
         "Jin Wang",
-        "Lei Wang",
+        "Lei Wang 0143",
         "Yaqiong Yang",
         "Boyang Wei",
         "Guoyao Zhou"
@@ -50519,6 +51697,19 @@ var papers = {
     },
     {
       "type": "inproceedings",
+      "key": "conf/dependsys/RapuanoIC20",
+      "title": "A scalable Blockchain based system for super resolution images manipulation.",
+      "year": "2020",
+      "doi": "https://doi.org/10.1109/DependSys51298.2020.00011",
+      "publisher": "DependSys",
+      "authors": [
+        "Antonio Rapuano",
+        "Gerardo Iovane",
+        "Marta Chinnici"
+      ]
+    },
+    {
+      "type": "inproceedings",
       "key": "conf/dependsys/OmarBRBB19",
       "title": "Towards Privacy-preserving Recommender System with Blockchains.",
       "year": "2019",
@@ -50530,6 +51721,19 @@ var papers = {
         "Mohammad Shahriar Rahman",
         "Nasima Begum",
         "Md. Zakirul Alam Bhuiyan"
+      ]
+    },
+    {
+      "type": "inproceedings",
+      "key": "conf/dependsys/AlsarsourMW20",
+      "title": "Free Chain: Enabling Freedom of Expression through Public Blockchains.",
+      "year": "2020",
+      "doi": "https://doi.org/10.1109/DependSys51298.2020.00014",
+      "publisher": "DependSys",
+      "authors": [
+        "Israa Alsarsour",
+        "Qutaibah M. Malluhi",
+        "Yongge Wang"
       ]
     },
     {
@@ -52034,7 +53238,7 @@ var papers = {
       "doi": "https://doi.org/10.1145/3211933.3211949",
       "publisher": "CRYBLOCK@MobiSys",
       "authors": [
-        "Alejandro Ranchal Pedrosa",
+        "Alejandro Ranchal-Pedrosa",
         "Giovanni Pau 0001"
       ]
     },
@@ -53181,7 +54385,7 @@ var papers = {
         "Sean Braithwaite",
         "Ethan Buchman",
         "Igor Konnov 0001",
-        "Zarko Milosevic",
+        "Zarko Milosevic 0001",
         "Ilina Stoilkovska",
         "Josef Widder",
         "Anca Zamfir"
@@ -55109,7 +56313,7 @@ var papers = {
         "Sean Braithwaite",
         "Ethan Buchman",
         "Igor Konnov 0001",
-        "Zarko Milosevic",
+        "Zarko Milosevic 0001",
         "Ilina Stoilkovska",
         "Josef Widder",
         "Anca Zamfir"
@@ -55263,6 +56467,21 @@ var papers = {
     },
     {
       "type": "inproceedings",
+      "key": "conf/ccnc/GoncalvesRMVM21",
+      "title": "Securing E-Health Networks by applying Network Slicing and Blockchain Techniques.",
+      "year": "2021",
+      "doi": "https://doi.org/10.1109/CCNC49032.2021.9369546",
+      "publisher": "CCNC",
+      "authors": [
+        "Joao Paulo de Brito Gonçalves",
+        "Henrique Cesar Carvalho de Resende",
+        "Esteban Municio",
+        "Rodolfo da Silva Villaça",
+        "Johann M. Márquez-Barja"
+      ]
+    },
+    {
+      "type": "inproceedings",
       "key": "conf/ccnc/FernandoW20",
       "title": "Blockchain-Powered Software Defined Network-Enabled Networking Infrastructure for Cloud Management.",
       "year": "2020",
@@ -55271,6 +56490,17 @@ var papers = {
       "authors": [
         "Praveen Fernando",
         "Jin Wei"
+      ]
+    },
+    {
+      "type": "inproceedings",
+      "key": "conf/ccnc/Urien21",
+      "title": "A New IoT Trust Model Based on TLS-SE and TLS-IM Secure Elements: A Blockchain Use Case.",
+      "year": "2021",
+      "doi": "https://doi.org/10.1109/CCNC49032.2021.9369485",
+      "publisher": "CCNC",
+      "authors": [
+        "Pascal Urien"
       ]
     },
     {
@@ -55336,6 +56566,50 @@ var papers = {
         "Danda B. Rawat",
         "Moses Garuba",
         "Laurent Njilla"
+      ]
+    },
+    {
+      "type": "inproceedings",
+      "key": "conf/ccnc/BazaARSMA21",
+      "title": "A Blockchain-Based Energy Trading Scheme for Electric Vehicles.",
+      "year": "2021",
+      "doi": "https://doi.org/10.1109/CCNC49032.2021.9369517",
+      "publisher": "CCNC",
+      "authors": [
+        "Mohamed Baza",
+        "Ramy Amer",
+        "Amar Rasheed",
+        "Gautam Srivastava",
+        "Mohamed Mahmoud",
+        "Waleed Alasmary"
+      ]
+    },
+    {
+      "type": "inproceedings",
+      "key": "conf/ccnc/AiyarHM21",
+      "title": "Probability Distribution Model to Analyze the Trade-off between Scalability and Security of Sharding-Based Blockchain Networks.",
+      "year": "2021",
+      "doi": "https://doi.org/10.1109/CCNC49032.2021.9369563",
+      "publisher": "CCNC",
+      "authors": [
+        "Kamalani Aiyar",
+        "Malka N. Halgamuge",
+        "Azeem Mohammad"
+      ]
+    },
+    {
+      "type": "inproceedings",
+      "key": "conf/ccnc/WeerasingheHDYL21",
+      "title": "Blockchain-based Roaming and Offload Service Platform for Local 5G Operators.",
+      "year": "2021",
+      "doi": "https://doi.org/10.1109/CCNC49032.2021.9369516",
+      "publisher": "CCNC",
+      "authors": [
+        "Nisita Weerasinghe",
+        "Tharaka Mawanane Hewa",
+        "Maheshi Dissanayake",
+        "Mika Ylianttila",
+        "Madhusanka Liyanage"
       ]
     },
     {
@@ -55697,7 +56971,7 @@ var papers = {
       "publisher": "ICCCS (2)",
       "authors": [
         "Ting Xiao",
-        "Yongfeng Huang"
+        "Yongfeng Huang 0001"
       ]
     },
     {
@@ -60197,7 +61471,7 @@ var papers = {
         "Edson Correa Tavares",
         "Fernando de Souza Meirelles",
         "Eduardo Correa Tavares",
-        "Maria Alexandra Cunha",
+        "Maria Alexandra Cunha 0001",
         "Leandro Marcilio Schunk"
       ]
     },
@@ -60525,7 +61799,7 @@ var papers = {
       "publisher": "AMCIS",
       "authors": [
         "Dénis Rodrigues",
-        "Maria Alexandra Cunha",
+        "Maria Alexandra Cunha 0001",
         "Fernando Meirelles",
         "Eduardo Diniz"
       ]
@@ -61178,6 +62452,50 @@ var papers = {
     },
     {
       "type": "inproceedings",
+      "key": "conf/icdcs/GaoLXW20",
+      "title": "Cross-chain Oracle Based Data Migration Mechanism in Heterogeneous Blockchains.",
+      "year": "2020",
+      "doi": "https://doi.org/10.1109/ICDCS47774.2020.00162",
+      "publisher": "ICDCS",
+      "authors": [
+        "Zhipeng Gao",
+        "Hongli Li",
+        "Kaile Xiao",
+        "Qian Wang"
+      ]
+    },
+    {
+      "type": "inproceedings",
+      "key": "conf/icdcs/HillmannKHK20",
+      "title": "Selective Deletion in a Blockchain.",
+      "year": "2020",
+      "doi": "https://doi.org/10.1109/ICDCS47774.2020.00160",
+      "publisher": "ICDCS",
+      "authors": [
+        "Peter Hillmann",
+        "Marcus Knüpfer",
+        "Erik Heiland",
+        "Andreas Karcher"
+      ]
+    },
+    {
+      "type": "inproceedings",
+      "key": "conf/icdcs/ZhaoTLWLX20",
+      "title": "An Analysis of Blockchain Consistency in Asynchronous Networks: Deriving a Neat Bound.",
+      "year": "2020",
+      "doi": "https://doi.org/10.1109/ICDCS47774.2020.00039",
+      "publisher": "ICDCS",
+      "authors": [
+        "Jun Zhao 0007",
+        "Jing Tang 0004",
+        "Zengxiang Li",
+        "Huaxiong Wang",
+        "Kwok-Yan Lam",
+        "Kaiping Xue"
+      ]
+    },
+    {
+      "type": "inproceedings",
       "key": "conf/icdcs/NguyenNDT19",
       "title": "OptChain: Optimal Transactions Placement for Scalable Blockchain Sharding.",
       "year": "2019",
@@ -61199,6 +62517,20 @@ var papers = {
       "publisher": "ICDCS",
       "authors": [
         "Jeffrey Tsai"
+      ]
+    },
+    {
+      "type": "inproceedings",
+      "key": "conf/icdcs/BerendeaMOR20",
+      "title": "Fair and Efficient Gossip in Hyperledger Fabric.",
+      "year": "2020",
+      "doi": "https://doi.org/10.1109/ICDCS47774.2020.00027",
+      "publisher": "ICDCS",
+      "authors": [
+        "Nicolae Berendea",
+        "Hugues Mercier",
+        "Emanuel Onica",
+        "Etienne Rivière"
       ]
     },
     {
@@ -61227,6 +62559,19 @@ var papers = {
         "Wenlong Ni",
         "Yuhong Zhang",
         "Wei Wayne Li"
+      ]
+    },
+    {
+      "type": "inproceedings",
+      "key": "conf/icdcs/KiayiasQR20",
+      "title": "Consistency of Proof-of-Stake Blockchains with Concurrent Honest Slot Leaders.",
+      "year": "2020",
+      "doi": "https://doi.org/10.1109/ICDCS47774.2020.00065",
+      "publisher": "ICDCS",
+      "authors": [
+        "Aggelos Kiayias",
+        "Saad Quader",
+        "Alexander Russell"
       ]
     },
     {
@@ -61285,6 +62630,32 @@ var papers = {
     },
     {
       "type": "inproceedings",
+      "key": "conf/icdcs/SunnySS20",
+      "title": "Towards a Lightweight Blockchain Platform for Critical Infrastructure Protection.",
+      "year": "2020",
+      "doi": "https://doi.org/10.1109/ICDCS47774.2020.00166",
+      "publisher": "ICDCS",
+      "authors": [
+        "Jerin Sunny",
+        "Sriram Sankaran",
+        "Vishal Saraswat"
+      ]
+    },
+    {
+      "type": "inproceedings",
+      "key": "conf/icdcs/GuptaRS20",
+      "title": "Permissioned Blockchain Through the Looking Glass: Architectural and Implementation Lessons Learned.",
+      "year": "2020",
+      "doi": "https://doi.org/10.1109/ICDCS47774.2020.00012",
+      "publisher": "ICDCS",
+      "authors": [
+        "Suyash Gupta",
+        "Sajjad Rahnama",
+        "Mohammad Sadoghi"
+      ]
+    },
+    {
+      "type": "inproceedings",
       "key": "conf/icdcs/HuangZD00Y19",
       "title": "Resource Allocation and Consensus on Edge Blockchain in Pervasive Edge Computing Environments.",
       "year": "2019",
@@ -61339,6 +62710,23 @@ var papers = {
     },
     {
       "type": "inproceedings",
+      "key": "conf/icdcs/DaiXYWCH020",
+      "title": "LVQ: A Lightweight Verifiable Query Approach for Transaction History in Bitcoin.",
+      "year": "2020",
+      "doi": "https://doi.org/10.1109/ICDCS47774.2020.00096",
+      "publisher": "ICDCS",
+      "authors": [
+        "Xiaohai Dai",
+        "Jiang Xiao",
+        "Wenhui Yang",
+        "Chaofan Wang",
+        "Jian Chang",
+        "Rui Han",
+        "Hai Jin 0001"
+      ]
+    },
+    {
+      "type": "inproceedings",
       "key": "conf/icdcs/Lu0W18",
       "title": "ZebraLancer: Private and Anonymous Crowdsourcing System atop Open Blockchain.",
       "year": "2018",
@@ -61352,6 +62740,46 @@ var papers = {
     },
     {
       "type": "inproceedings",
+      "key": "conf/icdcs/HouC20",
+      "title": "A Study on Nine Years of Bitcoin Transactions: Understanding Real-world Behaviors of Bitcoin Miners and Users.",
+      "year": "2020",
+      "doi": "https://doi.org/10.1109/ICDCS47774.2020.00091",
+      "publisher": "ICDCS",
+      "authors": [
+        "Binbing Hou",
+        "Feng Chen 0005"
+      ]
+    },
+    {
+      "type": "inproceedings",
+      "key": "conf/icdcs/BV20",
+      "title": "UL-blockDAG : Unsupervised Learning based Consensus Protocol for Blockchain.",
+      "year": "2020",
+      "doi": "https://doi.org/10.1109/ICDCS47774.2020.00159",
+      "publisher": "ICDCS",
+      "authors": [
+        "Swaroopa Reddy B",
+        "Sharma G. V. V"
+      ]
+    },
+    {
+      "type": "inproceedings",
+      "key": "conf/icdcs/GuoGLWMY20",
+      "title": "A Certificateless Consortium Blockchain for IoTs.",
+      "year": "2020",
+      "doi": "https://doi.org/10.1109/ICDCS47774.2020.00054",
+      "publisher": "ICDCS",
+      "authors": [
+        "Xiaobing Guo",
+        "Qingxiao Guo",
+        "Min Liu",
+        "Yunhao Wang",
+        "Yilong Ma",
+        "Bo Yang"
+      ]
+    },
+    {
+      "type": "inproceedings",
       "key": "conf/icdcs/BahriG19",
       "title": "Trust Mends Blockchains: Living up to Expectations.",
       "year": "2019",
@@ -61360,6 +62788,48 @@ var papers = {
       "authors": [
         "Leila Bahri",
         "Sarunas Girdzijauskas"
+      ]
+    },
+    {
+      "type": "inproceedings",
+      "key": "conf/icdcs/LiQLC20",
+      "title": "A Multi-node Collaborative Storage Strategy via Clustering in Blockchain Network.",
+      "year": "2020",
+      "doi": "https://doi.org/10.1109/ICDCS47774.2020.00164",
+      "publisher": "ICDCS",
+      "authors": [
+        "Mengya Li",
+        "Yang Qin",
+        "Bing Liu",
+        "Xiaowen Chu"
+      ]
+    },
+    {
+      "type": "inproceedings",
+      "key": "conf/icdcs/LeiXTL20",
+      "title": "An Inter-blockchain Escrow Approach for Fast Bitcoin Payment.",
+      "year": "2020",
+      "doi": "https://doi.org/10.1109/ICDCS47774.2020.00148",
+      "publisher": "ICDCS",
+      "authors": [
+        "Xinyu Lei",
+        "Tian Xie",
+        "Guan-Hua Tu",
+        "Alex X. Liu"
+      ]
+    },
+    {
+      "type": "inproceedings",
+      "key": "conf/icdcs/HongNHP20",
+      "title": "FabAsset: Unique Digital Asset Management System for Hyperledger Fabric.",
+      "year": "2020",
+      "doi": "https://doi.org/10.1109/ICDCS47774.2020.00163",
+      "publisher": "ICDCS",
+      "authors": [
+        "Sangwon Hong",
+        "Yoongdoo Noh",
+        "Jeyoung Hwang",
+        "Chanik Park"
       ]
     },
     {
@@ -61398,6 +62868,31 @@ var papers = {
     },
     {
       "type": "inproceedings",
+      "key": "conf/icdcs/JoMP20",
+      "title": "Toward Trustworthy Blockchain-as-a-Service with Auditing.",
+      "year": "2020",
+      "doi": "https://doi.org/10.1109/ICDCS47774.2020.00068",
+      "publisher": "ICDCS",
+      "authors": [
+        "Yongrae Jo",
+        "Jeonghyun Ma",
+        "Chanik Park"
+      ]
+    },
+    {
+      "type": "inproceedings",
+      "key": "conf/icdcs/ReijsbergenD20",
+      "title": "On Exploiting Transaction Concurrency To Speed Up Blockchains.",
+      "year": "2020",
+      "doi": "https://doi.org/10.1109/ICDCS47774.2020.00083",
+      "publisher": "ICDCS",
+      "authors": [
+        "Daniël Reijsbergen",
+        "Tien Tuan Anh Dinh"
+      ]
+    },
+    {
+      "type": "inproceedings",
       "key": "conf/icdcs/0001N19",
       "title": "Selfish Mining in Ethereum.",
       "year": "2019",
@@ -61406,6 +62901,18 @@ var papers = {
       "authors": [
         "Chen Feng 0001",
         "Jianyu Niu"
+      ]
+    },
+    {
+      "type": "inproceedings",
+      "key": "conf/icdcs/WangC20",
+      "title": "Performance Characterization and Bottleneck Analysis of Hyperledger Fabric.",
+      "year": "2020",
+      "doi": "https://doi.org/10.1109/ICDCS47774.2020.00165",
+      "publisher": "ICDCS",
+      "authors": [
+        "Canhui Wang",
+        "Xiaowen Chu"
       ]
     },
     {
@@ -61423,6 +62930,22 @@ var papers = {
     },
     {
       "type": "inproceedings",
+      "key": "conf/icdcs/AkhtarSVASR20",
+      "title": "Blockchain Based Auditable Access Control for Distributed Business Processes.",
+      "year": "2020",
+      "doi": "https://doi.org/10.1109/ICDCS47774.2020.00015",
+      "publisher": "ICDCS",
+      "authors": [
+        "Ahmad Akhtar",
+        "Basit Shafiq",
+        "Jaideep Vaidya",
+        "Ayesha Afzal",
+        "Shafay Shamail",
+        "Omer Rana"
+      ]
+    },
+    {
+      "type": "inproceedings",
       "key": "conf/icdcs/ModingerKKH18",
       "title": "A Flexible Network Approach to Privacy of Blockchain Transactions.",
       "year": "2018",
@@ -61433,6 +62956,22 @@ var papers = {
         "Henning Kopp",
         "Frank Kargl",
         "Franz J. Hauck"
+      ]
+    },
+    {
+      "type": "inproceedings",
+      "key": "conf/icdcs/Li0YRWC20",
+      "title": "SafePay on Ethereum: A Framework For Detecting Unfair Payments in Smart Contracts.",
+      "year": "2020",
+      "doi": "https://doi.org/10.1109/ICDCS47774.2020.00116",
+      "publisher": "ICDCS",
+      "authors": [
+        "Yue Li",
+        "Han Liu 0010",
+        "Zhiqiang Yang",
+        "Qian Ren",
+        "Lei Wang 0031",
+        "Bangdao Chen"
       ]
     },
     {
@@ -61530,6 +63069,18 @@ var papers = {
     },
     {
       "type": "inproceedings",
+      "key": "conf/hicss/MalikCC21",
+      "title": "Factors Affecting the Organizational Adoption of Blockchain Technology: An Australian Perspective.",
+      "year": "2021",
+      "publisher": "HICSS",
+      "authors": [
+        "Muhammad Saleem Malik",
+        "Mehmood Chadhar",
+        "Madhu Chetty"
+      ]
+    },
+    {
+      "type": "inproceedings",
       "key": "conf/hicss/BolivarO20",
       "title": "Introduction to the Minitrack on Blockchain, DLT, Tokenization, and Digital Government.",
       "year": "2020",
@@ -61573,6 +63124,29 @@ var papers = {
         "Juho Lindman",
         "Virpi Kristiina Tuunainen",
         "Matti Rossi"
+      ]
+    },
+    {
+      "type": "inproceedings",
+      "key": "conf/hicss/SandersZ21",
+      "title": "A comparison and contrast of APKTool and Soot for injecting blockchain calls into Android applications.",
+      "year": "2021",
+      "publisher": "HICSS",
+      "authors": [
+        "Sean Sanders",
+        "Luke Ziarek"
+      ]
+    },
+    {
+      "type": "inproceedings",
+      "key": "conf/hicss/VasylkovskyiGS21",
+      "title": "Designing and Validating a Blockchain-based Architecture to Enforce Privacy in Human Robot Interaction.",
+      "year": "2021",
+      "publisher": "HICSS",
+      "authors": [
+        "Viktor Vasylkovskyi",
+        "Sérgio Guerreiro 0001",
+        "João Sequeira"
       ]
     },
     {
@@ -61624,6 +63198,21 @@ var papers = {
     },
     {
       "type": "inproceedings",
+      "key": "conf/hicss/CoelhoBDDSC21",
+      "title": "Integrating Blockchain for Data Sharing and Collaboration Support in Scientific Ecosystem Platform.",
+      "year": "2021",
+      "publisher": "HICSS",
+      "authors": [
+        "Raiane Coelho",
+        "Regina M. M. Braga",
+        "José Maria N. David",
+        "Mário Antônio Ribeiro Dantas",
+        "Victor Ströele",
+        "Fernanda Campos"
+      ]
+    },
+    {
+      "type": "inproceedings",
       "key": "conf/hicss/AlbrechtL019",
       "title": "How Sentiment Impacts the Success of Blockchain Startups - An Analysis of Social Media Data and Initial Coin Offerings.",
       "year": "2019",
@@ -61644,6 +63233,17 @@ var papers = {
         "Maximilian Friedlmaier",
         "Andranik Tumasjan",
         "Isabell M. Welpe"
+      ]
+    },
+    {
+      "type": "inproceedings",
+      "key": "conf/hicss/PapantoniouH21",
+      "title": "Enterprise Solutions Criteria in the Age of GeoBlockchain: Land Ownership and Supply Chain.",
+      "year": "2021",
+      "publisher": "HICSS",
+      "authors": [
+        "Constantinos Papantoniou",
+        "Brian Hilton"
       ]
     },
     {
@@ -61696,6 +63296,42 @@ var papers = {
         "Juho Lindman",
         "Matti Rossi",
         "Virpi Tuunainen"
+      ]
+    },
+    {
+      "type": "inproceedings",
+      "key": "conf/hicss/WesterO21",
+      "title": "BlockELM A Public Blockchain Freight Exchange Protocol.",
+      "year": "2021",
+      "publisher": "HICSS",
+      "authors": [
+        "Marek Wester",
+        "Boris Otto"
+      ]
+    },
+    {
+      "type": "inproceedings",
+      "key": "conf/hicss/AmendFRRS21",
+      "title": "The Evolution of an Architectural Paradigm - Using Blockchain to Build a Cross-Organizational Enterprise Service Bus.",
+      "year": "2021",
+      "publisher": "HICSS",
+      "authors": [
+        "Julia Amend",
+        "Gilbert Fridgen",
+        "Alexander Rieger",
+        "Tamara Roth",
+        "Alexander Stohr"
+      ]
+    },
+    {
+      "type": "inproceedings",
+      "key": "conf/hicss/ChenL21",
+      "title": "Understanding the Challenges of Blockchain Technology Adoption: Evidence from China's Developing Carbon Markets.",
+      "year": "2021",
+      "publisher": "HICSS",
+      "authors": [
+        "Xing Chen",
+        "Ashley D. Lloyd"
       ]
     },
     {
@@ -61828,6 +63464,18 @@ var papers = {
     },
     {
       "type": "inproceedings",
+      "key": "conf/hicss/DetersCS21",
+      "title": "Introduction to the Minitrack on Blockchain Engineering.",
+      "year": "2021",
+      "publisher": "HICSS",
+      "authors": [
+        "Ralph Deters",
+        "Hong-Mei Chen",
+        "George Sanders"
+      ]
+    },
+    {
+      "type": "inproceedings",
       "key": "conf/hicss/PrechtWG20",
       "title": "Applying Software Quality Criteria to Blockchain Applications: A Criteria Catalog.",
       "year": "2020",
@@ -61864,6 +63512,32 @@ var papers = {
     },
     {
       "type": "inproceedings",
+      "key": "conf/hicss/TurnerMU21",
+      "title": "Follow the money: Revealing risky nodes in a Ransomware-Bitcoin network.",
+      "year": "2021",
+      "publisher": "HICSS",
+      "authors": [
+        "Adam Brian Turner",
+        "Stephen McCombie",
+        "Allon J. Uhlmann"
+      ]
+    },
+    {
+      "type": "inproceedings",
+      "key": "conf/hicss/HenryLHGB21",
+      "title": "Cross-Collaboration Processes based on Blockchain and IoT: a survey.",
+      "year": "2021",
+      "publisher": "HICSS",
+      "authors": [
+        "Tiphaine Henry",
+        "Nassim Laga",
+        "Julien Hatin",
+        "Walid Gaaloul",
+        "Imed Boughzala"
+      ]
+    },
+    {
+      "type": "inproceedings",
       "key": "conf/hicss/IngramM16",
       "title": "Almost an MNC: Bitcoin Entrepreneurs' Use of Collective Resources and Decoupling to Build Legitimacy.",
       "year": "2016",
@@ -61885,6 +63559,18 @@ var papers = {
         "Luc Becker",
         "Marcus Fischer",
         "Axel Winkelmann"
+      ]
+    },
+    {
+      "type": "inproceedings",
+      "key": "conf/hicss/ChristodoulouTC21",
+      "title": "Introduction to the Minitrack on Blockchain Cases and Innovations.",
+      "year": "2021",
+      "publisher": "HICSS",
+      "authors": [
+        "Klitos Christodoulou",
+        "Marinos Themistocleous",
+        "Paulo Rupino da Cunha"
       ]
     },
     {
@@ -61919,6 +63605,20 @@ var papers = {
       "authors": [
         "Martin Fleischmann",
         "Björn Seven Ivens"
+      ]
+    },
+    {
+      "type": "inproceedings",
+      "key": "conf/hicss/MazumdarJMKD21",
+      "title": "Do Blockchain and IoT Architecture Create Informedness to Support Provenance Tracking in the Product Lifecycle?",
+      "year": "2021",
+      "publisher": "HICSS",
+      "authors": [
+        "Somnath Mazumdar",
+        "Thomas Jensen",
+        "Raghava Rao Mukkamala",
+        "Robert J. Kauffman",
+        "Jan Damsgaard"
       ]
     },
     {
@@ -61959,6 +63659,32 @@ var papers = {
     },
     {
       "type": "inproceedings",
+      "key": "conf/hicss/KishoreCPYS21",
+      "title": "Blockchain-based Micro-credentials: Design, Implementation, Evaluation and Adoption.",
+      "year": "2021",
+      "publisher": "HICSS",
+      "authors": [
+        "Shohil Kishore",
+        "Johnny Chan",
+        "Muthupoltotage Udayangi Perera",
+        "Nick Young",
+        "David Sundaram"
+      ]
+    },
+    {
+      "type": "inproceedings",
+      "key": "conf/hicss/StraubertSM21",
+      "title": "Blockchain Technology for Tracking and Tracing in Supply Chains: A Critical Viewpoint.",
+      "year": "2021",
+      "publisher": "HICSS",
+      "authors": [
+        "Christian Straubert",
+        "Eric Sucky",
+        "Jens Mattke"
+      ]
+    },
+    {
+      "type": "inproceedings",
       "key": "conf/hicss/ZavolokinaMS19",
       "title": "Buyers of Lemons: Addressing Buyers' Needs in the Market for Lemons with Blockchain Technology.",
       "year": "2019",
@@ -61971,13 +63697,26 @@ var papers = {
     },
     {
       "type": "inproceedings",
+      "key": "conf/hicss/ZavolokinaSHK21",
+      "title": "Introduction to the Minitrack on Enterprise Blockchains.",
+      "year": "2021",
+      "publisher": "HICSS",
+      "authors": [
+        "Liudmila Zavolokina",
+        "Gerhard Schwabe",
+        "Andreas Hein",
+        "Helmut Krcmar"
+      ]
+    },
+    {
+      "type": "inproceedings",
       "key": "conf/hicss/FleischmannIK20",
       "title": "Blockchain Technology as a Means for Brand Trust Repair - Empirical Evidence from a Digital Transgression.",
       "year": "2020",
       "publisher": "HICSS",
       "authors": [
         "Martin Fleischmann",
-        "Björn S. Ivens",
+        "Björn Seven Ivens",
         "Bhaskar Krishnamachari"
       ]
     },
@@ -61993,6 +63732,20 @@ var papers = {
         "Elias Iosif",
         "Soulla Louca",
         "Demetrios Tseas"
+      ]
+    },
+    {
+      "type": "inproceedings",
+      "key": "conf/hicss/BeverungenOGMS21",
+      "title": "Blockchains for Pay-per-use Business Models: Insights from a Design Research Study.",
+      "year": "2021",
+      "publisher": "HICSS",
+      "authors": [
+        "Daniel Beverungen",
+        "Sebastian Overhage",
+        "Albert Gorlick'",
+        "Pascal Moerchel",
+        "Sebastian Schuermann"
       ]
     },
     {
@@ -62024,6 +63777,19 @@ var papers = {
     },
     {
       "type": "inproceedings",
+      "key": "conf/hicss/FallucchiGPL21",
+      "title": "Blockchain Framework in Digital Government for the Certification of Authenticity, Timestamping and Data Property.",
+      "year": "2021",
+      "publisher": "HICSS",
+      "authors": [
+        "Francesca Fallucchi",
+        "Marco Gerardi",
+        "Michele Petito",
+        "Ernesto William De Luca"
+      ]
+    },
+    {
+      "type": "inproceedings",
       "key": "conf/hicss/CunhaTM19",
       "title": "Introduction to the Minitrack on The Transformational Impact of Blockchain.",
       "year": "2019",
@@ -62044,6 +63810,18 @@ var papers = {
         "Isabell M. Welpe",
         "Helmut Krcmar",
         "Marcus Muller"
+      ]
+    },
+    {
+      "type": "inproceedings",
+      "key": "conf/hicss/KernahanBB21",
+      "title": "Blockchain out of the Box - Where is the Blockchain in Blockchain-as-a-Service?",
+      "year": "2021",
+      "publisher": "HICSS",
+      "authors": [
+        "Alan Kernahan",
+        "Ulrik Bernskov",
+        "Roman Beck"
       ]
     },
     {
@@ -62104,6 +63882,21 @@ var papers = {
         "Niklas Weidmann",
         "Raghava Rao Mukkamala",
         "Ravi Vatrapu"
+      ]
+    },
+    {
+      "type": "inproceedings",
+      "key": "conf/hicss/SedlmeirRLLMF21",
+      "title": "The DLPS: A New Framework for Benchmarking Blockchains.",
+      "year": "2021",
+      "publisher": "HICSS",
+      "authors": [
+        "Johannes Sedlmeir",
+        "Philipp Ross",
+        "André Luckow",
+        "Jannik Lockl",
+        "Daniel Miehle",
+        "Gilbert Fridgen"
       ]
     },
     {
@@ -62220,6 +64013,52 @@ var papers = {
     },
     {
       "type": "inproceedings",
+      "key": "conf/hicss/HermJ21",
+      "title": "Towards an Implementation of Blockchain-based Collaboration Platforms in Supply Chain Networks: A Requirements Analysis.",
+      "year": "2021",
+      "publisher": "HICSS",
+      "authors": [
+        "Lukas-Valentin Herm",
+        "Christian Janiesch"
+      ]
+    },
+    {
+      "type": "inproceedings",
+      "key": "conf/hicss/EggersHWBK21",
+      "title": "Process Automation on the Blockchain: An Exploratory Case Study on Smart Contracts.",
+      "year": "2021",
+      "publisher": "HICSS",
+      "authors": [
+        "Julia Eggers",
+        "Andreas Hein",
+        "Jörg Weking",
+        "Markus Böhm 0001",
+        "Helmut Krcmar"
+      ]
+    },
+    {
+      "type": "inproceedings",
+      "key": "conf/hicss/Brinkmann21",
+      "title": "Relevance of Public Administrations: Visualization of Shifting Power Relations in Blockchain-Based Public Service Delivery.",
+      "year": "2021",
+      "publisher": "HICSS",
+      "authors": [
+        "Maik Brinkmann"
+      ]
+    },
+    {
+      "type": "inproceedings",
+      "key": "conf/hicss/BoguszA21",
+      "title": "Open or just Fragmented? Mobilization through Open Source Action Repertoires in the Blockchain Social Movement.",
+      "year": "2021",
+      "publisher": "HICSS",
+      "authors": [
+        "Claire Ingram Bogusz",
+        "Jonas Valbjørn Andersen"
+      ]
+    },
+    {
+      "type": "inproceedings",
       "key": "conf/hicss/MiscioneZZS18",
       "title": "Tribal Governance: The Business of Blockchain Authentication.",
       "year": "2018",
@@ -62262,6 +64101,18 @@ var papers = {
       "authors": [
         "Mayra Samaniego",
         "Ralph Deters"
+      ]
+    },
+    {
+      "type": "inproceedings",
+      "key": "conf/hicss/RahmanKB21",
+      "title": "A Framework for Modelling Blockchain based Supply Chain Management System to ensure soundness of Smart Contract Workflow.",
+      "year": "2021",
+      "publisher": "HICSS",
+      "authors": [
+        "Mohammad Saidur Rahman 0001",
+        "Ibrahim Khalil",
+        "Abdelaziz Bouras"
       ]
     },
     {
@@ -63742,7 +65593,7 @@ var papers = {
       "authors": [
         "Chunyu Mao",
         "Anh-Duong Nguyen",
-        "Wojciech Golab"
+        "Wojciech M. Golab"
       ]
     },
     {
@@ -64635,7 +66486,7 @@ var papers = {
       "doi": "https://doi.org/10.1007/3-540-13345-3_28",
       "publisher": "ICALP",
       "authors": [
-        "J. C. Lagarias"
+        "J. C. Lagarias 0001"
       ]
     },
     {
@@ -65278,6 +67129,20 @@ var papers = {
       "authors": [
         "Michaël Verdonck",
         "Geert Poels"
+      ]
+    },
+    {
+      "type": "inproceedings",
+      "key": "conf/vmbo/JairamGTKM21",
+      "title": "A Decentralized Fair Governance Model for Permissionless Blockchain Systems (short paper).",
+      "year": "2021",
+      "publisher": "VMBO",
+      "authors": [
+        "Shiva Jairam",
+        "Jaap Gordijn",
+        "Isaac da Silva Torres",
+        "Fadime Kaya",
+        "Marc X. Makkes"
       ]
     },
     {
@@ -66705,7 +68570,7 @@ var papers = {
       "publisher": "OTM Conferences (1)",
       "authors": [
         "Önder Gürcan",
-        "Alejandro Ranchal Pedrosa",
+        "Alejandro Ranchal-Pedrosa",
         "Sara Tucci Piergiovanni"
       ]
     },
@@ -68271,6 +70136,18 @@ var papers = {
     },
     {
       "type": "inproceedings",
+      "key": "conf/icores/VazquezL21",
+      "title": "Towards Blockchain-based Ride-sharing Systems.",
+      "year": "2021",
+      "doi": "https://doi.org/10.5220/0010323204460452",
+      "publisher": "ICORES",
+      "authors": [
+        "Edgar Vázquez",
+        "Dario Landa-Silva"
+      ]
+    },
+    {
+      "type": "inproceedings",
       "key": "conf/pkc/GarayKLP18",
       "title": "Bootstrapping the Blockchain, with Applications to Consensus and Fast PKI Setup.",
       "year": "2018",
@@ -68771,6 +70648,18 @@ var papers = {
     },
     {
       "type": "inproceedings",
+      "key": "conf/birthday/LaneveV20",
+      "title": "A Formal Analysis of the Bitcoin Protocol.",
+      "year": "2020",
+      "doi": "https://doi.org/10.4230/OASIcs.Gabbrielli.2",
+      "publisher": "Gabbrielli's Festschrift",
+      "authors": [
+        "Cosimo Laneve",
+        "Adele Veschetti"
+      ]
+    },
+    {
+      "type": "inproceedings",
       "key": "conf/nbis/FujiUAYKPSO19",
       "title": "Blockchain-Based Malware Detection Method Using Shared Signatures of Suspected Malware Files.",
       "year": "2019",
@@ -68877,7 +70766,7 @@ var papers = {
       "publisher": "BMSD",
       "authors": [
         "Sélinde van Engelenburg",
-        "Marijn Janssen",
+        "Marijn Janssen 0001",
         "Bram Klievink"
       ]
     },
@@ -69069,10 +70958,24 @@ var papers = {
       "key": "conf/icuimc/ChakravortyR17",
       "title": "Ushare: user controlled social media based on blockchain.",
       "year": "2017",
+      "doi": "https://doi.org/10.1145/3022227.3022325",
       "publisher": "IMCOM",
       "authors": [
         "Antorweep Chakravorty",
         "Chunming Rong"
+      ]
+    },
+    {
+      "type": "inproceedings",
+      "key": "conf/icuimc/AminZS21",
+      "title": "Transparent Data Dealing: Hyperledger Fabric Based Biomedical Engineering Supply Chain.",
+      "year": "2021",
+      "doi": "https://doi.org/10.1109/IMCOM51814.2021.9377418",
+      "publisher": "IMCOM",
+      "authors": [
+        "Md. Ratul Amin",
+        "Megat Farez Azril Zuhairi",
+        "Md. Nazmus Saadat"
       ]
     },
     {
@@ -69086,6 +70989,20 @@ var papers = {
         "Motoki Kitahara",
         "Junpei Kawamoto",
         "Kouichi Sakurai"
+      ]
+    },
+    {
+      "type": "inproceedings",
+      "key": "conf/icuimc/LeeRLW21",
+      "title": "Security Analysis of Blockchain-based User Authentication for Smart Grid Edge Computing Infrastructure.",
+      "year": "2021",
+      "doi": "https://doi.org/10.1109/IMCOM51814.2021.9377422",
+      "publisher": "IMCOM",
+      "authors": [
+        "Hakjun Lee",
+        "Jihyeon Ryu",
+        "Youngsook Lee",
+        "Dongho Won"
       ]
     },
     {
@@ -69776,6 +71693,20 @@ var papers = {
         "Haowei Zheng",
         "Yuefeng Ji",
         "Young Lee"
+      ]
+    },
+    {
+      "type": "inproceedings",
+      "key": "conf/modelsward/SkotnicaAPG21",
+      "title": "Process Digitalization using Blockchain: EU Parliament Elections Case Study.",
+      "year": "2021",
+      "doi": "https://doi.org/10.5220/0010229000650075",
+      "publisher": "MODELSWARD",
+      "authors": [
+        "Marek Skotnica",
+        "Marta Aparício",
+        "Robert Pergl",
+        "Sérgio Guerreiro 0001"
       ]
     },
     {
@@ -71133,7 +73064,7 @@ var papers = {
       "publisher": "ICEIS (2)",
       "authors": [
         "Marta Aparício",
-        "Sérgio Guerreiro",
+        "Sérgio Guerreiro 0001",
         "Pedro Sousa"
       ]
     },
@@ -71565,6 +73496,20 @@ var papers = {
     },
     {
       "type": "article",
+      "key": "journals/tnse/DingGLW21",
+      "title": "An Incentive Mechanism for Building a Secure Blockchain-Based Internet of Things.",
+      "year": "2021",
+      "doi": "https://doi.org/10.1109/TNSE.2020.3040446",
+      "publisher": "IEEE Trans. Netw. Sci. Eng.",
+      "authors": [
+        "Xingjian Ding",
+        "Jianxiong Guo",
+        "Deying Li 0001",
+        "Weili Wu"
+      ]
+    },
+    {
+      "type": "article",
       "key": "journals/tnse/MisicMCMA20",
       "title": "Modeling of Bitcoin's Blockchain Delivery Network.",
       "year": "2020",
@@ -71604,6 +73549,34 @@ var papers = {
         "Yu-Jia Chen",
         "Li-Chun Wang 0001",
         "Shu Wang"
+      ]
+    },
+    {
+      "type": "article",
+      "key": "journals/tnse/MotlaghMM21",
+      "title": "The Impact of Selfish Mining on Bitcoin Network Performance.",
+      "year": "2021",
+      "doi": "https://doi.org/10.1109/TNSE.2021.3050034",
+      "publisher": "IEEE Trans. Netw. Sci. Eng.",
+      "authors": [
+        "Saeideh Gholamrezazadeh Motlagh",
+        "Jelena V. Misic",
+        "Vojislav B. Misic"
+      ]
+    },
+    {
+      "type": "article",
+      "key": "journals/tnse/ChenCYWW21",
+      "title": "Impact of Temporary Fork on the Evolution of Mining Pools in Blockchain Networks: An Evolutionary Game Analysis.",
+      "year": "2021",
+      "doi": "https://doi.org/10.1109/TNSE.2020.3038943",
+      "publisher": "IEEE Trans. Netw. Sci. Eng.",
+      "authors": [
+        "Canhui Chen",
+        "Xu Chen 0004",
+        "Jiangshan Yu",
+        "Weigang Wu",
+        "Di Wu 0001"
       ]
     },
     {
@@ -72358,6 +74331,22 @@ var papers = {
     },
     {
       "type": "article",
+      "key": "journals/tdsc/LiYS0AL21",
+      "title": "Traceable Monero: Anonymous Cryptocurrency with Enhanced Accountability.",
+      "year": "2021",
+      "doi": "https://doi.org/10.1109/TDSC.2019.2910058",
+      "publisher": "IEEE Trans. Dependable Secur. Comput.",
+      "authors": [
+        "Yannan Li",
+        "Guomin Yang",
+        "Willy Susilo",
+        "Yong Yu 0002",
+        "Man Ho Au",
+        "Dongxi Liu"
+      ]
+    },
+    {
+      "type": "article",
       "key": "journals/tdsc/AitzhanS18",
       "title": "Security and Privacy in Decentralized Energy Trading Through Multi-Signatures, Blockchain and Anonymous Messaging Streams.",
       "year": "2018",
@@ -72366,6 +74355,21 @@ var papers = {
       "authors": [
         "Nurzhan Zhumabekuly Aitzhan",
         "Davor Svetinovic"
+      ]
+    },
+    {
+      "type": "article",
+      "key": "journals/tdsc/Ma0H0X21",
+      "title": "An Efficient NIZK Scheme for Privacy-Preserving Transactions Over Account-Model Blockchain.",
+      "year": "2021",
+      "doi": "https://doi.org/10.1109/TDSC.2020.2969418",
+      "publisher": "IEEE Trans. Dependable Secur. Comput.",
+      "authors": [
+        "Shunli Ma",
+        "Yi Deng 0002",
+        "Debiao He",
+        "Jiang Zhang 0001",
+        "Xiang Xie"
       ]
     },
     {
@@ -72709,6 +74713,33 @@ var papers = {
     },
     {
       "type": "article",
+      "key": "journals/comcom/SankaIHC21",
+      "title": "A survey of breakthrough in blockchain technology: Adoptions, applications, challenges and future research.",
+      "year": "2021",
+      "doi": "https://doi.org/10.1016/j.comcom.2020.12.028",
+      "publisher": "Comput. Commun.",
+      "authors": [
+        "Abdurrashid Ibrahim Sanka",
+        "Muhammad Irfan 0004",
+        "Ian Huang",
+        "Ray C. C. Cheung"
+      ]
+    },
+    {
+      "type": "article",
+      "key": "journals/comcom/SankaCC21",
+      "title": "Efficient High-Performance FPGA-Redis Hybrid NoSQL Caching System for Blockchain Scalability.",
+      "year": "2021",
+      "doi": "https://doi.org/10.1016/j.comcom.2021.01.017",
+      "publisher": "Comput. Commun.",
+      "authors": [
+        "Abdurrashid Ibrahim Sanka",
+        "Mehdi Hasan Chowdhury",
+        "Ray C. C. Cheung"
+      ]
+    },
+    {
+      "type": "article",
       "key": "journals/comcom/DouTLXN20",
       "title": "Blockchain-based Mobility-aware Offloading mechanism for Fog computing services.",
       "year": "2020",
@@ -72736,6 +74767,22 @@ var papers = {
         "Ranesh Kumar Naha",
         "Saurabh Garg 0001",
         "Aniket Mahanti"
+      ]
+    },
+    {
+      "type": "article",
+      "key": "journals/comcom/BanerjeeBDCKR21",
+      "title": "Private blockchain-envisioned multi-authority CP-ABE-based user access control scheme in IIoT.",
+      "year": "2021",
+      "doi": "https://doi.org/10.1016/j.comcom.2021.01.023",
+      "publisher": "Comput. Commun.",
+      "authors": [
+        "Soumya Banerjee 0001",
+        "Basudeb Bera",
+        "Ashok Kumar Das",
+        "Samiran Chattopadhyay",
+        "Muhammad Khurram Khan",
+        "Joel J. P. C. Rodrigues"
       ]
     },
     {
@@ -73103,6 +75150,17 @@ var papers = {
     },
     {
       "type": "article",
+      "key": "journals/presence/Chng19",
+      "title": "The First Original Copy and the Role of Blockchain in the Reproduction of Cultural Heritage.",
+      "year": "2019",
+      "doi": "https://doi.org/10.1162/pres_a_00313",
+      "publisher": "Presence Teleoperators Virtual Environ.",
+      "authors": [
+        "Eugene Ch'ng"
+      ]
+    },
+    {
+      "type": "article",
       "key": "journals/smr/PalaciosSA20",
       "title": "A critical review on blockchain assessment initiatives: A technology evolution viewpoint.",
       "year": "2020",
@@ -73164,6 +75222,19 @@ var papers = {
       "authors": [
         "Charanya R.",
         "R. A. K. Saravanaguru"
+      ]
+    },
+    {
+      "type": "article",
+      "key": "journals/ijitwe/QinHQ21",
+      "title": "Programmable Implementation and Blockchain Security Scheme Based on Edge Computing Firework Model.",
+      "year": "2021",
+      "doi": "https://doi.org/10.4018/IJITWE.2021010101",
+      "publisher": "Int. J. Inf. Technol. Web Eng.",
+      "authors": [
+        "Bao Yi Qin",
+        "Zheng Hao",
+        "Zhao Qiang"
       ]
     },
     {
@@ -73271,6 +75342,25 @@ var papers = {
     },
     {
       "type": "article",
+      "key": "journals/iotj/ZhangLYLLLCXZ21",
+      "title": "Blockchain-Based Federated Learning for Device Failure Detection in Industrial IoT.",
+      "year": "2021",
+      "doi": "https://doi.org/10.1109/JIOT.2020.3032544",
+      "publisher": "IEEE Internet Things J.",
+      "authors": [
+        "Weishan Zhang",
+        "Qinghua Lu 0001",
+        "Qiuyu Yu",
+        "Zhaotong Li",
+        "Yue Liu",
+        "Sin Kit Lo",
+        "Shiping Chen 0001",
+        "Xiwei Xu",
+        "Liming Zhu"
+      ]
+    },
+    {
+      "type": "article",
       "key": "journals/iotj/MiaoSWHHC21",
       "title": "Smart Micro-GaS: A Cognitive Micro Natural Gas Industrial Ecosystem Based on Mixed Blockchain and Edge Computing.",
       "year": "2021",
@@ -73332,6 +75422,20 @@ var papers = {
     },
     {
       "type": "article",
+      "key": "journals/iotj/JiangQZG21",
+      "title": "SearchBC: A Blockchain-Based PEKS Framework for IoT Services.",
+      "year": "2021",
+      "doi": "https://doi.org/10.1109/JIOT.2020.3036705",
+      "publisher": "IEEE Internet Things J.",
+      "authors": [
+        "Peng Jiang",
+        "Baoqi Qiu",
+        "Liehuang Zhu",
+        "Keke Gai"
+      ]
+    },
+    {
+      "type": "article",
       "key": "journals/iotj/ShiWX20",
       "title": "Queuing Without Patience: A Novel Transaction Selection Mechanism in Blockchain for IoT Enhancement.",
       "year": "2020",
@@ -73359,6 +75463,24 @@ var papers = {
         "Yipeng Zhou",
         "Shiping Chen 0001",
         "Qinghua Lu 0001"
+      ]
+    },
+    {
+      "type": "article",
+      "key": "journals/iotj/MollahZNGYSLK21",
+      "title": "Blockchain for the Internet of Vehicles Towards Intelligent Transportation Systems: A Survey.",
+      "year": "2021",
+      "doi": "https://doi.org/10.1109/JIOT.2020.3028368",
+      "publisher": "IEEE Internet Things J.",
+      "authors": [
+        "Muhammad Baqer Mollah",
+        "Jun Zhao 0007",
+        "Dusit Niyato",
+        "Yong Liang Guan 0001",
+        "Chau Yuen",
+        "Sumei Sun",
+        "Kwok-Yan Lam",
+        "Leong Hai Koh"
       ]
     },
     {
@@ -73450,6 +75572,23 @@ var papers = {
         "Xinyi Huang",
         "Pandi Vijayakumar",
         "Kim-Kwang Raymond Choo"
+      ]
+    },
+    {
+      "type": "article",
+      "key": "journals/iotj/HuangWCHZWG21",
+      "title": "RepChain: A Reputation-Based Secure, Fast, and High Incentive Blockchain System via Sharding.",
+      "year": "2021",
+      "doi": "https://doi.org/10.1109/JIOT.2020.3028449",
+      "publisher": "IEEE Internet Things J.",
+      "authors": [
+        "Chenyu Huang",
+        "Zeyu Wang 0001",
+        "Huangxun Chen",
+        "Qiwei Hu",
+        "Qian Zhang 0001",
+        "Wei Wang",
+        "Xia Guan"
       ]
     },
     {
@@ -74246,6 +76385,18 @@ var papers = {
     },
     {
       "type": "article",
+      "key": "journals/iotj/WuA21",
+      "title": "A Trust-Evaluation-Enhanced Blockchain-Secured Industrial IoT System.",
+      "year": "2021",
+      "doi": "https://doi.org/10.1109/JIOT.2020.3030689",
+      "publisher": "IEEE Internet Things J.",
+      "authors": [
+        "Di Wu 0042",
+        "Nirwan Ansari"
+      ]
+    },
+    {
+      "type": "article",
       "key": "journals/iotj/WuWCGGR19",
       "title": "A Comprehensive Survey of Blockchain: From Theory to IoT Applications and Beyond.",
       "year": "2019",
@@ -74790,6 +76941,21 @@ var papers = {
     },
     {
       "type": "article",
+      "key": "journals/iotj/ZhaoJGYL21",
+      "title": "Blockchain-Enabled Cyber-Physical Systems: A Review.",
+      "year": "2021",
+      "doi": "https://doi.org/10.1109/JIOT.2020.3014864",
+      "publisher": "IEEE Internet Things J.",
+      "authors": [
+        "Wenbing Zhao 0001",
+        "Congfeng Jiang",
+        "Honghao Gao",
+        "Shunkun Yang",
+        "Xiong Luo"
+      ]
+    },
+    {
+      "type": "article",
       "key": "journals/iotj/MohantaJRDG21",
       "title": "Addressing Security and Privacy Issues of IoT Using Blockchain Technology.",
       "year": "2021",
@@ -74830,6 +76996,20 @@ var papers = {
         "Shui Yu",
         "Bai Li",
         "Gavin Zheng"
+      ]
+    },
+    {
+      "type": "article",
+      "key": "journals/iotj/BeraSDV21",
+      "title": "Designing Blockchain-Based Access Control Protocol in IoT-Enabled Smart-Grid System.",
+      "year": "2021",
+      "doi": "https://doi.org/10.1109/JIOT.2020.3030308",
+      "publisher": "IEEE Internet Things J.",
+      "authors": [
+        "Basudeb Bera",
+        "Sourav Saha 0002",
+        "Ashok Kumar Das",
+        "Athanasios V. Vasilakos"
       ]
     },
     {
@@ -75001,6 +77181,19 @@ var papers = {
         "Cheng Huang 0001",
         "Xiaodong Lin",
         "Xuemin Sherman Shen"
+      ]
+    },
+    {
+      "type": "article",
+      "key": "journals/iotj/AggarwalKT21",
+      "title": "Blockchain-Envisioned UAV Communication Using 6G Networks: Open Issues, Use Cases, and Future Directions.",
+      "year": "2021",
+      "doi": "https://doi.org/10.1109/JIOT.2020.3020819",
+      "publisher": "IEEE Internet Things J.",
+      "authors": [
+        "Shubhani Aggarwal",
+        "Neeraj Kumar 0001",
+        "Sudeep Tanwar"
       ]
     },
     {
@@ -75607,7 +77800,7 @@ var papers = {
       "authors": [
         "Purva Grover",
         "Arpan Kumar Kar",
-        "Marijn Janssen",
+        "Marijn Janssen 0001",
         "P. Vigneswara Ilavarasan"
       ]
     },
@@ -75786,6 +77979,34 @@ var papers = {
     },
     {
       "type": "article",
+      "key": "journals/ijcse/LiYHSZZ21",
+      "title": "A blockchain-based authority management framework in traceability systems.",
+      "year": "2021",
+      "doi": "https://doi.org/10.1504/IJCSE.2021.113639",
+      "publisher": "Int. J. Comput. Sci. Eng.",
+      "authors": [
+        "Jiangfeng Li",
+        "Yifan Yu",
+        "Shili Hu",
+        "Yang Shi 0002",
+        "Shengjie Zhao",
+        "Chenxi Zhang"
+      ]
+    },
+    {
+      "type": "article",
+      "key": "journals/ijcse/AnsahA20",
+      "title": "Enhancing user and transaction privacy in bitcoin with unlinkable coin mixing scheme.",
+      "year": "2020",
+      "doi": "https://doi.org/10.1504/IJCSE.2020.113183",
+      "publisher": "Int. J. Comput. Sci. Eng.",
+      "authors": [
+        "Albert Kofi Kwansah Ansah",
+        "Daniel Adu-Gyamfi"
+      ]
+    },
+    {
+      "type": "article",
       "key": "journals/ijcse/DaiLX19",
       "title": "Study on learning resource authentication in MOOCs based on blockchain.",
       "year": "2019",
@@ -75879,6 +78100,18 @@ var papers = {
         "Qiming Fu",
         "Xuefeng Xi",
         "Zhenping Chen"
+      ]
+    },
+    {
+      "type": "article",
+      "key": "journals/jifs/ZhangR21",
+      "title": "Data security sharing method based on CP-ABE and blockchain.",
+      "year": "2021",
+      "doi": "https://doi.org/10.3233/JIFS-189318",
+      "publisher": "J. Intell. Fuzzy Syst.",
+      "authors": [
+        "Zhijun Zhang",
+        "Xiaojun Ren"
       ]
     },
     {
@@ -76321,6 +78554,18 @@ var papers = {
     },
     {
       "type": "article",
+      "key": "journals/tvt/DewantaM21",
+      "title": "BPT Scheme: Establishing Trusted Vehicular Fog Computing Service for Rural Area Based on Blockchain Approach.",
+      "year": "2021",
+      "doi": "https://doi.org/10.1109/TVT.2021.3051258",
+      "publisher": "IEEE Trans. Veh. Technol.",
+      "authors": [
+        "Favian Dewanta",
+        "Masahiro Mambo"
+      ]
+    },
+    {
+      "type": "article",
       "key": "journals/tvt/ZhangZXZSWW20",
       "title": "BSFP: Blockchain-Enabled Smart Parking With Fairness, Reliability and Privacy Protection.",
       "year": "2020",
@@ -76349,6 +78594,23 @@ var papers = {
         "Jianming Zhu",
         "Xindi Ma",
         "Jianfeng Ma 0001"
+      ]
+    },
+    {
+      "type": "article",
+      "key": "journals/tvt/KangXLZNLM21",
+      "title": "Optimizing Task Assignment for Reliable Blockchain-Empowered Federated Edge Learning.",
+      "year": "2021",
+      "doi": "https://doi.org/10.1109/TVT.2021.3055767",
+      "publisher": "IEEE Trans. Veh. Technol.",
+      "authors": [
+        "Jiawen Kang",
+        "Zehui Xiong",
+        "Xuandi Li",
+        "Yang Zhang 0025",
+        "Dusit Niyato",
+        "Cyril Leung",
+        "Chunyan Miao"
       ]
     },
     {
@@ -76654,7 +78916,7 @@ var papers = {
       "publisher": "J. Intell. Inf. Syst.",
       "authors": [
         "Sélinde van Engelenburg",
-        "Marijn Janssen",
+        "Marijn Janssen 0001",
         "Bram Klievink"
       ]
     },
@@ -76667,7 +78929,7 @@ var papers = {
       "publisher": "Neurocomputing",
       "authors": [
         "Francisco Luis Benítez Martínez",
-        "María Visitación Hurtado Torres",
+        "María Visitación Hurtado-Torres",
         "Esteban Romero-Frías"
       ]
     },
@@ -76818,7 +79080,7 @@ var papers = {
       "publisher": "Expert Syst. Appl.",
       "authors": [
         "Huimin Tang",
-        "Yong Shi",
+        "Yong Shi 0001",
         "Peiwu Dong"
       ]
     },
@@ -76898,7 +79160,7 @@ var papers = {
       "authors": [
         "Ahmed Faeq Hussein",
         "Arunkumar N.",
-        "Gustavo A. Ramírez González",
+        "Gustavo Ramírez-González 0001",
         "Enas W. Abdulhay",
         "João Manuel R. S. Tavares",
         "Victor Hugo C. de Albuquerque"
@@ -77540,6 +79802,22 @@ var papers = {
     },
     {
       "type": "article",
+      "key": "journals/access/AhmadSJYOE21",
+      "title": "Blockchain-Based Forward Supply Chain and Waste Management for COVID-19 Medical Equipment and Supplies.",
+      "year": "2021",
+      "doi": "https://doi.org/10.1109/ACCESS.2021.3066503",
+      "publisher": "IEEE Access",
+      "authors": [
+        "Raja Wasim Ahmad",
+        "Khaled Salah",
+        "Raja Jayaraman",
+        "Ibrar Yaqoob",
+        "Mohammed A. Omar",
+        "Samer Ellahham"
+      ]
+    },
+    {
+      "type": "article",
       "key": "journals/access/SalahRNA19",
       "title": "Blockchain for AI: Review and Open Research Challenges.",
       "year": "2019",
@@ -77704,6 +79982,20 @@ var papers = {
         "Wenhui Yao",
         "Yawei Hu",
         "Huanhao Li"
+      ]
+    },
+    {
+      "type": "article",
+      "key": "journals/access/GuoSXY21",
+      "title": "MRCC: A Practical Covert Channel Over Monero With Provable Security.",
+      "year": "2021",
+      "doi": "https://doi.org/10.1109/ACCESS.2021.3060285",
+      "publisher": "IEEE Access",
+      "authors": [
+        "Zhaozhong Guo",
+        "Liucheng Shi",
+        "Maozhi Xu",
+        "Hong Yin"
       ]
     },
     {
@@ -79131,6 +81423,20 @@ var papers = {
     },
     {
       "type": "article",
+      "key": "journals/access/SunDCL21",
+      "title": "Blockchain-Based IoT Access Control System: Towards Security, Lightweight, and Cross-Domain.",
+      "year": "2021",
+      "doi": "https://doi.org/10.1109/ACCESS.2021.3059863",
+      "publisher": "IEEE Access",
+      "authors": [
+        "Shuang Sun",
+        "Rong Du",
+        "Shudong Chen",
+        "Weiwei Li"
+      ]
+    },
+    {
+      "type": "article",
       "key": "journals/access/Al-JaroodiM19",
       "title": "Blockchain in Industries: A Survey.",
       "year": "2019",
@@ -79934,6 +82240,21 @@ var papers = {
     },
     {
       "type": "article",
+      "key": "journals/access/JamilIIAK21",
+      "title": "Peer-to-Peer Energy Trading Mechanism Based on Blockchain and Machine Learning for Sustainable Electrical Power Supply in Smart Grid.",
+      "year": "2021",
+      "doi": "https://doi.org/10.1109/ACCESS.2021.3060457",
+      "publisher": "IEEE Access",
+      "authors": [
+        "Faisal Jamil",
+        "Naeem Iqbal",
+        "Imran",
+        "Shabir Ahmad",
+        "Dohyeun Kim 0001"
+      ]
+    },
+    {
+      "type": "article",
       "key": "journals/access/ArifKRKI20",
       "title": "Investigating Smart Home Security: Is Blockchain the Answer?",
       "year": "2020",
@@ -80012,6 +82333,20 @@ var papers = {
       "publisher": "IEEE Access",
       "authors": [
         "Fahad A. Al-Zahrani"
+      ]
+    },
+    {
+      "type": "article",
+      "key": "journals/access/RatheeIWB21",
+      "title": "On the Design and Implementation of a Blockchain Enabled E-Voting Application Within IoT-Oriented Smart Cities.",
+      "year": "2021",
+      "doi": "https://doi.org/10.1109/ACCESS.2021.3061411",
+      "publisher": "IEEE Access",
+      "authors": [
+        "Geetanjali Rathee",
+        "Razi Iqbal",
+        "Omer Waqar",
+        "Ali Kashif Bashir"
       ]
     },
     {
@@ -80411,6 +82746,21 @@ var papers = {
     },
     {
       "type": "article",
+      "key": "journals/access/JavedAMCQ21",
+      "title": "PETchain: A Blockchain-Based Privacy Enhancing Technology.",
+      "year": "2021",
+      "doi": "https://doi.org/10.1109/ACCESS.2021.3064896",
+      "publisher": "IEEE Access",
+      "authors": [
+        "Ibrahim Tariq Javed",
+        "Fares Alharbi",
+        "Tiziana Margaria",
+        "Noël Crespi",
+        "Kashif Naseer Qureshi"
+      ]
+    },
+    {
+      "type": "article",
       "key": "journals/access/WangZ20d",
       "title": "Secure Data Sharing and Customized Services for Intelligent Transportation Based on a Consortium Blockchain.",
       "year": "2020",
@@ -80462,6 +82812,22 @@ var papers = {
         "Pu Miao",
         "Baoyi Wang",
         "Bin Dong"
+      ]
+    },
+    {
+      "type": "article",
+      "key": "journals/access/YangLYWXS21",
+      "title": "A Trusted Blockchain-Based Traceability System for Fruit and Vegetable Agricultural Products.",
+      "year": "2021",
+      "doi": "https://doi.org/10.1109/ACCESS.2021.3062845",
+      "publisher": "IEEE Access",
+      "authors": [
+        "Xinting Yang",
+        "Mengqi Li",
+        "Huajing Yu",
+        "Mingting Wang",
+        "Daming Xu",
+        "Chuanheng Sun"
       ]
     },
     {
@@ -80638,6 +83004,22 @@ var papers = {
     },
     {
       "type": "article",
+      "key": "journals/access/YanDCHZZ21",
+      "title": "Blockchain-Assisted Collaborative Service Recommendation Scheme With Data Sharing.",
+      "year": "2021",
+      "doi": "https://doi.org/10.1109/ACCESS.2021.3065001",
+      "publisher": "IEEE Access",
+      "authors": [
+        "Biwei Yan",
+        "Anming Dong",
+        "Baobao Chai",
+        "Yubing Han",
+        "Guanglin Zhou",
+        "Fangxin Zhao"
+      ]
+    },
+    {
+      "type": "article",
       "key": "journals/access/Al-ShaibaniLA20",
       "title": "Consortium Blockchain-Based Decentralized Stock Exchange Platform.",
       "year": "2020",
@@ -80647,6 +83029,20 @@ var papers = {
         "Hamed Al-Shaibani",
         "Noureddine Lasla",
         "Mohamed M. Abdallah 0001"
+      ]
+    },
+    {
+      "type": "article",
+      "key": "journals/access/ChenCLZ21",
+      "title": "Effective Management for Blockchain-Based Agri-Food Supply Chains Using Deep Reinforcement Learning.",
+      "year": "2021",
+      "doi": "https://doi.org/10.1109/ACCESS.2021.3062410",
+      "publisher": "IEEE Access",
+      "authors": [
+        "Huilin Chen",
+        "Zheyi Chen",
+        "Feiting Lin",
+        "Peifen Zhuang"
       ]
     },
     {
@@ -80691,6 +83087,24 @@ var papers = {
         "Khaled Salah",
         "Moayad Aloqaily",
         "Yaser Jararweh"
+      ]
+    },
+    {
+      "type": "article",
+      "key": "journals/access/JagannathBSEOMJ21",
+      "title": "A Self-Adaptive Deep Learning-Based Algorithm for Predictive Analysis of Bitcoin Price.",
+      "year": "2021",
+      "doi": "https://doi.org/10.1109/ACCESS.2021.3061002",
+      "publisher": "IEEE Access",
+      "authors": [
+        "Nishant Jagannath",
+        "Tudor Barbulescu",
+        "Karam M. Sallam",
+        "Ibrahim Elgendi",
+        "Asuquo A. Okon",
+        "Braden Mcgrath",
+        "Abbas Jamalipour",
+        "Kumudu S. Munasinghe"
       ]
     },
     {
@@ -81054,6 +83468,21 @@ var papers = {
     },
     {
       "type": "article",
+      "key": "journals/access/RadhakrishnanMC21",
+      "title": "A Bayesian Regularized Neural Network for Analyzing Bitcoin Trends.",
+      "year": "2021",
+      "doi": "https://doi.org/10.1109/ACCESS.2021.3063243",
+      "publisher": "IEEE Access",
+      "authors": [
+        "Sujatha Radhakrishnan",
+        "V. Mareeswari",
+        "Jyotir Moy Chatterjee",
+        "Abd Allah A. Mousa",
+        "Aboul Ella Hassanien"
+      ]
+    },
+    {
+      "type": "article",
       "key": "journals/access/WangWZ19",
       "title": "A Secure Cloud Storage Framework With Access Control Based on Blockchain.",
       "year": "2019",
@@ -81274,6 +83703,22 @@ var papers = {
     },
     {
       "type": "article",
+      "key": "journals/access/GhiasiDNKSA21",
+      "title": "Cyber-Attack Detection and Cyber-Security Enhancement in Smart DC-Microgrid Based on Blockchain Technology and Hilbert Huang Transform.",
+      "year": "2021",
+      "doi": "https://doi.org/10.1109/ACCESS.2021.3059042",
+      "publisher": "IEEE Access",
+      "authors": [
+        "Mohammad Ghiasi",
+        "Moslem Dehghani",
+        "Taher Niknam",
+        "Abdollah Kavousi-Fard",
+        "Pierluigi Siano",
+        "Hassan Haes Alhelou"
+      ]
+    },
+    {
+      "type": "article",
       "key": "journals/access/DebeSRS19",
       "title": "IoT Public Fog Nodes Reputation System: A Decentralized Solution Using Ethereum Blockchain.",
       "year": "2019",
@@ -81375,6 +83820,22 @@ var papers = {
         "William J. Buchanan",
         "Reji Thomas",
         "Mamoun Alazab"
+      ]
+    },
+    {
+      "type": "article",
+      "key": "journals/access/CioaraAMAAM21",
+      "title": "Blockchain-Based Decentralized Virtual Power Plants of Small Prosumers.",
+      "year": "2021",
+      "doi": "https://doi.org/10.1109/ACCESS.2021.3059106",
+      "publisher": "IEEE Access",
+      "authors": [
+        "Tudor Cioara",
+        "Marcel Antal",
+        "Vlad T. Mihailescu",
+        "Claudia Daniela Antal",
+        "Ionut Mugurel Anghel",
+        "Dan Mitrea"
       ]
     },
     {
@@ -81534,6 +83995,21 @@ var papers = {
     },
     {
       "type": "article",
+      "key": "journals/access/GMKKN21",
+      "title": "Blockchain-Based Secure Healthcare Application for Diabetic-Cardio Disease Prediction in Fog Computing.",
+      "year": "2021",
+      "doi": "https://doi.org/10.1109/ACCESS.2021.3065440",
+      "publisher": "IEEE Access",
+      "authors": [
+        "Shynu P. G.",
+        "Varun G. Menon",
+        "R. Lakshmana Kumar",
+        "Seifedine Nimer Kadry",
+        "Yunyoung Nam"
+      ]
+    },
+    {
+      "type": "article",
       "key": "journals/access/LuLWQL18",
       "title": "A Privacy-Preserving Trust Model Based on Blockchain for VANETs.",
       "year": "2018",
@@ -81607,6 +84083,22 @@ var papers = {
     },
     {
       "type": "article",
+      "key": "journals/access/CaoZZWLM21",
+      "title": "Blockchain-Enabled HMM Model for Sports Performance Prediction.",
+      "year": "2021",
+      "doi": "https://doi.org/10.1109/ACCESS.2021.3064261",
+      "publisher": "IEEE Access",
+      "authors": [
+        "Ping Cao",
+        "Guoqing Zhu",
+        "Qingguo Zhang",
+        "Fan Wang",
+        "Yuwen Liu",
+        "Ruichao Mo"
+      ]
+    },
+    {
+      "type": "article",
       "key": "journals/access/OkonESEJM20",
       "title": "Blockchain and SDN Architecture for Spectrum Management in Cellular Networks.",
       "year": "2020",
@@ -81619,6 +84111,18 @@ var papers = {
         "Jaafar M. H. Elmirghani",
         "Abbas Jamalipour",
         "Kumudu S. Munasinghe"
+      ]
+    },
+    {
+      "type": "article",
+      "key": "journals/access/LashkariM21",
+      "title": "A Comprehensive Review of Blockchain Consensus Mechanisms.",
+      "year": "2021",
+      "doi": "https://doi.org/10.1109/ACCESS.2021.3065880",
+      "publisher": "IEEE Access",
+      "authors": [
+        "Bahareh Lashkari",
+        "Petr Musílek"
       ]
     },
     {
@@ -81677,6 +84181,17 @@ var papers = {
         "Leila Ismail",
         "Huned Materwala",
         "Sherali Zeadally"
+      ]
+    },
+    {
+      "type": "article",
+      "key": "journals/access/Iovane21",
+      "title": "MuReQua Chain: Multiscale Relativistic Quantum Blockchain.",
+      "year": "2021",
+      "doi": "https://doi.org/10.1109/ACCESS.2021.3064297",
+      "publisher": "IEEE Access",
+      "authors": [
+        "Gerardo Iovane"
       ]
     },
     {
@@ -82418,6 +84933,19 @@ var papers = {
     },
     {
       "type": "article",
+      "key": "journals/access/PaulaviciusGF21",
+      "title": "A Systematic Review and Empirical Analysis of Blockchain Simulators.",
+      "year": "2021",
+      "doi": "https://doi.org/10.1109/ACCESS.2021.3063324",
+      "publisher": "IEEE Access",
+      "authors": [
+        "Remigijus Paulavicius",
+        "Saulius Grigaitis",
+        "Ernestas Filatovas"
+      ]
+    },
+    {
+      "type": "article",
       "key": "journals/access/ToyodaMO19",
       "title": "A Novel Methodology for HYIP Operators' Bitcoin Addresses Identification.",
       "year": "2019",
@@ -82686,6 +85214,20 @@ var papers = {
     },
     {
       "type": "article",
+      "key": "journals/access/RicciMFF21",
+      "title": "Blockchains for COVID-19 Contact Tracing and Vaccine Support: A Systematic Review.",
+      "year": "2021",
+      "doi": "https://doi.org/10.1109/ACCESS.2021.3063152",
+      "publisher": "IEEE Access",
+      "authors": [
+        "Laura Ricci",
+        "Damiano Di Francesco Maesa",
+        "Alfredo Favenza",
+        "Enrico Ferro"
+      ]
+    },
+    {
+      "type": "article",
       "key": "journals/access/SunYWW20a",
       "title": "Non-Repudiation Storage and Access Control Scheme of Insurance Data Based on Blockchain in IPFS.",
       "year": "2020",
@@ -82710,6 +85252,23 @@ var papers = {
         "Hao Guo 0012",
         "Mark Nejad",
         "Chien-Chung Shen"
+      ]
+    },
+    {
+      "type": "article",
+      "key": "journals/access/YinHJAEGM21",
+      "title": "A Secured Social-Economic Framework Based on PEM-Blockchain for Optimal Scheduling of Reconfigurable Interconnected Microgrids.",
+      "year": "2021",
+      "doi": "https://doi.org/10.1109/ACCESS.2021.3065400",
+      "publisher": "IEEE Access",
+      "authors": [
+        "Fengyuan Yin",
+        "Ali Hajjiah",
+        "Kittisak Jermsittiparsert",
+        "Ameena Saad Al-Sumaiti",
+        "Salah K. Elsayed",
+        "Sherif S. M. Ghoneim",
+        "Mohamed A. Mohamed"
       ]
     },
     {
@@ -82995,7 +85554,7 @@ var papers = {
         "Zijian Bao",
         "Qinghao Wang",
         "Wenbo Shi",
-        "Lei Wang",
+        "Lei Wang 0031",
         "Hong Lei",
         "Bangdao Chen"
       ]
@@ -83372,6 +85931,22 @@ var papers = {
     },
     {
       "type": "article",
+      "key": "journals/access/GaoPLLCW21",
+      "title": "The Notarial Office in E-government: A Blockchain-Based Solution.",
+      "year": "2021",
+      "doi": "https://doi.org/10.1109/ACCESS.2021.3066184",
+      "publisher": "IEEE Access",
+      "authors": [
+        "Ying Gao 0004",
+        "Qiaofeng Pan",
+        "Yangliang Liu",
+        "Hongliang Lin",
+        "Yijian Chen",
+        "Quansi Wen"
+      ]
+    },
+    {
+      "type": "article",
       "key": "journals/access/WangLHLXW18",
       "title": "A Blockchain Based Privacy-Preserving Incentive Mechanism in Crowdsensing Applications.",
       "year": "2018",
@@ -83430,6 +86005,22 @@ var papers = {
         "Wei-Chu Chao",
         "Jen-Sheng Tsai",
         "Yau-Hwang Kuo"
+      ]
+    },
+    {
+      "type": "article",
+      "key": "journals/access/OmarJDSYO21",
+      "title": "Automating Procurement Contracts in the Healthcare Supply Chain Using Blockchain Smart Contracts.",
+      "year": "2021",
+      "doi": "https://doi.org/10.1109/ACCESS.2021.3062471",
+      "publisher": "IEEE Access",
+      "authors": [
+        "Ilhaam A. Omar",
+        "Raja Jayaraman",
+        "Mazin Debe",
+        "Khaled Salah",
+        "Ibrar Yaqoob",
+        "Mohammed A. Omar"
       ]
     },
     {
@@ -83617,6 +86208,21 @@ var papers = {
     },
     {
       "type": "article",
+      "key": "journals/access/KimYRLP21",
+      "title": "Developmental Trajectories in Blockchain Technology Using Patent-Based Knowledge Network Analysis.",
+      "year": "2021",
+      "doi": "https://doi.org/10.1109/ACCESS.2021.3066573",
+      "publisher": "IEEE Access",
+      "authors": [
+        "Sohee Kim",
+        "Sejun Yoon",
+        "Nagarajan Raghavan",
+        "Nguyen-Truong Le",
+        "Hyunseok Park"
+      ]
+    },
+    {
+      "type": "article",
       "key": "journals/access/BattahMAYSJ20",
       "title": "Blockchain-Based Multi-Party Authorization for Accessing IPFS Encrypted Data.",
       "year": "2020",
@@ -83694,6 +86300,18 @@ var papers = {
         "Juha Partala",
         "Tri Hong Nguyen",
         "Susanna Pirttikangas"
+      ]
+    },
+    {
+      "type": "article",
+      "key": "journals/access/AlsamhiL21",
+      "title": "Blockchain-Empowered Multi-Robot Collaboration to Fight COVID-19 and Future Pandemics.",
+      "year": "2021",
+      "doi": "https://doi.org/10.1109/ACCESS.2020.3032450",
+      "publisher": "IEEE Access",
+      "authors": [
+        "Saeed H. Alsamhi",
+        "Brian Lee"
       ]
     },
     {
@@ -84107,6 +86725,23 @@ var papers = {
     },
     {
       "type": "article",
+      "key": "journals/jwe/HeXYZCFS21",
+      "title": "Distributed Energy Transaction Model Based on the Alliance Blockchain in Case of China.",
+      "year": "2021",
+      "doi": "https://doi.org/10.13052/jwe1540-9589.2026",
+      "publisher": "J. Web Eng.",
+      "authors": [
+        "Yongxiu He",
+        "Wei Xiong",
+        "Binyou Yang",
+        "Rui Zhang",
+        "Ming-li Cui",
+        "Tiantian Feng",
+        "Yi-er Sun"
+      ]
+    },
+    {
+      "type": "article",
       "key": "journals/ijim/KKBA20",
       "title": "Authentic Drug Usage and Tracking with Blockchain Using Mobile Apps.",
       "year": "2020",
@@ -84210,6 +86845,20 @@ var papers = {
     },
     {
       "type": "article",
+      "key": "journals/jsa/BaggaSDV21",
+      "title": "Blockchain-based batch authentication protocol for Internet of Vehicles.",
+      "year": "2021",
+      "doi": "https://doi.org/10.1016/j.sysarc.2020.101877",
+      "publisher": "J. Syst. Archit.",
+      "authors": [
+        "Palak Bagga",
+        "Anil Kumar Sutrala",
+        "Ashok Kumar Das",
+        "Pandi Vijayakumar"
+      ]
+    },
+    {
+      "type": "article",
       "key": "journals/jsa/QinHYL21",
       "title": "A Blockchain-based access control scheme with multiple attribute authorities for secure cloud data sharing.",
       "year": "2021",
@@ -84217,9 +86866,23 @@ var papers = {
       "publisher": "J. Syst. Archit.",
       "authors": [
         "Xuanmei Qin",
-        "Yongfeng Huang",
+        "Yongfeng Huang 0001",
         "Zhen Yang",
-        "Xing Li"
+        "Xing Li 0001"
+      ]
+    },
+    {
+      "type": "article",
+      "key": "journals/jsa/WangSGL21",
+      "title": "ConGradetect: Blockchain-based detection of code and identity privacy vulnerabilities in crowdsourcing.",
+      "year": "2021",
+      "doi": "https://doi.org/10.1016/j.sysarc.2020.101910",
+      "publisher": "J. Syst. Archit.",
+      "authors": [
+        "Jitao Wang",
+        "Guozi Sun",
+        "Yu Gu",
+        "Kun Liu"
       ]
     },
     {
@@ -84923,6 +87586,22 @@ var papers = {
         "Qiang Pan",
         "Hui Li 0006",
         "Yintang Yang"
+      ]
+    },
+    {
+      "type": "article",
+      "key": "journals/fgcs/BandaraTFSRZ21",
+      "title": "Tikiri - Towards a lightweight blockchain for IoT.",
+      "year": "2021",
+      "doi": "https://doi.org/10.1016/j.future.2021.02.006",
+      "publisher": "Future Gener. Comput. Syst.",
+      "authors": [
+        "Eranga Bandara",
+        "Deepak K. Tosh",
+        "Peter Foytik",
+        "Sachin Shetty",
+        "Nalin Ranasinghe",
+        "Kasun De Zoysa"
       ]
     },
     {
@@ -85874,6 +88553,20 @@ var papers = {
     },
     {
       "type": "article",
+      "key": "journals/ojcomps/QiuRCM21",
+      "title": "Deep Reinforcement Learning Empowered Adaptivity for Future Blockchain Networks.",
+      "year": "2021",
+      "doi": "https://doi.org/10.1109/OJCS.2020.3010987",
+      "publisher": "IEEE Open J. Comput. Soc.",
+      "authors": [
+        "Chao Qiu",
+        "Xiaoxu Ren",
+        "Yifan Cao",
+        "Tianle Mai"
+      ]
+    },
+    {
+      "type": "article",
       "key": "journals/ojcomps/TranTWSKH21",
       "title": "A Survey on Privacy-Preserving Blockchain Systems (PPBS) and a Novel PPBS-Based Framework for Smart Agriculture.",
       "year": "2021",
@@ -86320,6 +89013,19 @@ var papers = {
     },
     {
       "type": "article",
+      "key": "journals/rigaacs/IrshadBS20",
+      "title": "Block-ED: The Proposed Blockchain Solution for Effectively Utilising Educational Resources.",
+      "year": "2020",
+      "doi": "https://doi.org/10.2478/acss-2020-0001",
+      "publisher": "Appl. Comput. Syst.",
+      "authors": [
+        "Shareen Irshad",
+        "Muhammad Nawaz Brohi",
+        "Tariq Rahim Soomro"
+      ]
+    },
+    {
+      "type": "article",
       "key": "journals/rigaacs/ZileS18",
       "title": "Blockchain Use Cases and Their Feasibility.",
       "year": "2018",
@@ -86562,6 +89268,20 @@ var papers = {
     },
     {
       "type": "article",
+      "key": "journals/jaihc/WangWXL21",
+      "title": "Decentralized data outsourcing auditing protocol based on blockchain.",
+      "year": "2021",
+      "doi": "https://doi.org/10.1007/s12652-020-02432-x",
+      "publisher": "J. Ambient Intell. Humaniz. Comput.",
+      "authors": [
+        "Han Wang",
+        "Xu An Wang",
+        "Shuai Xiao",
+        "Jiasen Liu"
+      ]
+    },
+    {
+      "type": "article",
       "key": "journals/jaihc/AlbaneseCSC20",
       "title": "Dynamic consent management for clinical trials via private blockchain technology.",
       "year": "2020",
@@ -86572,6 +89292,18 @@ var papers = {
         "Jean-Paul Calbimonte",
         "Michael Schumacher 0001",
         "Davide Calvaresi"
+      ]
+    },
+    {
+      "type": "article",
+      "key": "journals/jaihc/KumarT21",
+      "title": "Scalable and secure access control policy for healthcare system using blockchain and enhanced Bell-LaPadula model.",
+      "year": "2021",
+      "doi": "https://doi.org/10.1007/s12652-020-02346-8",
+      "publisher": "J. Ambient Intell. Humaniz. Comput.",
+      "authors": [
+        "Randhir Kumar",
+        "Rakesh Tripathi"
       ]
     },
     {
@@ -86690,6 +89422,20 @@ var papers = {
     },
     {
       "type": "article",
+      "key": "journals/cluster/AlfandiKAK21",
+      "title": "A survey on boosting IoT security and privacy through blockchain.",
+      "year": "2021",
+      "doi": "https://doi.org/10.1007/s10586-020-03137-8",
+      "publisher": "Clust. Comput.",
+      "authors": [
+        "Omar Alfandi",
+        "Salam Ismail Rasheed Khanji",
+        "Liza Ahmad",
+        "Asad Masood Khattak"
+      ]
+    },
+    {
+      "type": "article",
       "key": "journals/cluster/GonzalezGNGC20",
       "title": "Replacing email protocols with blockchain-based smart contracts.",
       "year": "2020",
@@ -86730,6 +89476,22 @@ var papers = {
         "Gautam Srivastava",
         "Agnieszka Wiszniewska-Matyszkiel",
         "Xiaochun Cheng"
+      ]
+    },
+    {
+      "type": "article",
+      "key": "journals/cluster/LiPLWXS21",
+      "title": "BDDT: use blockchain to facilitate IoT data transactions.",
+      "year": "2021",
+      "doi": "https://doi.org/10.1007/s10586-020-03119-w",
+      "publisher": "Clust. Comput.",
+      "authors": [
+        "Hui Li",
+        "Lishuang Pei",
+        "Dan Liao",
+        "Xiong Wang 0001",
+        "Du Xu",
+        "Jian Sun"
       ]
     },
     {
@@ -86789,6 +89551,20 @@ var papers = {
     },
     {
       "type": "article",
+      "key": "journals/cluster/AlazabAAA21",
+      "title": "Blockchain technology in supply chain management: an empirical study of the factors affecting user adoption/acceptance.",
+      "year": "2021",
+      "doi": "https://doi.org/10.1007/s10586-020-03200-4",
+      "publisher": "Clust. Comput.",
+      "authors": [
+        "Moutaz Alazab",
+        "Salah Alhyari",
+        "Albara W. Awajan",
+        "Ayman Bahjat Abdallah"
+      ]
+    },
+    {
+      "type": "article",
       "key": "journals/cluster/PavithranSAG20",
       "title": "Towards building a blockchain framework for IoT.",
       "year": "2020",
@@ -86828,6 +89604,22 @@ var papers = {
         "Patrick C. K. Hung",
         "Muhammad Adnan Tariq",
         "Laura Rafferty"
+      ]
+    },
+    {
+      "type": "article",
+      "key": "journals/cluster/LatifFRHJK21",
+      "title": "Retail level Blockchain transformation for product supply chain using truffle development platform.",
+      "year": "2021",
+      "doi": "https://doi.org/10.1007/s10586-020-03165-4",
+      "publisher": "Clust. Comput.",
+      "authors": [
+        "Rana M. Amir Latif",
+        "Muhammad Farhan",
+        "Osama Rizwan",
+        "Majid Hussain",
+        "Sohail Jabbar",
+        "Shahzad Khalid"
       ]
     },
     {
@@ -87401,6 +90193,19 @@ var papers = {
     },
     {
       "type": "article",
+      "key": "journals/fbloc/DhillonXP20",
+      "title": "Blockchain Enabled Tracking of Physician Burnout and Stressors During the COVID-19 Pandemic.",
+      "year": "2020",
+      "doi": "https://doi.org/10.3389/fbloc.2020.586742",
+      "publisher": "Frontiers Blockchain",
+      "authors": [
+        "Vikram Dhillon",
+        "Tailong Xu",
+        "Chirag Parikh"
+      ]
+    },
+    {
+      "type": "article",
       "key": "journals/fbloc/DucreeGWBEH20",
       "title": "Open Platform Concept for Blockchain-Enabled Crowdsourcing of Technology Development and Supply Chains.",
       "year": "2020",
@@ -87502,6 +90307,27 @@ var papers = {
       "publisher": "Frontiers Blockchain",
       "authors": [
         "Vikram Dhillon"
+      ]
+    },
+    {
+      "type": "article",
+      "key": "journals/fbloc/LemieuxHHBKPCRP20",
+      "title": "Having Our \"Omic\" Cake and Eating It Too?: Evaluating User Response to Using Blockchain Technology for Private and Secure Health Data Management and Sharing.",
+      "year": "2020",
+      "doi": "https://doi.org/10.3389/fbloc.2020.558705",
+      "publisher": "Frontiers Blockchain",
+      "authors": [
+        "Victoria L. Lemieux",
+        "Darra L. Hofman",
+        "Hoda Hamouda",
+        "Danielle Batista",
+        "Ravneet Kaur",
+        "Wen Pan",
+        "Ian Costanzo",
+        "Dean Regier",
+        "Samantha Pollard",
+        "Deirdre Weymann",
+        "Rob Fraser"
       ]
     },
     {
@@ -87690,6 +90516,18 @@ var papers = {
     },
     {
       "type": "article",
+      "key": "journals/fbloc/KhanS21",
+      "title": "A Peer-To-Peer Publication Model on Blockchain.",
+      "year": "2021",
+      "doi": "https://doi.org/10.3389/fbloc.2021.615726",
+      "publisher": "Frontiers Blockchain",
+      "authors": [
+        "Imtiaz A. Khan",
+        "Ali Shahaab"
+      ]
+    },
+    {
+      "type": "article",
       "key": "journals/fbloc/PobletAKLV20",
       "title": "From Athens to the Blockchain: Oracles for Digital Democracy.",
       "year": "2020",
@@ -87735,6 +90573,18 @@ var papers = {
       "authors": [
         "Sohag Saleh",
         "Farabi Shayor"
+      ]
+    },
+    {
+      "type": "article",
+      "key": "journals/fbloc/ParryC20",
+      "title": "Perspectives on \"Good\" in Blockchain for Good.",
+      "year": "2020",
+      "doi": "https://doi.org/10.3389/fbloc.2020.609136",
+      "publisher": "Frontiers Blockchain",
+      "authors": [
+        "Glenn Parry",
+        "John P. Collomosse"
       ]
     },
     {
@@ -88138,6 +90988,18 @@ var papers = {
     },
     {
       "type": "article",
+      "key": "journals/fbloc/SenguptaK21",
+      "title": "Meeting Changing Customer Requirements in Food and Agriculture Through the Application of Blockchain Technology.",
+      "year": "2021",
+      "doi": "https://doi.org/10.3389/fbloc.2021.613346",
+      "publisher": "Frontiers Blockchain",
+      "authors": [
+        "Ushnish Sengupta",
+        "Henry M. Kim"
+      ]
+    },
+    {
+      "type": "article",
       "key": "journals/fbloc/Koepsell19",
       "title": "Blockchain, Wikis, and the Ideal Science Machine: With an Example From Genomics.",
       "year": "2019",
@@ -88221,6 +91083,19 @@ var papers = {
       "authors": [
         "Ranjeeth Kumar Sundararajan",
         "Umamakeswari Arumugam"
+      ]
+    },
+    {
+      "type": "article",
+      "key": "journals/ledger/CaporalePO21",
+      "title": "Bitcoin Returns and the Frequency of Daily Abnormal Returns.",
+      "year": "2021",
+      "doi": "https://doi.org/10.5195/ledger.2021.216",
+      "publisher": "Ledger",
+      "authors": [
+        "Guglielmo Maria Caporale",
+        "Alex Plastun",
+        "Viktor Oliinyk"
       ]
     },
     {
@@ -88534,6 +91409,19 @@ var papers = {
     },
     {
       "type": "article",
+      "key": "journals/jpdc/LiZD21",
+      "title": "When services computing meets blockchain: Challenges and opportunities.",
+      "year": "2021",
+      "doi": "https://doi.org/10.1016/j.jpdc.2020.12.003",
+      "publisher": "J. Parallel Distributed Comput.",
+      "authors": [
+        "Xiaoyun Li",
+        "Zibin Zheng",
+        "Hong-Ning Dai"
+      ]
+    },
+    {
+      "type": "article",
       "key": "journals/jpdc/RahmanGB20",
       "title": "Blockchain-based access control management for Decentralized Online Social Networks.",
       "year": "2020",
@@ -88670,7 +91558,7 @@ var papers = {
         "Ruixuan Li",
         "Yan Zhang 0003",
         "Wenlong Tian",
-        "Yongfeng Huang"
+        "Yongfeng Huang 0001"
       ]
     },
     {
@@ -88750,6 +91638,7 @@ var papers = {
       "key": "journals/pvldb/ZakharyAA20",
       "title": "Atomic Commitment Across Blockchains.",
       "year": "2020",
+      "doi": "https://doi.org/10.14778/3397230.3397231",
       "publisher": "Proc. VLDB Endow.",
       "authors": [
         "Victor Zakhary",
@@ -88833,6 +91722,7 @@ var papers = {
       "key": "journals/pvldb/BuchnikF20",
       "title": "FireLedger: A High Throughput Blockchain Consensus Protocol.",
       "year": "2020",
+      "doi": "https://doi.org/10.14778/3397230.3397246",
       "publisher": "Proc. VLDB Endow.",
       "authors": [
         "Yehonatan Buchnik",
@@ -88863,6 +91753,7 @@ var papers = {
       "key": "journals/pvldb/GuptaRHS20",
       "title": "ResilientDB: Global Scale Resilient Blockchain Fabric.",
       "year": "2020",
+      "doi": "https://doi.org/10.14778/3380750.3380757",
       "publisher": "Proc. VLDB Endow.",
       "authors": [
         "Suyash Gupta",
@@ -88889,6 +91780,7 @@ var papers = {
       "key": "journals/pvldb/RahnamaGQHS20",
       "title": "Scalable, Resilient and Configurable Permissioned Blockchain Fabric.",
       "year": "2020",
+      "doi": "https://doi.org/10.14778/3415478.3415502",
       "publisher": "Proc. VLDB Endow.",
       "authors": [
         "Sajjad Rahnama",
@@ -88918,6 +91810,7 @@ var papers = {
       "key": "journals/pvldb/GuptaHRS20",
       "title": "Building High Throughput Permissioned Blockchain Fabrics: Challenges and Opportunities.",
       "year": "2020",
+      "doi": "https://doi.org/10.14778/3415478.3415565",
       "publisher": "Proc. VLDB Endow.",
       "authors": [
         "Suyash Gupta",
@@ -88936,6 +91829,22 @@ var papers = {
       "authors": [
         "Merve Can Kus Khalilov",
         "Albert Levi"
+      ]
+    },
+    {
+      "type": "article",
+      "key": "journals/comsur/HomoliakVRHSS21",
+      "title": "The Security Reference Architecture for Blockchains: Toward a Standardized Model for Studying Vulnerabilities, Threats, and Defenses.",
+      "year": "2021",
+      "doi": "https://doi.org/10.1109/COMST.2020.3033665",
+      "publisher": "IEEE Commun. Surv. Tutorials",
+      "authors": [
+        "Ivan Homoliak",
+        "Sarad Venugopalan",
+        "Daniël Reijsbergen",
+        "Qingze Hum",
+        "Richard Schumi",
+        "Pawel Szalachowski"
       ]
     },
     {
@@ -89181,6 +92090,18 @@ var papers = {
     },
     {
       "type": "article",
+      "key": "journals/asc/CavalliA21",
+      "title": "CNN-based multivariate data analysis for bitcoin trend prediction.",
+      "year": "2021",
+      "doi": "https://doi.org/10.1016/j.asoc.2020.107065",
+      "publisher": "Appl. Soft Comput.",
+      "authors": [
+        "Stefano Cavalli",
+        "Michele Amoretti"
+      ]
+    },
+    {
+      "type": "article",
       "key": "journals/ijtd/BriceD20",
       "title": "Design of a Blockchain-Based Smart Contract Model for Child Labor Alleviation.",
       "year": "2020",
@@ -89269,6 +92190,22 @@ var papers = {
         "Sourav Kunal",
         "Satyanarayana Vollala",
         "Sanjeev K. Dwivedi"
+      ]
+    },
+    {
+      "type": "article",
+      "key": "journals/sap/MercanCAATD21",
+      "title": "Blockchain-based video forensics and integrity verification framework for wireless Internet-of-Things devices.",
+      "year": "2021",
+      "doi": "https://doi.org/10.1002/spy2.143",
+      "publisher": "Secur. Priv.",
+      "authors": [
+        "Suat Mercan",
+        "Mumin Cebe",
+        "Ramazan Savas Aygün",
+        "Kemal Akkaya",
+        "Elijah Toussaint",
+        "Dominik Danko"
       ]
     },
     {
@@ -89511,6 +92448,283 @@ var papers = {
     },
     {
       "type": "article",
+      "key": "journals/ijpr/SaberiKSS19",
+      "title": "Blockchain technology and its relationships to sustainable supply chain management.",
+      "year": "2019",
+      "doi": "https://doi.org/10.1080/00207543.2018.1533261",
+      "publisher": "Int. J. Prod. Res.",
+      "authors": [
+        "Sara Saberi",
+        "Mahtab Kouhizadeh",
+        "Joseph Sarkis",
+        "Lejia Shen"
+      ]
+    },
+    {
+      "type": "article",
+      "key": "journals/ijpr/DolguiIPSIW20",
+      "title": "Blockchain-oriented dynamic modelling of smart contract design and execution in the supply chain.",
+      "year": "2020",
+      "doi": "https://doi.org/10.1080/00207543.2019.1627439",
+      "publisher": "Int. J. Prod. Res.",
+      "authors": [
+        "Alexandre Dolgui",
+        "Dmitry A. Ivanov",
+        "Semyon A. Potryasaev",
+        "Boris V. Sokolov",
+        "Marina Ivanova",
+        "Frank Werner 0001"
+      ]
+    },
+    {
+      "type": "article",
+      "key": "journals/ijpr/ManupatiSRWPS20",
+      "title": "A blockchain-based approach for a multi-echelon sustainable supply chain.",
+      "year": "2020",
+      "doi": "https://doi.org/10.1080/00207543.2019.1683248",
+      "publisher": "Int. J. Prod. Res.",
+      "authors": [
+        "Vijaya Kumar Manupati",
+        "Tobias Schoenherr",
+        "M. Ramkumar",
+        "Stephan M. Wagner",
+        "Sai Krishna Pabba",
+        "R. Inder Raj Singh"
+      ]
+    },
+    {
+      "type": "article",
+      "key": "journals/ijpr/WangCZ21",
+      "title": "Designing a blockchain enabled supply chain.",
+      "year": "2021",
+      "doi": "https://doi.org/10.1080/00207543.2020.1824086",
+      "publisher": "Int. J. Prod. Res.",
+      "authors": [
+        "Yingli Wang",
+        "Catherine Huirong Chen",
+        "Ahmed Zghari-Sales"
+      ]
+    },
+    {
+      "type": "article",
+      "key": "journals/ijpr/YoonTYS20",
+      "title": "The value of Blockchain technology implementation in international trades under demand volatility risk.",
+      "year": "2020",
+      "doi": "https://doi.org/10.1080/00207543.2019.1693651",
+      "publisher": "Int. J. Prod. Res.",
+      "authors": [
+        "Jiho Yoon",
+        "Srinivas Talluri",
+        "Hakan Yildiz",
+        "Chwen Sheu"
+      ]
+    },
+    {
+      "type": "article",
+      "key": "journals/ijpr/LiGBWGH20",
+      "title": "A sustainable production capability evaluation mechanism based on blockchain, LSTM, analytic hierarchy process for supply chain network.",
+      "year": "2020",
+      "doi": "https://doi.org/10.1080/00207543.2020.1740342",
+      "publisher": "Int. J. Prod. Res.",
+      "authors": [
+        "Zhi Li 0053",
+        "Hanyang Guo",
+        "Ali Vatankhah Barenji",
+        "Wai Ming Wang",
+        "Yijiang Guan",
+        "George Q. Huang"
+      ]
+    },
+    {
+      "type": "article",
+      "key": "journals/ijpr/ChangIS20",
+      "title": "Blockchain in global supply chains and cross border trade: a critical synthesis of the state-of-the-art, challenges and opportunities.",
+      "year": "2020",
+      "doi": "https://doi.org/10.1080/00207543.2019.1651946",
+      "publisher": "Int. J. Prod. Res.",
+      "authors": [
+        "Yanling Chang",
+        "Eleftherios Iakovou",
+        "Weidong Shi"
+      ]
+    },
+    {
+      "type": "article",
+      "key": "journals/ijpr/WongTLOS20",
+      "title": "Unearthing the determinants of Blockchain adoption in supply chain management.",
+      "year": "2020",
+      "doi": "https://doi.org/10.1080/00207543.2020.1730463",
+      "publisher": "Int. J. Prod. Res.",
+      "authors": [
+        "Lai-Wan Wong",
+        "Garry Wei-Han Tan",
+        "Voon-Hsien Lee",
+        "Keng-Boon Ooi",
+        "Amrik Sohal"
+      ]
+    },
+    {
+      "type": "article",
+      "key": "journals/ijpr/RahmanzadehPR20",
+      "title": "Integrated innovative product design and supply chain tactical planning within a blockchain platform.",
+      "year": "2020",
+      "doi": "https://doi.org/10.1080/00207543.2019.1651947",
+      "publisher": "Int. J. Prod. Res.",
+      "authors": [
+        "Sajjad Rahmanzadeh",
+        "Mir Saman Pishvaee",
+        "Mohammad Reza Rasouli"
+      ]
+    },
+    {
+      "type": "article",
+      "key": "journals/ijpr/BarenjiLWHG20",
+      "title": "Blockchain-based ubiquitous manufacturing: a secure and reliable cyber-physical system.",
+      "year": "2020",
+      "doi": "https://doi.org/10.1080/00207543.2019.1680899",
+      "publisher": "Int. J. Prod. Res.",
+      "authors": [
+        "Ali Vatankhah Barenji",
+        "Zhi Li 0053",
+        "Wai Ming Wang",
+        "George Q. Huang",
+        "David A. Guerra-Zubiaga"
+      ]
+    },
+    {
+      "type": "article",
+      "key": "journals/ijpr/TozanliKG20",
+      "title": "Trade-in-to-upgrade as a marketing strategy in disassembly-to-order systems at the edge of blockchain technology.",
+      "year": "2020",
+      "doi": "https://doi.org/10.1080/00207543.2020.1712489",
+      "publisher": "Int. J. Prod. Res.",
+      "authors": [
+        "Özden Tozanli",
+        "Elif Kongar",
+        "Surendra M. Gupta"
+      ]
+    },
+    {
+      "type": "article",
+      "key": "journals/ijpr/Rodriguez-Espindola20",
+      "title": "The potential of emergent disruptive technologies for humanitarian supply chains: the integration of blockchain, Artificial Intelligence and 3D printing.",
+      "year": "2020",
+      "doi": "https://doi.org/10.1080/00207543.2020.1761565",
+      "publisher": "Int. J. Prod. Res.",
+      "authors": [
+        "Oscar Rodríguez-Espíndola",
+        "Soumyadeb Chowdhury",
+        "Ahmad Beltagui",
+        "Pavel Albores"
+      ]
+    },
+    {
+      "type": "article",
+      "key": "journals/ijpr/KambleGA19",
+      "title": "Understanding the Blockchain technology adoption in supply chains-Indian context.",
+      "year": "2019",
+      "doi": "https://doi.org/10.1080/00207543.2018.1518610",
+      "publisher": "Int. J. Prod. Res.",
+      "authors": [
+        "Sachin S. Kamble",
+        "Angappa Gunasekaran",
+        "Himanshu Arha"
+      ]
+    },
+    {
+      "type": "article",
+      "key": "journals/ijpr/Aghamohammadzadeh20a",
+      "title": "A novel cloud manufacturing service composition platform enabled by Blockchain technology.",
+      "year": "2020",
+      "doi": "https://doi.org/10.1080/00207543.2020.1715507",
+      "publisher": "Int. J. Prod. Res.",
+      "authors": [
+        "Ehsan Aghamohammadzadeh",
+        "Omid Fatahi Valilai"
+      ]
+    },
+    {
+      "type": "article",
+      "key": "journals/ijpr/PournaderSSK20",
+      "title": "Blockchain applications in supply chains, transport and logistics: a systematic review of the literature.",
+      "year": "2020",
+      "doi": "https://doi.org/10.1080/00207543.2019.1650976",
+      "publisher": "Int. J. Prod. Res.",
+      "authors": [
+        "Mehrdokht Pournader",
+        "Yangyan Shi",
+        "Stefan Seuring",
+        "S. C. Lenny Koh"
+      ]
+    },
+    {
+      "type": "article",
+      "key": "journals/ijpr/BaiS20",
+      "title": "A supply chain transparency and sustainability technology appraisal model for blockchain technology.",
+      "year": "2020",
+      "doi": "https://doi.org/10.1080/00207543.2019.1708989",
+      "publisher": "Int. J. Prod. Res.",
+      "authors": [
+        "Chunguang Bai",
+        "Joseph Sarkis"
+      ]
+    },
+    {
+      "type": "article",
+      "key": "journals/ijpr/JabbarD20",
+      "title": "Investigating the link between transaction and computational costs in a blockchain environment.",
+      "year": "2020",
+      "doi": "https://doi.org/10.1080/00207543.2020.1754487",
+      "publisher": "Int. J. Prod. Res.",
+      "authors": [
+        "Abdul Jabbar",
+        "Samir Dani"
+      ]
+    },
+    {
+      "type": "article",
+      "key": "journals/ijpr/DubeyGBDP20",
+      "title": "Blockchain technology for enhancing swift-trust, collaboration and resilience within a humanitarian supply chain setting.",
+      "year": "2020",
+      "doi": "https://doi.org/10.1080/00207543.2020.1722860",
+      "publisher": "Int. J. Prod. Res.",
+      "authors": [
+        "Rameshwar Dubey",
+        "Angappa Gunasekaran",
+        "David J. Bryde",
+        "Yogesh K. Dwivedi",
+        "Thanos Papadopoulos"
+      ]
+    },
+    {
+      "type": "article",
+      "key": "journals/ijpr/KohDS20",
+      "title": "Blockchain in transport and logistics - paradigms and transitions.",
+      "year": "2020",
+      "doi": "https://doi.org/10.1080/00207543.2020.1736428",
+      "publisher": "Int. J. Prod. Res.",
+      "authors": [
+        "Lenny Koh",
+        "Alexandre Dolgui",
+        "Joseph Sarkis"
+      ]
+    },
+    {
+      "type": "article",
+      "key": "journals/jcise/ShiKTL21",
+      "title": "A Blockchain-Based G-Code Protection Approach for Cyber-Physical Security in Additive Manufacturing.",
+      "year": "2021",
+      "doi": "https://doi.org/10.1115/1.4048966",
+      "publisher": "J. Comput. Inf. Sci. Eng.",
+      "authors": [
+        "Zhangyue Shi",
+        "Chen Kan",
+        "Wenmeng Tian",
+        "Chenang Liu"
+      ]
+    },
+    {
+      "type": "article",
       "key": "journals/questa/Fralix20",
       "title": "On classes of Bitcoin-inspired infinite-server queueing systems.",
       "year": "2020",
@@ -89689,7 +92903,7 @@ var papers = {
       "authors": [
         "Svein Ølnes",
         "Jolien Ubacht",
-        "Marijn Janssen"
+        "Marijn Janssen 0001"
       ]
     },
     {
@@ -90028,6 +93242,18 @@ var papers = {
       "publisher": "Electron. Mark.",
       "authors": [
         "Rainer Alt"
+      ]
+    },
+    {
+      "type": "article",
+      "key": "journals/ijcmcst/GrigorievS21",
+      "title": "RSA and redactable blockchains.",
+      "year": "2021",
+      "doi": "https://doi.org/10.1080/23799927.2020.1842808",
+      "publisher": "Int. J. Comput. Math. Comput. Syst. Theory",
+      "authors": [
+        "Dima Grigoriev",
+        "Vladimir Shpilrain"
       ]
     },
     {
@@ -90378,6 +93604,18 @@ var papers = {
     },
     {
       "type": "article",
+      "key": "journals/percom/WuL21",
+      "title": "A blockchain-based trust management method for Internet of Things.",
+      "year": "2021",
+      "doi": "https://doi.org/10.1016/j.pmcj.2021.101330",
+      "publisher": "Pervasive Mob. Comput.",
+      "authors": [
+        "Xu Wu",
+        "Junbin Liang"
+      ]
+    },
+    {
+      "type": "article",
       "key": "journals/percom/ZhuSHZ20",
       "title": "Consensus-oriented cloud manufacturing based on blockchain technology: An exploratory study.",
       "year": "2020",
@@ -90388,6 +93626,17 @@ var papers = {
         "Jing Shi 0006",
         "Samuel Huang",
         "Bin Zhang 0024"
+      ]
+    },
+    {
+      "type": "article",
+      "key": "journals/percom/Sarier21",
+      "title": "Efficient biometric-based identity management on the Blockchain for smart industrial applications.",
+      "year": "2021",
+      "doi": "https://doi.org/10.1016/j.pmcj.2020.101322",
+      "publisher": "Pervasive Mob. Comput.",
+      "authors": [
+        "Neyire Deniz Sarier"
       ]
     },
     {
@@ -90461,6 +93710,22 @@ var papers = {
       "publisher": "Comput. Sci. Eng.",
       "authors": [
         "Massimo Di Pierro"
+      ]
+    },
+    {
+      "type": "article",
+      "key": "journals/vldb/RuanDLZCO21",
+      "title": "LineageChain: a fine-grained, secure and efficient data provenance system for blockchains.",
+      "year": "2021",
+      "doi": "https://doi.org/10.1007/s00778-020-00646-1",
+      "publisher": "VLDB J.",
+      "authors": [
+        "Pingcheng Ruan",
+        "Tien Tuan Anh Dinh",
+        "Qian Lin",
+        "Meihui Zhang",
+        "Gang Chen 0001",
+        "Beng Chin Ooi"
       ]
     },
     {
@@ -91655,12 +94920,41 @@ var papers = {
       "doi": "https://doi.org/10.1002/cpe.5578",
       "publisher": "Concurr. Comput. Pract. Exp.",
       "authors": [
-        "Ya-Nan Li",
+        "Yanan Li 0007",
         "Xiaotao Feng",
         "Jan Xie",
-        "Hanwen Feng",
+        "Hanwen Feng 0001",
         "Zhenyu Guan",
         "Qianhong Wu"
+      ]
+    },
+    {
+      "type": "article",
+      "key": "journals/concurrency/KoensAP21",
+      "title": "Blockchain adoption drivers: The rationality of irrational choices.",
+      "year": "2021",
+      "doi": "https://doi.org/10.1002/cpe.5843",
+      "publisher": "Concurr. Comput. Pract. Exp.",
+      "authors": [
+        "Tommy Koens",
+        "Pol Van Aubel",
+        "Erik Poll"
+      ]
+    },
+    {
+      "type": "article",
+      "key": "journals/concurrency/GarrigaPARPT21",
+      "title": "Blockchain and cryptocurrencies: A classification and comparison of architecture drivers.",
+      "year": "2021",
+      "doi": "https://doi.org/10.1002/cpe.5992",
+      "publisher": "Concurr. Comput. Pract. Exp.",
+      "authors": [
+        "Martin Garriga",
+        "Stefano Dalla Palma",
+        "Maxmiliano Arias",
+        "Alan De Renzis",
+        "Remo Pareschi",
+        "Damian Andrew Tamburri"
       ]
     },
     {
@@ -92174,6 +95468,20 @@ var papers = {
       "authors": [
         "Volodymyr Babich",
         "Gilles Hilary"
+      ]
+    },
+    {
+      "type": "article",
+      "key": "journals/tce/RachakondaBMK21",
+      "title": "SaYoPillow: Blockchain-Integrated Privacy-Assured IoMT Framework for Stress Management Considering Sleeping Habits.",
+      "year": "2021",
+      "doi": "https://doi.org/10.1109/TCE.2020.3043683",
+      "publisher": "IEEE Trans. Consumer Electron.",
+      "authors": [
+        "Laavanya Rachakonda",
+        "Anand K. Bapatla",
+        "Saraju P. Mohanty",
+        "Elias Kougianos"
       ]
     },
     {
@@ -92733,7 +96041,7 @@ var papers = {
       "authors": [
         "Purva Grover",
         "Arpan Kumar Kar",
-        "Marijn Janssen"
+        "Marijn Janssen 0001"
       ]
     },
     {
@@ -92843,7 +96151,7 @@ var papers = {
       "doi": "https://doi.org/10.18417/emisa.15.15",
       "publisher": "Enterp. Model. Inf. Syst. Archit. Int. J. Concept. Model.",
       "authors": [
-        "Sérgio Guerreiro",
+        "Sérgio Guerreiro 0001",
         "Diogo Silva",
         "Tiago Rosado",
         "André Vasconcelos",
@@ -93748,6 +97056,20 @@ var papers = {
     },
     {
       "type": "article",
+      "key": "journals/information/EtemadiBSE21",
+      "title": "Supply Chain Disruption Risk Management with Blockchain: A Dynamic Literature Review.",
+      "year": "2021",
+      "doi": "https://doi.org/10.3390/info12020070",
+      "publisher": "Inf.",
+      "authors": [
+        "Niloofar Etemadi",
+        "Yari Borbon-Galvez",
+        "Fernanda Strozzi",
+        "Tahereh Etemadi"
+      ]
+    },
+    {
+      "type": "article",
       "key": "journals/information/CalvaresiCDMPS19",
       "title": "The Good, the Bad, and the Ethical Implications of Bridging Blockchain and Multi-Agent Systems.",
       "year": "2019",
@@ -93906,6 +97228,19 @@ var papers = {
         "Michele Marchesi",
         "Andrea Pinna 0002",
         "Roberto Tonelli"
+      ]
+    },
+    {
+      "type": "article",
+      "key": "journals/information/SunDC21",
+      "title": "A Secure and Computable Blockchain-Based Data Sharing Scheme in IoT System.",
+      "year": "2021",
+      "doi": "https://doi.org/10.3390/info12020047",
+      "publisher": "Inf.",
+      "authors": [
+        "Shuang Sun",
+        "Rong Du",
+        "Shudong Chen"
       ]
     },
     {
@@ -94282,6 +97617,19 @@ var papers = {
     },
     {
       "type": "article",
+      "key": "journals/jnca/HewaYL21",
+      "title": "Survey on blockchain based smart contracts: Applications, opportunities and challenges.",
+      "year": "2021",
+      "doi": "https://doi.org/10.1016/j.jnca.2020.102857",
+      "publisher": "J. Netw. Comput. Appl.",
+      "authors": [
+        "Tharaka Mawanane Hewa",
+        "Mika Ylianttila",
+        "Madhusanka Liyanage"
+      ]
+    },
+    {
+      "type": "article",
       "key": "journals/jnca/FengHZKK19",
       "title": "A survey on privacy protection in blockchain system.",
       "year": "2019",
@@ -94370,6 +97718,20 @@ var papers = {
     },
     {
       "type": "article",
+      "key": "journals/jnca/SookhakJSY21",
+      "title": "Blockchain and smart contract for access control in healthcare: A survey, issues and challenges, and open issues.",
+      "year": "2021",
+      "doi": "https://doi.org/10.1016/j.jnca.2020.102950",
+      "publisher": "J. Netw. Comput. Appl.",
+      "authors": [
+        "Mehdi Sookhak",
+        "Mohammad Reza Jabbarpour",
+        "Nader Sohrabi Safa",
+        "F. Richard Yu"
+      ]
+    },
+    {
+      "type": "article",
       "key": "journals/jnca/MeloTFBC21",
       "title": "Field surveillance of fuel dispensers using IoT-based metering and blockchains.",
       "year": "2021",
@@ -94381,6 +97743,18 @@ var papers = {
         "Bruno A. Rodrigues Filho",
         "Alysson Neves Bessani",
         "Luiz F. R. C. Carmo"
+      ]
+    },
+    {
+      "type": "article",
+      "key": "journals/jnca/KumarC21",
+      "title": "MedHypChain: A patient-centered interoperability hyperledger-based medical healthcare system: Regulation in COVID-19 pandemic.",
+      "year": "2021",
+      "doi": "https://doi.org/10.1016/j.jnca.2021.102975",
+      "publisher": "J. Netw. Comput. Appl.",
+      "authors": [
+        "Mahender Kumar",
+        "Satish Chand"
       ]
     },
     {
@@ -94439,6 +97813,20 @@ var papers = {
     },
     {
       "type": "article",
+      "key": "journals/jnca/SaadKNM21",
+      "title": "Contra-∗: Mechanisms for countering spam attacks on blockchain's memory pools.",
+      "year": "2021",
+      "doi": "https://doi.org/10.1016/j.jnca.2020.102971",
+      "publisher": "J. Netw. Comput. Appl.",
+      "authors": [
+        "Muhammad Saad",
+        "Joongheon Kim",
+        "DaeHun Nyang",
+        "David A. Mohaisen"
+      ]
+    },
+    {
+      "type": "article",
       "key": "journals/jnca/LyuQZLWZ20",
       "title": "SBAC: A secure blockchain-based access control framework for information-centric networking.",
       "year": "2020",
@@ -94451,6 +97839,22 @@ var papers = {
         "Huaping Liu",
         "Qiuhua Wang",
         "Ning Zheng"
+      ]
+    },
+    {
+      "type": "article",
+      "key": "journals/jnca/NerurkarPBLKK21",
+      "title": "Dissecting bitcoin blockchain: Empirical analysis of bitcoin network (2009-2020).",
+      "year": "2021",
+      "doi": "https://doi.org/10.1016/j.jnca.2020.102940",
+      "publisher": "J. Netw. Comput. Appl.",
+      "authors": [
+        "Pranav Nerurkar",
+        "Dhiren R. Patel",
+        "Yann Busnel",
+        "Romaric Ludinard",
+        "Saru Kumari",
+        "Muhammad Khurram Khan"
       ]
     },
     {
@@ -94767,6 +98171,20 @@ var papers = {
         "Jordi Forné",
         "Oscar Esparza",
         "Miguel Soriano"
+      ]
+    },
+    {
+      "type": "article",
+      "key": "journals/ijisec/LiWLA21",
+      "title": "Toward a blockchain-based framework for challenge-based collaborative intrusion detection.",
+      "year": "2021",
+      "doi": "https://doi.org/10.1007/s10207-020-00488-6",
+      "publisher": "Int. J. Inf. Sec.",
+      "authors": [
+        "Wenjuan Li 0001",
+        "Yu Wang 0017",
+        "Jin Li 0002",
+        "Man Ho Au"
       ]
     },
     {
@@ -95109,6 +98527,18 @@ var papers = {
     },
     {
       "type": "article",
+      "key": "journals/jiat/SahooH21",
+      "title": "Traceability and ownership claim of data on big data marketplace using blockchain technology.",
+      "year": "2021",
+      "doi": "https://doi.org/10.1080/24751839.2020.1819634",
+      "publisher": "J. Inf. Telecommun.",
+      "authors": [
+        "Swagatika Sahoo",
+        "Raju Halder"
+      ]
+    },
+    {
+      "type": "article",
       "key": "journals/csi/DrljevicAS20",
       "title": "Perspectives on risks and standards that affect the requirements engineering of blockchain technology.",
       "year": "2020",
@@ -95135,6 +98565,21 @@ var papers = {
         "Ahmed Shihab Albahri",
         "M. A. Alsalem",
         "K. I. Mohammed"
+      ]
+    },
+    {
+      "type": "article",
+      "key": "journals/csi/TanXYAJ21",
+      "title": "A blockchain-empowered crowdsourcing system for 5G-enabled smart cities.",
+      "year": "2021",
+      "doi": "https://doi.org/10.1016/j.csi.2021.103517",
+      "publisher": "Comput. Stand. Interfaces",
+      "authors": [
+        "Liang Tan",
+        "Huan Xiao",
+        "Keping Yu",
+        "Moayad Aloqaily",
+        "Yaser Jararweh"
       ]
     },
     {
@@ -95471,6 +98916,21 @@ var papers = {
       "publisher": "Publ.",
       "authors": [
         "Michael Spearpoint"
+      ]
+    },
+    {
+      "type": "article",
+      "key": "journals/tsp/JiangLZZQ21",
+      "title": "Decentralized Blockchain-Based Dynamic Spectrum Acquisition for Wireless Downlink Communications.",
+      "year": "2021",
+      "doi": "https://doi.org/10.1109/TSP.2021.3052830",
+      "publisher": "IEEE Trans. Signal Process.",
+      "authors": [
+        "Miao Jiang",
+        "Yiqing Li",
+        "Qi Zhang 0002",
+        "Guangchi Zhang",
+        "Jiayin Qin"
       ]
     },
     {
@@ -96070,6 +99530,19 @@ var papers = {
     },
     {
       "type": "article",
+      "key": "journals/sncs/PraitheeshanPD21",
+      "title": "Private and Trustworthy Distributed Lending Model Using Hyperledger Besu.",
+      "year": "2021",
+      "doi": "https://doi.org/10.1007/s42979-021-00500-3",
+      "publisher": "SN Comput. Sci.",
+      "authors": [
+        "Purathani Praitheeshan",
+        "Lei Pan 0002",
+        "Robin Doss"
+      ]
+    },
+    {
+      "type": "article",
       "key": "journals/sncs/KhettryPB21",
       "title": "A Detailed Review on Blockchain and Its Applications.",
       "year": "2021",
@@ -96448,6 +99921,19 @@ var papers = {
     },
     {
       "type": "article",
+      "key": "journals/symmetry/WangLL21",
+      "title": "Analysis of the Optimal Application of Blockchain-Based Smart Lockers in the Logistics Industry Based on FFD-SAGA and Grey Decision-Making.",
+      "year": "2021",
+      "doi": "https://doi.org/10.3390/sym13020329",
+      "publisher": "Symmetry",
+      "authors": [
+        "Shen-Tsu Wang",
+        "Meng-Hua Li",
+        "Chun-Chi Lien"
+      ]
+    },
+    {
+      "type": "article",
       "key": "journals/symmetry/YinBZH17",
       "title": "M2M Security Technology of CPS Based on Blockchains.",
       "year": "2017",
@@ -96500,6 +99986,22 @@ var papers = {
     },
     {
       "type": "article",
+      "key": "journals/symmetry/WaniIAAAG21",
+      "title": "Distributed Denial of Service (DDoS) Mitigation Using Blockchain - A Comprehensive Insight.",
+      "year": "2021",
+      "doi": "https://doi.org/10.3390/sym13020227",
+      "publisher": "Symmetry",
+      "authors": [
+        "Sharyar Wani",
+        "Mohammed Imthiyas",
+        "Hamad Almohamedh",
+        "Khalid M. Alhamed",
+        "Sultan Almotairi",
+        "Yonis Gulzar"
+      ]
+    },
+    {
+      "type": "article",
       "key": "journals/symmetry/IsmailM20",
       "title": "Blockchain Paradigm for Healthcare: Performance Evaluation.",
       "year": "2020",
@@ -96526,6 +100028,30 @@ var papers = {
     },
     {
       "type": "article",
+      "key": "journals/ac/AggarwalK21m",
+      "title": "Chapter Sixteen - Hyperledger.",
+      "year": "2021",
+      "doi": "https://doi.org/10.1016/bs.adcom.2020.08.016",
+      "publisher": "Adv. Comput.",
+      "authors": [
+        "Shubhani Aggarwal",
+        "Neeraj Kumar 0001"
+      ]
+    },
+    {
+      "type": "article",
+      "key": "journals/ac/AggarwalK21f",
+      "title": "Chapter Eight - History of blockchain-Blockchain 1.0: Currency.",
+      "year": "2021",
+      "doi": "https://doi.org/10.1016/bs.adcom.2020.08.008",
+      "publisher": "Adv. Comput.",
+      "authors": [
+        "Shubhani Aggarwal",
+        "Neeraj Kumar 0001"
+      ]
+    },
+    {
+      "type": "article",
       "key": "journals/ac/IkedaH18",
       "title": "Chapter Four - Applications of Blockchain in the Financial Sector and a Peer-to-Peer Global Barter Web.",
       "year": "2018",
@@ -96534,6 +100060,30 @@ var papers = {
       "authors": [
         "Kazuki Ikeda",
         "Md-Nafiz Hamid"
+      ]
+    },
+    {
+      "type": "article",
+      "key": "journals/ac/AggarwalK21l",
+      "title": "Chapter Fifteen - Blockchain 2.0: Smart contracts.",
+      "year": "2021",
+      "doi": "https://doi.org/10.1016/bs.adcom.2020.08.015",
+      "publisher": "Adv. Comput.",
+      "authors": [
+        "Shubhani Aggarwal",
+        "Neeraj Kumar 0001"
+      ]
+    },
+    {
+      "type": "article",
+      "key": "journals/ac/AggarwalK21n",
+      "title": "Chapter Seventeen - Blockchain for enterprise.",
+      "year": "2021",
+      "doi": "https://doi.org/10.1016/bs.adcom.2020.08.017",
+      "publisher": "Adv. Comput.",
+      "authors": [
+        "Shubhani Aggarwal",
+        "Neeraj Kumar 0001"
       ]
     },
     {
@@ -96599,6 +100149,20 @@ var papers = {
     },
     {
       "type": "article",
+      "key": "journals/ac/YangC0021",
+      "title": "Chapter Six - Protecting personal sensitive data security in the cloud with blockchain.",
+      "year": "2021",
+      "doi": "https://doi.org/10.1016/bs.adcom.2020.09.004",
+      "publisher": "Adv. Comput.",
+      "authors": [
+        "Zhen Yang",
+        "Yingying Chen",
+        "Yongfeng Huang 0001",
+        "Xing Li 0001"
+      ]
+    },
+    {
+      "type": "article",
       "key": "journals/ac/Kim18",
       "title": "Chapter Two - Blockchain for a Trust Network Among Intelligent Vehicles.",
       "year": "2018",
@@ -96606,6 +100170,18 @@ var papers = {
       "publisher": "Adv. Comput.",
       "authors": [
         "Shiho Kim"
+      ]
+    },
+    {
+      "type": "article",
+      "key": "journals/ac/AggarwalK21h",
+      "title": "Chapter Ten - Core components of blockchain.",
+      "year": "2021",
+      "doi": "https://doi.org/10.1016/bs.adcom.2020.08.010",
+      "publisher": "Adv. Comput.",
+      "authors": [
+        "Shubhani Aggarwal",
+        "Neeraj Kumar 0001"
       ]
     },
     {
@@ -96619,6 +100195,18 @@ var papers = {
         "Bruno Rodrigues 0001",
         "Thomas Bocek",
         "Burkhard Stiller"
+      ]
+    },
+    {
+      "type": "article",
+      "key": "journals/ac/AggarwalK21g",
+      "title": "Chapter Nine - Architecture of blockchain.",
+      "year": "2021",
+      "doi": "https://doi.org/10.1016/bs.adcom.2020.08.009",
+      "publisher": "Adv. Comput.",
+      "authors": [
+        "Shubhani Aggarwal",
+        "Neeraj Kumar 0001"
       ]
     },
     {
@@ -96663,6 +100251,29 @@ var papers = {
     },
     {
       "type": "article",
+      "key": "journals/ac/Raj21a",
+      "title": "Chapter One - Demystifying the blockchain technology.",
+      "year": "2021",
+      "doi": "https://doi.org/10.1016/bs.adcom.2020.08.001",
+      "publisher": "Adv. Comput.",
+      "authors": [
+        "Pethuru Raj"
+      ]
+    },
+    {
+      "type": "article",
+      "key": "journals/ac/AggarwalK21o",
+      "title": "Chapter Nineteen - Blockchain components and concepts.",
+      "year": "2021",
+      "doi": "https://doi.org/10.1016/bs.adcom.2020.08.019",
+      "publisher": "Adv. Comput.",
+      "authors": [
+        "Shubhani Aggarwal",
+        "Neeraj Kumar 0001"
+      ]
+    },
+    {
+      "type": "article",
       "key": "journals/ac/Swan18",
       "title": "Chapter Five - Blockchain for Business: Next-Generation Enterprise Artificial Intelligence Systems.",
       "year": "2018",
@@ -96670,6 +100281,18 @@ var papers = {
       "publisher": "Adv. Comput.",
       "authors": [
         "Melanie Swan"
+      ]
+    },
+    {
+      "type": "article",
+      "key": "journals/ac/AggarwalK21p",
+      "title": "Chapter Twenty - Attacks on blockchain.",
+      "year": "2021",
+      "doi": "https://doi.org/10.1016/bs.adcom.2020.08.020",
+      "publisher": "Adv. Comput.",
+      "authors": [
+        "Shubhani Aggarwal",
+        "Neeraj Kumar 0001"
       ]
     },
     {
@@ -96697,6 +100320,28 @@ var papers = {
     },
     {
       "type": "article",
+      "key": "journals/ac/Raj21b",
+      "title": "Chapter Thirteen - Empowering digital twins with blockchain.",
+      "year": "2021",
+      "doi": "https://doi.org/10.1016/bs.adcom.2020.08.013",
+      "publisher": "Adv. Comput.",
+      "authors": [
+        "Pethuru Raj"
+      ]
+    },
+    {
+      "type": "article",
+      "key": "journals/ac/Raj21c",
+      "title": "Chapter Eighteen - Industrial use cases at the cusp of the IoT and blockchain paradigms.",
+      "year": "2021",
+      "doi": "https://doi.org/10.1016/bs.adcom.2020.08.018",
+      "publisher": "Adv. Comput.",
+      "authors": [
+        "Pethuru Raj"
+      ]
+    },
+    {
+      "type": "article",
       "key": "journals/ac/Banerjee19",
       "title": "Chapter Nine - Blockchain with IOT: Applications and use cases for a new paradigm of supply chain driving efficiency and cost.",
       "year": "2019",
@@ -96716,6 +100361,18 @@ var papers = {
       "authors": [
         "Hany F. Atlam",
         "Gary B. Wills"
+      ]
+    },
+    {
+      "type": "article",
+      "key": "journals/ac/AggarwalK21e",
+      "title": "Chapter Seven - Basics of blockchain.",
+      "year": "2021",
+      "doi": "https://doi.org/10.1016/bs.adcom.2020.08.007",
+      "publisher": "Adv. Comput.",
+      "authors": [
+        "Shubhani Aggarwal",
+        "Neeraj Kumar 0001"
       ]
     },
     {
@@ -96742,6 +100399,20 @@ var papers = {
         "Yi Zhang",
         "Chenlei Xie",
         "Xiaoli Ma"
+      ]
+    },
+    {
+      "type": "article",
+      "key": "journals/ejwcn/RanYHZ21",
+      "title": "An improved AODV routing security algorithm based on blockchain technology in ad hoc network.",
+      "year": "2021",
+      "doi": "https://doi.org/10.1186/s13638-021-01938-y",
+      "publisher": "EURASIP J. Wirel. Commun. Netw.",
+      "authors": [
+        "Conglin Ran",
+        "Shuailing Yan",
+        "Liang Huang",
+        "Lei Zhang"
       ]
     },
     {
@@ -97117,6 +100788,19 @@ var papers = {
     },
     {
       "type": "article",
+      "key": "journals/tii/YangPG21",
+      "title": "Compensation for Power Loss by a Proof-of-Stake Consortium Blockchain Microgrid.",
+      "year": "2021",
+      "doi": "https://doi.org/10.1109/TII.2020.3007657",
+      "publisher": "IEEE Trans. Ind. Informatics",
+      "authors": [
+        "Jiawei Yang",
+        "Amrit Paudel",
+        "Hoay Beng Gooi"
+      ]
+    },
+    {
+      "type": "article",
       "key": "journals/tii/QiLZLC21",
       "title": "Cpds: Enabling Compressed and Private Data Sharing for Industrial Internet of Things Over Blockchain.",
       "year": "2021",
@@ -97320,6 +101004,18 @@ var papers = {
         "Chi Harold Liu",
         "Qiuxia Lin",
         "Shilin Wen"
+      ]
+    },
+    {
+      "type": "article",
+      "key": "journals/tii/YangW21a",
+      "title": "Blockchain-Empowered Socially Optimal Transactive Energy System: Framework and Implementation.",
+      "year": "2021",
+      "doi": "https://doi.org/10.1109/TII.2020.3027577",
+      "publisher": "IEEE Trans. Ind. Informatics",
+      "authors": [
+        "Qing Yang",
+        "Hao Wang 0016"
       ]
     },
     {
@@ -97986,6 +101682,23 @@ var papers = {
     },
     {
       "type": "article",
+      "key": "journals/tsg/AlAsheryYSLXWQ21",
+      "title": "A Blockchain-Enabled Multi-Settlement Quasi-Ideal Peer-to-Peer Trading Framework.",
+      "year": "2021",
+      "doi": "https://doi.org/10.1109/TSG.2020.3022601",
+      "publisher": "IEEE Trans. Smart Grid",
+      "authors": [
+        "Mohamed Kareem AlAshery",
+        "Zhehan Yi",
+        "Di Shi",
+        "Xiao Lu",
+        "Chunlei Xu",
+        "Zhiwei Wang",
+        "Wei Qiao 0001"
+      ]
+    },
+    {
+      "type": "article",
       "key": "journals/tsg/DevineC19",
       "title": "Blockchain Electricity Trading Under Demurrage.",
       "year": "2019",
@@ -98172,7 +101885,7 @@ var papers = {
       "publisher": "IEEE Netw.",
       "authors": [
         "Mohammad Iqbal Saryuddin Assaqty",
-        "Ying Gao",
+        "Ying Gao 0004",
         "Xiping Hu 0001",
         "Zhaolong Ning",
         "Victor C. M. Leung",
@@ -98518,7 +102231,7 @@ var papers = {
       "doi": "https://doi.org/10.1109/MNET.011.2000219",
       "publisher": "IEEE Netw.",
       "authors": [
-        "Mohammad Saidur Rahman",
+        "Mohammad Saidur Rahman 0001",
         "Ibrahim Khalil",
         "Mohammed Atiquzzaman"
       ]
@@ -99231,15 +102944,15 @@ var papers = {
     {
       "type": "article",
       "key": "journals/network/WangZWMZ20",
-      "title": "Blockchain and AI for Beyond 5G Networks.",
+      "title": "Guest Editorial: Blockchain and AI for Beyond 5G Networks.",
       "year": "2020",
-      "doi": "https://doi.org/10.1109/MNET.2020.9277896",
+      "doi": "https://doi.org/10.1109/MNET.2020.9374644",
       "publisher": "IEEE Netw.",
       "authors": [
-        "Stephen Wang 0001",
         "Yan Zhang",
         "Kun Wang",
         "Hassnaa Moustafa",
+        "Stephen Wang 0001",
         "Ke Zhang"
       ]
     },
@@ -99437,6 +103150,20 @@ var papers = {
     },
     {
       "type": "article",
+      "key": "journals/imds/NandiSHH21",
+      "title": "Do blockchain and circular economy practices improve post COVID-19 supply chains? A resource-based and resource dependence perspective.",
+      "year": "2021",
+      "doi": "https://doi.org/10.1108/IMDS-09-2020-0560",
+      "publisher": "Ind. Manag. Data Syst.",
+      "authors": [
+        "Santosh Nandi",
+        "Joseph Sarkis",
+        "Aref Hervani",
+        "Marilyn Helms"
+      ]
+    },
+    {
+      "type": "article",
       "key": "journals/imds/RyuK19",
       "title": "Understanding speculative investment behavior in the Bitcoin context from a dual-systems perspective.",
       "year": "2019",
@@ -99602,6 +103329,21 @@ var papers = {
     },
     {
       "type": "article",
+      "key": "journals/peerj-cs/AhmadAAAK21",
+      "title": "Using algorithmic trading to analyze short term profitability of Bitcoin.",
+      "year": "2021",
+      "doi": "https://doi.org/10.7717/peerj-cs.337",
+      "publisher": "PeerJ Comput. Sci.",
+      "authors": [
+        "Iftikhar Ahmad 0004",
+        "Muhammad Ovais Ahmad",
+        "Mohammed A. Alqarni",
+        "Abdulwahab Ali Almazroi",
+        "Muhammad Imran Khan Khalil"
+      ]
+    },
+    {
+      "type": "article",
       "key": "journals/peerj-cs/UrasMMT20",
       "title": "Forecasting Bitcoin closing price series using linear regression and neural networks models.",
       "year": "2020",
@@ -99629,6 +103371,34 @@ var papers = {
     },
     {
       "type": "article",
+      "key": "journals/isem/MeierBFBT21",
+      "title": "Generating design knowledge for blockchain-based access control to personal health records.",
+      "year": "2021",
+      "doi": "https://doi.org/10.1007/s10257-020-00476-2",
+      "publisher": "Inf. Syst. E Bus. Manag.",
+      "authors": [
+        "Pascal Meier",
+        "Jan Heinrich Beinke",
+        "Christian Fitte",
+        "Jan Schulte to Brinke",
+        "Frank Teuteberg"
+      ]
+    },
+    {
+      "type": "article",
+      "key": "journals/isem/SeebacherSS21",
+      "title": "Towards an understanding of technology fit and appropriation in business networks: evidence from blockchain implementations.",
+      "year": "2021",
+      "doi": "https://doi.org/10.1007/s10257-020-00485-1",
+      "publisher": "Inf. Syst. E Bus. Manag.",
+      "authors": [
+        "Stefan Seebacher",
+        "Ronny Schüritz",
+        "Gerhard Satzger"
+      ]
+    },
+    {
+      "type": "article",
       "key": "journals/isem/CiaianRK16",
       "title": "The digital agenda of virtual currencies: Can BitCoin become a global currency?",
       "year": "2016",
@@ -99649,7 +103419,7 @@ var papers = {
       "publisher": "Int. J. Hum. Comput. Stud.",
       "authors": [
         "Abdulla Alshamsi",
-        "Peter Andras"
+        "Peter Andras 0001"
       ]
     },
     {
@@ -99814,6 +103584,19 @@ var papers = {
     },
     {
       "type": "article",
+      "key": "journals/isci/LaxRF21",
+      "title": "A Blockchain-based approach for matching desired and real privacy settings of social network users.",
+      "year": "2021",
+      "doi": "https://doi.org/10.1016/j.ins.2021.01.004",
+      "publisher": "Inf. Sci.",
+      "authors": [
+        "Gianluca Lax",
+        "Antonia Russo",
+        "Lara Saidia Fascì"
+      ]
+    },
+    {
+      "type": "article",
       "key": "journals/isci/GuoDW19",
       "title": "Graph structure and statistical properties of Ethereum transaction relationships.",
       "year": "2019",
@@ -99834,9 +103617,9 @@ var papers = {
       "publisher": "Inf. Sci.",
       "authors": [
         "Xuanmei Qin",
-        "Yongfeng Huang",
+        "Yongfeng Huang 0001",
         "Zhen Yang",
-        "Xing Li"
+        "Xing Li 0001"
       ]
     },
     {
@@ -100090,6 +103873,21 @@ var papers = {
         "Kun Lv",
         "Shengjun Wei",
         "Changzhen Hu"
+      ]
+    },
+    {
+      "type": "article",
+      "key": "journals/ijics/AlimehajHDNR21",
+      "title": "Analysing and comparing the digital seal according to eIDAS regulation with and without blockchain technology.",
+      "year": "2021",
+      "doi": "https://doi.org/10.1504/IJICS.2021.113174",
+      "publisher": "Int. J. Inf. Comput. Secur.",
+      "authors": [
+        "Vlera Alimehaj",
+        "Arbnor Halili",
+        "Ramadan Dervishi",
+        "Vehbi Neziri",
+        "Blerim Rexha"
       ]
     },
     {
@@ -100390,6 +104188,18 @@ var papers = {
     },
     {
       "type": "article",
+      "key": "journals/wpc/KumarB21",
+      "title": "Blockchain Based Chameleon Hashing Technique for Privacy Preservation in E-Governance System.",
+      "year": "2021",
+      "doi": "https://doi.org/10.1007/s11277-020-07907-w",
+      "publisher": "Wirel. Pers. Commun.",
+      "authors": [
+        "M. V. Ranjith Kumar",
+        "N. Bhalaji 0001"
+      ]
+    },
+    {
+      "type": "article",
       "key": "journals/wpc/RakovicKAG19",
       "title": "Blockchain Paradigm and Internet of Things.",
       "year": "2019",
@@ -100400,6 +104210,36 @@ var papers = {
         "Jovan Karamachoski",
         "Vladimir Atanasovski",
         "Liljana Gavrilovska"
+      ]
+    },
+    {
+      "type": "article",
+      "key": "journals/wpc/PatilMB21",
+      "title": "Blockchain for IoT Access Control, Security and Privacy: A Review.",
+      "year": "2021",
+      "doi": "https://doi.org/10.1007/s11277-020-07947-2",
+      "publisher": "Wirel. Pers. Commun.",
+      "authors": [
+        "Pradnya Patil",
+        "Sangeetha Manoharan",
+        "Vidhyacharan Bhaskar"
+      ]
+    },
+    {
+      "type": "article",
+      "key": "journals/wpc/LinZYWSGW21",
+      "title": "A Secure Online Treatment Blockchain Service.",
+      "year": "2021",
+      "doi": "https://doi.org/10.1007/s11277-020-07945-4",
+      "publisher": "Wirel. Pers. Commun.",
+      "authors": [
+        "Hao Lin",
+        "Hua Zhang 0001",
+        "Hanbing Yan",
+        "Huawei Wang",
+        "Yijie Shi",
+        "Fei Gao 0001",
+        "Qiaoyan Wen"
       ]
     },
     {
@@ -100466,6 +104306,18 @@ var papers = {
     },
     {
       "type": "article",
+      "key": "journals/tele/ZhengB21",
+      "title": "Value drivers of blockchain technology: A case study of blockchain-enabled online community.",
+      "year": "2021",
+      "doi": "https://doi.org/10.1016/j.tele.2021.101563",
+      "publisher": "Telematics Informatics",
+      "authors": [
+        "Yujie Zheng",
+        "Wai Fong Boh"
+      ]
+    },
+    {
+      "type": "article",
       "key": "journals/tele/Hayes17",
       "title": "Cryptocurrency value formation: An empirical study leading to a cost of production model for valuing bitcoin.",
       "year": "2017",
@@ -100473,6 +104325,18 @@ var papers = {
       "publisher": "Telematics Informatics",
       "authors": [
         "Adam S. Hayes"
+      ]
+    },
+    {
+      "type": "article",
+      "key": "journals/tele/KarN21",
+      "title": "Diffusion of blockchain in insurance industry: An analysis through the review of academic and trade literature.",
+      "year": "2021",
+      "doi": "https://doi.org/10.1016/j.tele.2020.101532",
+      "publisher": "Telematics Informatics",
+      "authors": [
+        "Arpan Kumar Kar",
+        "L. Navin"
       ]
     },
     {
@@ -100650,6 +104514,21 @@ var papers = {
     },
     {
       "type": "article",
+      "key": "journals/compsec/DabbaghCBTS21",
+      "title": "A survey of empirical performance evaluation of permissioned blockchain platforms: Challenges and opportunities.",
+      "year": "2021",
+      "doi": "https://doi.org/10.1016/j.cose.2020.102078",
+      "publisher": "Comput. Secur.",
+      "authors": [
+        "Mohammad Dabbagh",
+        "Kim-Kwang Raymond Choo",
+        "Amin Beheshti",
+        "Mohammad Tahir",
+        "Nader Sohrabi Safa"
+      ]
+    },
+    {
+      "type": "article",
       "key": "journals/compsec/JawaheriSBE20",
       "title": "Deanonymizing Tor hidden service users through Bitcoin transactions analysis.",
       "year": "2020",
@@ -100745,6 +104624,22 @@ var papers = {
     },
     {
       "type": "article",
+      "key": "journals/compsec/AltarawnehSBHYS21",
+      "title": "Availability analysis of a permissioned blockchain with a lightweight consensus protocol.",
+      "year": "2021",
+      "doi": "https://doi.org/10.1016/j.cose.2020.102098",
+      "publisher": "Comput. Secur.",
+      "authors": [
+        "Amani Altarawneh",
+        "Fei Sun",
+        "Richard R. Brooks",
+        "Oluwakemi Hambolu",
+        "Lu Yu",
+        "Anthony Skjellum"
+      ]
+    },
+    {
+      "type": "article",
       "key": "journals/compsec/YuLNYR19",
       "title": "Proof-of-QoS: QoS based blockchain consensus protocol.",
       "year": "2019",
@@ -100756,6 +104651,37 @@ var papers = {
         "Surya Nepal",
         "Jiangshan Yu",
         "Paul Rimba"
+      ]
+    },
+    {
+      "type": "article",
+      "key": "journals/compsec/ZulfiqarTJMQQSH21",
+      "title": "EthReview: An Ethereum-based Product Review System for Mitigating Rating Frauds.",
+      "year": "2021",
+      "doi": "https://doi.org/10.1016/j.cose.2020.102094",
+      "publisher": "Comput. Secur.",
+      "authors": [
+        "Maryam Zulfiqar",
+        "Filza Tariq",
+        "Muhammad Umar Janjua",
+        "Adnan Noor Mian",
+        "Adnan Qayyum",
+        "Junaid Qadir 0001",
+        "Falak Sher",
+        "Muhammad Hassan"
+      ]
+    },
+    {
+      "type": "article",
+      "key": "journals/compsec/LiLJ21",
+      "title": "SecTEP: Enabling secure tender evaluation with sealed prices and quality evaluation in procurement bidding systems over blockchain.",
+      "year": "2021",
+      "doi": "https://doi.org/10.1016/j.cose.2021.102188",
+      "publisher": "Comput. Secur.",
+      "authors": [
+        "Li Li",
+        "Jiayong Liu",
+        "Peng Jia"
       ]
     },
     {
@@ -100772,6 +104698,21 @@ var papers = {
         "Shubhani Aggarwal",
         "Neeraj Kumar 0001",
         "Kim-Kwang Raymond Choo"
+      ]
+    },
+    {
+      "type": "article",
+      "key": "journals/compsec/LiYWSL21",
+      "title": "A lightweight privacy-preserving and sharing scheme with dual-blockchain for intelligent pricing system of smart grid.",
+      "year": "2021",
+      "doi": "https://doi.org/10.1016/j.cose.2021.102189",
+      "publisher": "Comput. Secur.",
+      "authors": [
+        "Kunchang Li",
+        "Yifan Yang",
+        "Shuhao Wang",
+        "Runhua Shi",
+        "Jianbin Li"
       ]
     },
     {
@@ -100926,6 +104867,19 @@ var papers = {
     },
     {
       "type": "article",
+      "key": "journals/compsec/SarfarazCE21",
+      "title": "A tree structure-based improved blockchain framework for a secure online bidding system.",
+      "year": "2021",
+      "doi": "https://doi.org/10.1016/j.cose.2020.102147",
+      "publisher": "Comput. Secur.",
+      "authors": [
+        "Aaliya Sarfaraz",
+        "Ripon K. Chakrabortty",
+        "Daryl Essam"
+      ]
+    },
+    {
+      "type": "article",
       "key": "journals/compsec/ZhengWXGQG20",
       "title": "An organization-friendly blockchain system.",
       "year": "2020",
@@ -100938,6 +104892,20 @@ var papers = {
         "Zhenyu Guan",
         "Bo Qin",
         "Zhiqiang Gu"
+      ]
+    },
+    {
+      "type": "article",
+      "key": "journals/compsec/AdjaHSZ21",
+      "title": "A blockchain-based certificate revocation management and status verification system.",
+      "year": "2021",
+      "doi": "https://doi.org/10.1016/j.cose.2021.102209",
+      "publisher": "Comput. Secur.",
+      "authors": [
+        "Yves Christian Elloh Adja",
+        "Badis Hammi",
+        "Ahmed Serhrouchni",
+        "Sherali Zeadally"
       ]
     },
     {
@@ -101027,6 +104995,19 @@ var papers = {
     },
     {
       "type": "article",
+      "key": "journals/compsec/KhanAK21",
+      "title": "Empirical analysis of transaction malleability within blockchain-based e-Voting.",
+      "year": "2021",
+      "doi": "https://doi.org/10.1016/j.cose.2020.102081",
+      "publisher": "Comput. Secur.",
+      "authors": [
+        "Kashif Mehboob Khan",
+        "Junaid Arshad",
+        "Muhammad Mubashir Khan"
+      ]
+    },
+    {
+      "type": "article",
       "key": "journals/sigmobile/PerreyUW11",
       "title": "WiSec' 2011 poster: security enhancement for bluetooth low energy with Merkle's puzzle.",
       "year": "2011",
@@ -101099,6 +105080,20 @@ var papers = {
     },
     {
       "type": "article",
+      "key": "journals/cybersecurity/ParkSNR21",
+      "title": "Going from bad to worse: from Internet voting to blockchain voting.",
+      "year": "2021",
+      "doi": "https://doi.org/10.1093/cybsec/tyaa025",
+      "publisher": "J. Cybersecur.",
+      "authors": [
+        "Sunoo Park",
+        "Michael A. Specter",
+        "Neha Narula",
+        "Ronald L. Rivest"
+      ]
+    },
+    {
+      "type": "article",
       "key": "journals/cybersecurity/Paquet-Clouston19",
       "title": "Ransomware payments in the Bitcoin ecosystem.",
       "year": "2019",
@@ -101120,6 +105115,17 @@ var papers = {
       "authors": [
         "Malte Möser",
         "Rainer Böhme"
+      ]
+    },
+    {
+      "type": "article",
+      "key": "journals/cybersecurity/Karasek-Wojciechowicz21",
+      "title": "Reconciliation of anti-money laundering instruments and European data protection requirements in permissionless blockchain spaces.",
+      "year": "2021",
+      "doi": "https://doi.org/10.1093/cybsec/tyab004",
+      "publisher": "J. Cybersecur.",
+      "authors": [
+        "Iwona Karasek-Wojciechowicz"
       ]
     },
     {
@@ -101351,7 +105357,7 @@ var papers = {
         "Jianbin Gao",
         "Hu Xia",
         "Xiaojiang Du",
-        "Moshen Guizani"
+        "Mohsen Guizani"
       ]
     },
     {
@@ -101368,6 +105374,21 @@ var papers = {
         "Moayad Aloqaily",
         "Naveen Jaglan",
         "Rajiv Kumar 0001"
+      ]
+    },
+    {
+      "type": "article",
+      "key": "journals/sensors/FerreiraGOSC21",
+      "title": "IoT Registration and Authentication in Smart City Applications with Blockchain.",
+      "year": "2021",
+      "doi": "https://doi.org/10.3390/s21041323",
+      "publisher": "Sensors",
+      "authors": [
+        "Célio Marcio Soares Ferreira",
+        "Charles Tim Batista Garrocho",
+        "Ricardo Augusto Rabelo Oliveira",
+        "Jorge Sá Silva",
+        "Carlos Frederico Marcelo da Cunha Cavalcanti"
       ]
     },
     {
@@ -101890,6 +105911,20 @@ var papers = {
     },
     {
       "type": "article",
+      "key": "journals/sensors/ZhouFWG21",
+      "title": "Using Secure Multi-Party Computation to Protect Privacy on a Permissioned Blockchain.",
+      "year": "2021",
+      "doi": "https://doi.org/10.3390/s21041540",
+      "publisher": "Sensors",
+      "authors": [
+        "Jiapeng Zhou",
+        "Yuxiang Feng",
+        "Zhenyu Wang",
+        "Danyi Guo"
+      ]
+    },
+    {
+      "type": "article",
       "key": "journals/sensors/KoptyraO21",
       "title": "Imagechain - Application of Blockchain Technology for Images.",
       "year": "2021",
@@ -102343,6 +106378,18 @@ var papers = {
     },
     {
       "type": "article",
+      "key": "journals/sensors/ShahbaziB21",
+      "title": "Integration of Blockchain, IoT and Machine Learning for Multistage Quality Control and Enhancing Security in Smart Manufacturing.",
+      "year": "2021",
+      "doi": "https://doi.org/10.3390/s21041467",
+      "publisher": "Sensors",
+      "authors": [
+        "Zeinab Shahbazi",
+        "Yung-Cheol Byun"
+      ]
+    },
+    {
+      "type": "article",
       "key": "journals/sensors/FigorilliACPRCP18",
       "title": "A Blockchain Implementation Prototype for the Electronic Open Source Traceability of Wood along the Whole Supply Chain.",
       "year": "2018",
@@ -102418,6 +106465,22 @@ var papers = {
       "authors": [
         "Xiaoyang Zhu",
         "Youakim Badr"
+      ]
+    },
+    {
+      "type": "article",
+      "key": "journals/sensors/AkhterASAKZ21",
+      "title": "A Blockchain-Based Authentication Protocol for Cooperative Vehicular Ad Hoc Network.",
+      "year": "2021",
+      "doi": "https://doi.org/10.3390/s21041273",
+      "publisher": "Sensors",
+      "authors": [
+        "A. F. M. Suaib Akhter",
+        "Mohiuddin Ahmed",
+        "A. F. M. Shahen Shah",
+        "Adnan Anwar",
+        "A. S. M. Kayes",
+        "Ahmet Zengin"
       ]
     },
     {
@@ -102721,6 +106784,21 @@ var papers = {
         "Tejaswi Khanna",
         "Parma Nand",
         "Vikram Bali"
+      ]
+    },
+    {
+      "type": "article",
+      "key": "journals/ijpe/GuoyangYGWH20",
+      "title": "Blockchain for Collaborative Creation System.",
+      "year": "2020",
+      "doi": "https://doi.org/10.23940/ijpe.20.10.p12.16081616",
+      "publisher": "Int. J. Perform. Eng.",
+      "authors": [
+        "Pan Guoyang",
+        "Yi Yang 0019",
+        "Li Guoqing",
+        "Jian Wang 0029",
+        "Weixing Huang"
       ]
     },
     {
@@ -103055,7 +107133,7 @@ var papers = {
         "Meng Shen",
         "Feng Gao",
         "Chuan Zhang 0003",
-        "Yan-Dong Li",
+        "Yandong Li",
         "Jing Yang"
       ]
     },
@@ -103292,6 +107370,20 @@ var papers = {
     },
     {
       "type": "article",
+      "key": "journals/computing/YakubuKJK21",
+      "title": "Blockchain-based secure multi-resource trading model for smart marketplace.",
+      "year": "2021",
+      "doi": "https://doi.org/10.1007/s00607-020-00886-7",
+      "publisher": "Computing",
+      "authors": [
+        "Bello Musa Yakubu",
+        "Majid I. Khan",
+        "Nadeem Javaid",
+        "Abid Khan"
+      ]
+    },
+    {
+      "type": "article",
       "key": "journals/computing/SahayGM20",
       "title": "A novel blockchain based framework to secure IoT-LLNs against routing attacks.",
       "year": "2020",
@@ -103416,6 +107508,33 @@ var papers = {
     },
     {
       "type": "article",
+      "key": "journals/sj/RayDSK21",
+      "title": "Blockchain for IoT-Based Healthcare: Background, Consensus, Platforms, and Use Cases.",
+      "year": "2021",
+      "doi": "https://doi.org/10.1109/JSYST.2020.2963840",
+      "publisher": "IEEE Syst. J.",
+      "authors": [
+        "Partha Pratim Ray",
+        "Dinesh Dash",
+        "Khaled Salah",
+        "Neeraj Kumar 0001"
+      ]
+    },
+    {
+      "type": "article",
+      "key": "journals/sj/RayKD21",
+      "title": "BLWN: Blockchain-Based Lightweight Simplified Payment Verification in IoT-Assisted e-Healthcare.",
+      "year": "2021",
+      "doi": "https://doi.org/10.1109/JSYST.2020.2968614",
+      "publisher": "IEEE Syst. J.",
+      "authors": [
+        "Partha Pratim Ray",
+        "Neeraj Kumar 0001",
+        "Dinesh Dash"
+      ]
+    },
+    {
+      "type": "article",
       "key": "journals/sj/LiXJHLCMM20",
       "title": "ChainSDI: A Software-Defined Infrastructure for Regulation-Compliant Home-Based Healthcare Services Secured by Blockchains.",
       "year": "2020",
@@ -103430,6 +107549,19 @@ var papers = {
         "Yu Cao 0002",
         "Jomol Mathew",
         "Yunsheng Ma"
+      ]
+    },
+    {
+      "type": "article",
+      "key": "journals/sj/KhaniFE21",
+      "title": "Operational and Economic Feasibility Area Estimation for Peer-to-Peer Consortium of Storage Systems in a Blockchain Framework.",
+      "year": "2021",
+      "doi": "https://doi.org/10.1109/JSYST.2020.3011064",
+      "publisher": "IEEE Syst. J.",
+      "authors": [
+        "Hadi Khani",
+        "Hany E. Z. Farag",
+        "Ehab F. El-Saadany"
       ]
     },
     {
@@ -103929,6 +108061,20 @@ var papers = {
     },
     {
       "type": "article",
+      "key": "journals/bpmj/MilaniGFM21",
+      "title": "Modelling blockchain-based business processes: a comparative analysis of BPMN vs CMMN.",
+      "year": "2021",
+      "doi": "https://doi.org/10.1108/BPMJ-06-2020-0263",
+      "publisher": "Bus. Process. Manag. J.",
+      "authors": [
+        "Fredrik Milani",
+        "Luciano García-Bañuelos",
+        "Svitlana Filipova",
+        "Mariia Markovska"
+      ]
+    },
+    {
+      "type": "article",
       "key": "journals/bpmj/DhagarraGSC19",
       "title": "Big Data and blockchain supported conceptual model for enhanced healthcare coverage.",
       "year": "2019",
@@ -104063,6 +108209,18 @@ var papers = {
     },
     {
       "type": "article",
+      "key": "journals/cejcs/PhilipS20",
+      "title": "Secure Incident &amp; Evidence Management Framework (SIEMF) for Internet of Vehicles using Deep Learning and Blockchain.",
+      "year": "2020",
+      "doi": "https://doi.org/10.1515/comp-2019-0022",
+      "publisher": "Open Comput. Sci.",
+      "authors": [
+        "A. Oommen Philip",
+        "R. K. K. Saravanaguru"
+      ]
+    },
+    {
+      "type": "article",
       "key": "journals/cejcs/OnikKLY19",
       "title": "Privacy-aware blockchain for personal data sharing and tracking.",
       "year": "2019",
@@ -104073,6 +108231,20 @@ var papers = {
         "Chul-Soo Kim",
         "Nam-Yong Lee",
         "Jinhong Yang"
+      ]
+    },
+    {
+      "type": "article",
+      "key": "journals/cejcs/SinghBCK20",
+      "title": "Machine Learning approaches for convergence of IoT and Blockchain.",
+      "year": "2020",
+      "doi": "https://doi.org/10.1515/comp-2020-0207",
+      "publisher": "Open Comput. Sci.",
+      "authors": [
+        "Krishna Kant Singh",
+        "B. Balamurugan",
+        "Naveen K. Chilamkurti",
+        "Bharat S. Rawal Kshatriya"
       ]
     },
     {
@@ -104425,6 +108597,19 @@ var papers = {
     },
     {
       "type": "article",
+      "key": "journals/fi/DuWL21",
+      "title": "Blockchain-Enabled Edge Intelligence for IoT: Background, Emerging Trends and Open Issues.",
+      "year": "2021",
+      "doi": "https://doi.org/10.3390/fi13020048",
+      "publisher": "Future Internet",
+      "authors": [
+        "Yao Du",
+        "Zehua Wang",
+        "Victor C. M. Leung"
+      ]
+    },
+    {
+      "type": "article",
       "key": "journals/fi/ODonovanO19",
       "title": "A Systematic Analysis of Real-World Energy Blockchain Initiatives.",
       "year": "2019",
@@ -104679,6 +108864,36 @@ var papers = {
         "Yi-Cheng Chen",
         "Yueh-Peng Chou",
         "Yung-Chen Chou"
+      ]
+    },
+    {
+      "type": "article",
+      "key": "journals/fi/BourasLDN21",
+      "title": "A Lightweight Blockchain-Based IoT Identity Management Approach.",
+      "year": "2021",
+      "doi": "https://doi.org/10.3390/fi13020024",
+      "publisher": "Future Internet",
+      "authors": [
+        "Mohammed Amine Bouras",
+        "Qinghua Lu 0001",
+        "Sahraoui Dhelim",
+        "Huansheng Ning"
+      ]
+    },
+    {
+      "type": "article",
+      "key": "journals/fi/YangHGHLH21",
+      "title": "An Accelerating Approach for Blockchain Information Transmission Based on NDN.",
+      "year": "2021",
+      "doi": "https://doi.org/10.3390/fi13020047",
+      "publisher": "Future Internet",
+      "authors": [
+        "Zhi-Peng Yang",
+        "Lu Hua",
+        "Ningjie Gao",
+        "Ru Huo",
+        "Jiang Liu 0010",
+        "Tao Huang 0005"
       ]
     },
     {
@@ -105593,6 +109808,18 @@ var papers = {
     },
     {
       "type": "article",
+      "key": "journals/tccn/AsheralievaN21",
+      "title": "Bayesian Reinforcement Learning and Bayesian Deep Learning for Blockchains With Mobile Edge Computing.",
+      "year": "2021",
+      "doi": "https://doi.org/10.1109/TCCN.2020.2994366",
+      "publisher": "IEEE Trans. Cogn. Commun. Netw.",
+      "authors": [
+        "Alia Asheralieva",
+        "Dusit Niyato"
+      ]
+    },
+    {
+      "type": "article",
       "key": "journals/tccn/WeissWSB19",
       "title": "On the Application of Blockchains to Spectrum Management.",
       "year": "2019",
@@ -105657,6 +109884,20 @@ var papers = {
         "Adam Brian Turner",
         "Stephen McCombie",
         "Allon J. Uhlmann"
+      ]
+    },
+    {
+      "type": "article",
+      "key": "journals/fcomp/AlkhalifahNWK21",
+      "title": "A Mechanism to Detect and Prevent Ethereum Blockchain Smart Contract Reentrancy Attacks.",
+      "year": "2021",
+      "doi": "https://doi.org/10.3389/fcomp.2021.598780",
+      "publisher": "Frontiers Comput. Sci.",
+      "authors": [
+        "Ayman Alkhalifah",
+        "Alex Ng",
+        "Paul A. Watters",
+        "A. S. M. Kayes"
       ]
     },
     {
@@ -106503,7 +110744,7 @@ var papers = {
       "publisher": "Inf. Polity",
       "authors": [
         "Olivier Rikken",
-        "Marijn Janssen",
+        "Marijn Janssen 0001",
         "Zenlin Kwee"
       ]
     },
@@ -106560,7 +110801,7 @@ var papers = {
       "publisher": "Inf. Polity",
       "authors": [
         "D. Allessie",
-        "Marijn Janssen",
+        "Marijn Janssen 0001",
         "Jolien Ubacht",
         "Scott W. Cunningham",
         "G. van der Harst"
@@ -106687,7 +110928,7 @@ var papers = {
       "doi": "https://doi.org/10.1016/j.ijinfomgt.2019.08.012",
       "publisher": "Int. J. Inf. Manag.",
       "authors": [
-        "Marijn Janssen",
+        "Marijn Janssen 0001",
         "Vishanth Weerakkody",
         "Elvira Ismagilova",
         "Uthayasankar Sivarajah",
@@ -107726,7 +111967,7 @@ var papers = {
       "authors": [
         "Kexin Hu",
         "Zhenfeng Zhang",
-        "Kaiven Guo"
+        "Kaiwen Guo"
       ]
     },
     {
@@ -108642,6 +112883,19 @@ var papers = {
       "authors": [
         "Somnath Panja",
         "Bimal Kumar Roy"
+      ]
+    },
+    {
+      "type": "article",
+      "key": "journals/iacr/LohrSJS21",
+      "title": "Cost Fairness for Blockchain-Based Two-Party Exchange Protocols.",
+      "year": "2021",
+      "publisher": "IACR Cryptol. ePrint Arch.",
+      "authors": [
+        "Matthias Lohr",
+        "Benjamin Schlosser",
+        "Jan Jürjens",
+        "Steffen Staab"
       ]
     },
     {
@@ -110074,6 +114328,17 @@ var papers = {
     },
     {
       "type": "article",
+      "key": "journals/iacr/GarayS21",
+      "title": "The Bitcoin Cash Backbone Protocol.",
+      "year": "2021",
+      "publisher": "IACR Cryptol. ePrint Arch.",
+      "authors": [
+        "Juan A. Garay",
+        "Yu Shen"
+      ]
+    },
+    {
+      "type": "article",
       "key": "journals/iacr/NaitoYWO09a",
       "title": "Security of Practical Cryptosystems Using Merkle-Damgard Hash Function in the Ideal Cipher Model.",
       "year": "2009",
@@ -111099,6 +115364,19 @@ var papers = {
     },
     {
       "type": "article",
+      "key": "journals/iacr/MirzaeiSYS21",
+      "title": "FPPW: A Fair and Privacy Preserving Watchtower For Bitcoin.",
+      "year": "2021",
+      "publisher": "IACR Cryptol. ePrint Arch.",
+      "authors": [
+        "Arash Mirzaei",
+        "Amin Sakzad",
+        "Jiangshan Yu",
+        "Ron Steinfeld"
+      ]
+    },
+    {
+      "type": "article",
       "key": "journals/iacr/RonS12",
       "title": "Quantitative Analysis of the Full Bitcoin Transaction Graph.",
       "year": "2012",
@@ -111882,6 +116160,17 @@ var papers = {
     },
     {
       "type": "article",
+      "key": "journals/corr/abs-2103-03866",
+      "title": "Towards Automated Benchmark Support for Multi-Blockchain Interoperability-Facilitating Platforms.",
+      "year": "2021",
+      "publisher": "CoRR",
+      "authors": [
+        "Mostafa Kazemi",
+        "Abbas Yazdinejad"
+      ]
+    },
+    {
+      "type": "article",
       "key": "journals/corr/abs-2005-11556",
       "title": "A traceability and auditing framework for electronic equipment reverse logistics based on blockchain: the case of mobile phones.",
       "year": "2020",
@@ -112622,6 +116911,16 @@ var papers = {
         "Zijian Bao",
         "Bin Wang",
         "Wenbo Shi"
+      ]
+    },
+    {
+      "type": "article",
+      "key": "journals/corr/abs-2103-00395",
+      "title": "Scale matters: The daily, weekly and monthly volatility and predictability of Bitcoin, Gold, and the S&amp;P 500.",
+      "year": "2021",
+      "publisher": "CoRR",
+      "authors": [
+        "Nassim Dehouche"
       ]
     },
     {
@@ -113848,6 +118147,22 @@ var papers = {
     },
     {
       "type": "article",
+      "key": "journals/corr/abs-2103-08361",
+      "title": "BLOWN: A Blockchain Protocol for Wireless Networks under Adversarial SINR.",
+      "year": "2021",
+      "publisher": "CoRR",
+      "authors": [
+        "Minghui Xu 0001",
+        "Feng Zhao",
+        "Jiguo Yu",
+        "Yifei Zou",
+        "Chun-Chi Liu",
+        "Xiuzhen Cheng",
+        "Falko Dressler"
+      ]
+    },
+    {
+      "type": "article",
       "key": "journals/corr/KiktenkoPATYKLF17",
       "title": "Quantum-secured blockchain.",
       "year": "2017",
@@ -114110,6 +118425,19 @@ var papers = {
     },
     {
       "type": "article",
+      "key": "journals/corr/abs-2103-05406",
+      "title": "Blockchains' federation for integrating distributed health data using a patient-centered approach.",
+      "year": "2021",
+      "publisher": "CoRR",
+      "authors": [
+        "Javier Rojo 0004",
+        "Juan Hernández 0001",
+        "Juan Manuel Murillo",
+        "José García-Alonso"
+      ]
+    },
+    {
+      "type": "article",
       "key": "journals/corr/abs-2006-14358",
       "title": "An empirical study of availability and reliability properties of the Bitcoin Lightning Network.",
       "year": "2020",
@@ -114283,6 +118611,16 @@ var papers = {
     },
     {
       "type": "article",
+      "key": "journals/corr/abs-2102-12796",
+      "title": "libtxsize - a library for automated Bitcoin transaction-size estimates.",
+      "year": "2021",
+      "publisher": "CoRR",
+      "authors": [
+        "Johannes Hofmann 0001"
+      ]
+    },
+    {
+      "type": "article",
       "key": "journals/corr/abs-1811-03417",
       "title": "Automated Remote Patient Monitoring: Data Sharing and Privacy Using Blockchain.",
       "year": "2018",
@@ -114387,7 +118725,7 @@ var papers = {
       "authors": [
         "Rafael Belchior",
         "André Vasconcelos",
-        "Sérgio Guerreiro",
+        "Sérgio Guerreiro 0001",
         "Miguel Correia 0001"
       ]
     },
@@ -114514,6 +118852,16 @@ var papers = {
         "Eduardo Oliveira 0003",
         "Maria Barbosa",
         "Kelvin Dias"
+      ]
+    },
+    {
+      "type": "article",
+      "key": "journals/corr/abs-2103-08304",
+      "title": "Scaling a Blockchain-based Railway Control System Prototype for Mainline Railways: a Progress Report.",
+      "year": "2021",
+      "publisher": "CoRR",
+      "authors": [
+        "Michael Kuperberg"
       ]
     },
     {
@@ -114956,7 +119304,7 @@ var papers = {
       "authors": [
         "Sam M. Werner",
         "Paul J. Pritz",
-        "Daniel Pérez 0002"
+        "Daniel Perez 0001"
       ]
     },
     {
@@ -115442,6 +119790,19 @@ var papers = {
     },
     {
       "type": "article",
+      "key": "journals/corr/abs-2102-12058",
+      "title": "A Survey on Consortium Blockchain Consensus Mechanisms.",
+      "year": "2021",
+      "publisher": "CoRR",
+      "authors": [
+        "Wei Yao",
+        "Junyi Ye",
+        "Renita Murimi",
+        "Guiling Wang"
+      ]
+    },
+    {
+      "type": "article",
       "key": "journals/corr/abs-1912-06812",
       "title": "Cerberus: A Blockchain-Based Accreditation and Degree Verification System.",
       "year": "2019",
@@ -115872,6 +120233,18 @@ var papers = {
     },
     {
       "type": "article",
+      "key": "journals/corr/abs-2103-10519",
+      "title": "An Auditability, Transparent, and Privacy-Preserving for Supply Chain Traceability Based on Blockchain.",
+      "year": "2021",
+      "publisher": "CoRR",
+      "authors": [
+        "Bora Bugra Sezer",
+        "Selçuk Topal",
+        "Urfat Nuriyev"
+      ]
+    },
+    {
+      "type": "article",
       "key": "journals/corr/abs-2005-06227",
       "title": "eThor: Practical and Provably Sound Static Analysis of Ethereum Smart Contracts.",
       "year": "2020",
@@ -115894,6 +120267,17 @@ var papers = {
         "Sebastien Blandin",
         "Laura Wynter",
         "Pralhad Deshpande"
+      ]
+    },
+    {
+      "type": "article",
+      "key": "journals/corr/abs-2103-06046",
+      "title": "Exploring Blockchain for The Coordination of Distributed Energy Resources.",
+      "year": "2021",
+      "publisher": "CoRR",
+      "authors": [
+        "Qing Yang",
+        "Hao Wang 0016"
       ]
     },
     {
@@ -116619,6 +121003,20 @@ var papers = {
     },
     {
       "type": "article",
+      "key": "journals/corr/abs-2102-12064",
+      "title": "The rich still get richer: Empirical comparison of preferential attachment via linking statistics in Bitcoin and Ethereum.",
+      "year": "2021",
+      "publisher": "CoRR",
+      "authors": [
+        "Dániel Kondor",
+        "Nikola Bulatovic",
+        "József Stéger",
+        "István Csabai",
+        "Gábor Vattay"
+      ]
+    },
+    {
+      "type": "article",
       "key": "journals/corr/abs-1804-00875",
       "title": "Blockchain-based TLS Notary Service.",
       "year": "2018",
@@ -116832,6 +121230,17 @@ var papers = {
     },
     {
       "type": "article",
+      "key": "journals/corr/abs-2103-04234",
+      "title": "Bottlenecks in Blockchain Consensus Protocols.",
+      "year": "2021",
+      "publisher": "CoRR",
+      "authors": [
+        "Salem Alqahtani",
+        "Murat Demirbas"
+      ]
+    },
+    {
+      "type": "article",
       "key": "journals/corr/abs-1903-03954",
       "title": "Permissionless Blockchains and Secure Logging.",
       "year": "2019",
@@ -116840,6 +121249,18 @@ var papers = {
         "Chunpeng Ge",
         "Siwei Sun",
         "Pawel Szalachowski"
+      ]
+    },
+    {
+      "type": "article",
+      "key": "journals/corr/abs-2103-10756",
+      "title": "On-Chain IoT Data Modification in Blockchains.",
+      "year": "2021",
+      "publisher": "CoRR",
+      "authors": [
+        "Sina Rafati Niya",
+        "Julius Willems",
+        "Burkhard Stiller"
       ]
     },
     {
@@ -117641,6 +122062,19 @@ var papers = {
     },
     {
       "type": "article",
+      "key": "journals/corr/abs-2103-08436",
+      "title": "Formal Modelling and Security Analysis of Bitcoin's Payment Protocol.",
+      "year": "2021",
+      "publisher": "CoRR",
+      "authors": [
+        "Paolo Modesti",
+        "Siamak F. Shahandashti",
+        "Patrick McCorry",
+        "Feng Hao"
+      ]
+    },
+    {
+      "type": "article",
       "key": "journals/corr/SapirshteinSZ15",
       "title": "Optimal Selfish Mining Strategies in Bitcoin.",
       "year": "2015",
@@ -117731,7 +122165,7 @@ var papers = {
       "year": "2020",
       "publisher": "CoRR",
       "authors": [
-        "Jun Li",
+        "Jun Li 0004",
         "Yumeng Shao",
         "Ming Ding 0001",
         "Chuan Ma",
@@ -117959,6 +122393,18 @@ var papers = {
         "Noor Fairoza",
         "Issa Sylla",
         "Amar Das"
+      ]
+    },
+    {
+      "type": "article",
+      "key": "journals/corr/abs-2103-01116",
+      "title": "Blockchain-Based Federated Learning in Mobile Edge Networks with Application in Internet of Vehicles.",
+      "year": "2021",
+      "publisher": "CoRR",
+      "authors": [
+        "Rui Wang 0001",
+        "Heju Li",
+        "Erwu Liu"
       ]
     },
     {
@@ -118538,6 +122984,20 @@ var papers = {
     },
     {
       "type": "article",
+      "key": "journals/corr/abs-2103-09459",
+      "title": "A Novel Framework for the Analysis of Unknown Transactions in Bitcoin: Theory, Model, and Experimental Results.",
+      "year": "2021",
+      "publisher": "CoRR",
+      "authors": [
+        "Maurantonio Caprolu",
+        "Matteo Pontecorvi",
+        "Matteo Signorini",
+        "Carlos Segarra",
+        "Roberto Di Pietro"
+      ]
+    },
+    {
+      "type": "article",
       "key": "journals/corr/abs-1909-11013",
       "title": "Towards the Uses of Blockchain in Mobile Health Services and Applications: A Survey.",
       "year": "2019",
@@ -118618,6 +123078,17 @@ var papers = {
         "Matt Barlin",
         "Danil Kabanov",
         "Eden Dhaliwal"
+      ]
+    },
+    {
+      "type": "article",
+      "key": "journals/corr/abs-2103-10074",
+      "title": "Blockchain Testing: Challenges, Techniques, and Research Directions.",
+      "year": "2021",
+      "publisher": "CoRR",
+      "authors": [
+        "Chhagan Lal",
+        "Dusica Marijan"
       ]
     },
     {
@@ -118814,6 +123285,18 @@ var papers = {
     },
     {
       "type": "article",
+      "key": "journals/corr/abs-2103-00173",
+      "title": "Deciphering Bitcoin Blockchain Data by Cohort Analysis.",
+      "year": "2021",
+      "publisher": "CoRR",
+      "authors": [
+        "Yulin Liu",
+        "Luyao Zhang",
+        "Yinhong Zhao"
+      ]
+    },
+    {
+      "type": "article",
       "key": "journals/corr/abs-1805-05004",
       "title": "Double-Spending Risk Quantification in Private, Consortium and Public Ethereum Blockchains.",
       "year": "2018",
@@ -118822,6 +123305,16 @@ var papers = {
         "Parinya Ekparinya",
         "Vincent Gramoli",
         "Guillaume Jourjon"
+      ]
+    },
+    {
+      "type": "article",
+      "key": "journals/corr/abs-2102-12746",
+      "title": "Blockchained Federated Learning for Threat Defense.",
+      "year": "2021",
+      "publisher": "CoRR",
+      "authors": [
+        "Konstantinos Demertzis"
       ]
     },
     {
@@ -119005,6 +123498,18 @@ var papers = {
         "Antonella Del Pozzo",
         "Maria Potop-Butucaru",
         "Sara Tucci Piergiovanni"
+      ]
+    },
+    {
+      "type": "article",
+      "key": "journals/corr/abs-2103-07315",
+      "title": "Automatic Generation of Blockchain Agri-food Traceability Systems.",
+      "year": "2021",
+      "publisher": "CoRR",
+      "authors": [
+        "Lodovica Marchesi",
+        "Katiuscia Mannaro",
+        "Raffaele Porcu"
       ]
     },
     {
@@ -119485,7 +123990,7 @@ var papers = {
       "authors": [
         "Rachit Agarwal 0004",
         "Shikhar Barve",
-        "Sandeep Kuman Shukla"
+        "Sandeep Kumar Shukla"
       ]
     },
     {
@@ -119625,6 +124130,20 @@ var papers = {
     },
     {
       "type": "article",
+      "key": "journals/corr/abs-2103-05866",
+      "title": "A Social Welfare Maximization Mechanism for Blockchain Storage.",
+      "year": "2021",
+      "publisher": "CoRR",
+      "authors": [
+        "Yunshu Liu",
+        "Zhixuan Fang",
+        "Man Hon Cheung",
+        "Wei Cai",
+        "Jianwei Huang"
+      ]
+    },
+    {
+      "type": "article",
       "key": "journals/corr/abs-1901-09942",
       "title": "On transaction parallelizability in Ethereum.",
       "year": "2019",
@@ -119736,6 +124255,18 @@ var papers = {
         "Sergii Kushch",
         "Silvio Ranise",
         "Giada Sciarretta"
+      ]
+    },
+    {
+      "type": "article",
+      "key": "journals/corr/abs-2103-02139",
+      "title": "Energy and Cost Efficient Resource Allocation for Blockchain-Enabled NFV.",
+      "year": "2021",
+      "publisher": "CoRR",
+      "authors": [
+        "Shiva Kazemi Taskou",
+        "Mehdi Rasti",
+        "Pedro H. J. Nardelli"
       ]
     },
     {
@@ -120742,6 +125273,19 @@ var papers = {
     },
     {
       "type": "article",
+      "key": "journals/corr/abs-2103-02606",
+      "title": "Blockchain in Cyberdefence: A Technology Review from a Swiss Perspective.",
+      "year": "2021",
+      "publisher": "CoRR",
+      "authors": [
+        "Luca Gambazzi",
+        "Patrick Schaller",
+        "Alain Mermoud",
+        "Vincent Lenders"
+      ]
+    },
+    {
+      "type": "article",
       "key": "journals/corr/abs-1801-02672",
       "title": "Violable Contracts and Governance for Blockchain Applications.",
       "year": "2018",
@@ -120993,7 +125537,7 @@ var papers = {
       "year": "2020",
       "publisher": "CoRR",
       "authors": [
-        "Daniel Pérez 0002",
+        "Daniel Perez 0001",
         "Jiahua Xu",
         "Benjamin Livshits"
       ]
@@ -121192,6 +125736,19 @@ var papers = {
     },
     {
       "type": "article",
+      "key": "journals/corr/abs-2103-08908",
+      "title": "Blockchain-assisted Undisclosed IIoT Vulnerabilities Trusted Sharing Protection with Dynamic Token.",
+      "year": "2021",
+      "publisher": "CoRR",
+      "authors": [
+        "Jingyu Feng",
+        "Yifei Shi",
+        "Neal N. Xiong",
+        "Feng Xiao"
+      ]
+    },
+    {
+      "type": "article",
       "key": "journals/corr/abs-1805-07047",
       "title": "Blockchain Cohomology.",
       "year": "2018",
@@ -121208,7 +125765,7 @@ var papers = {
       "publisher": "CoRR",
       "authors": [
         "Chuan Ma",
-        "Jun Li",
+        "Jun Li 0004",
         "Ming Ding 0001",
         "Long Shi",
         "Taotao Wang",
@@ -121577,6 +126134,23 @@ var papers = {
         "Thuat Do",
         "Thao Nguyen",
         "Hung Pham"
+      ]
+    },
+    {
+      "type": "article",
+      "key": "journals/corr/abs-2103-02260",
+      "title": "Talaria: A Framework for Simulation of Permissioned Blockchains for Logistics and Beyond.",
+      "year": "2021",
+      "publisher": "CoRR",
+      "authors": [
+        "Jiali Xing",
+        "David Fischer",
+        "Nitya Labh",
+        "Ryan Piersma",
+        "Benjamin C. Lee",
+        "Yu Amy Xia",
+        "Tuhin Sahai",
+        "Vahid Tarokh"
       ]
     },
     {
@@ -122278,6 +126852,21 @@ var papers = {
     },
     {
       "type": "article",
+      "key": "journals/corr/abs-2103-11585",
+      "title": "Blockchain-based Digital Twins: Research Trends, Issues, and Future Challenges.",
+      "year": "2021",
+      "publisher": "CoRR",
+      "authors": [
+        "Sabah Suhail",
+        "Rasheed Hussain",
+        "Raja Jurdak",
+        "Alma Oracevic",
+        "Khaled Salah",
+        "Choong Seon Hong"
+      ]
+    },
+    {
+      "type": "article",
       "key": "journals/corr/abs-1907-04156",
       "title": "Private key encryption and recovery in blockchain.",
       "year": "2019",
@@ -122449,6 +127038,18 @@ var papers = {
         "Misha Abraham",
         "Himajit Aithal",
         "Krishnan Mohan"
+      ]
+    },
+    {
+      "type": "article",
+      "key": "journals/corr/abs-2103-11765",
+      "title": "A General and Configurable Framework for Blockchain-based Marketplaces.",
+      "year": "2021",
+      "publisher": "CoRR",
+      "authors": [
+        "Andrea Merlina",
+        "Roman Vitenberg",
+        "Vinay Setty"
       ]
     },
     {
@@ -122881,6 +127482,18 @@ var papers = {
     },
     {
       "type": "article",
+      "key": "journals/corr/abs-2103-08712",
+      "title": "Blockchain Networks: Data Structures of Bitcoin, Monero, Zcash, Ethereum, Ripple and Iota.",
+      "year": "2021",
+      "publisher": "CoRR",
+      "authors": [
+        "Cuneyt Gurcan Akcora",
+        "Murat Kantarcioglu",
+        "Yulia R. Gel"
+      ]
+    },
+    {
+      "type": "article",
       "key": "journals/corr/abs-1912-11620",
       "title": "An Uncertainty- and Collusion-Proof Voting Consensus Mechanism in Blockchain.",
       "year": "2019",
@@ -123202,12 +127815,26 @@ var papers = {
     },
     {
       "type": "article",
+      "key": "journals/corr/abs-2103-02916",
+      "title": "Consensus in Blockchain Systems with Low Network Throughput: A Systematic Mapping Study.",
+      "year": "2021",
+      "publisher": "CoRR",
+      "authors": [
+        "Henrik Knudsen",
+        "Jakob Svennevik Notland",
+        "Peter Halland Haro",
+        "Truls Bakkejord Ræder",
+        "Jingyue Li"
+      ]
+    },
+    {
+      "type": "article",
       "key": "journals/corr/abs-2101-06905",
       "title": "Blockchain Assisted Decentralized Federated Learning (BLADE-FL): Performance Analysis and Resource Allocation.",
       "year": "2021",
       "publisher": "CoRR",
       "authors": [
-        "Jun Li",
+        "Jun Li 0004",
         "Yumeng Shao",
         "Kang Wei",
         "Ming Ding 0001",
@@ -123228,6 +127855,18 @@ var papers = {
         "Ronghua Xu",
         "Seyed Yahya Nikouei",
         "Yu Chen 0002"
+      ]
+    },
+    {
+      "type": "article",
+      "key": "journals/corr/abs-2102-13488",
+      "title": "Leveraged Trading on Blockchain Technology.",
+      "year": "2021",
+      "publisher": "CoRR",
+      "authors": [
+        "Johannes Rude Jensen",
+        "Victor von Wachter",
+        "Omri Ross"
       ]
     },
     {
@@ -123906,6 +128545,19 @@ var papers = {
     },
     {
       "type": "article",
+      "key": "journals/corr/abs-2103-10186",
+      "title": "A Cooperative Architecture of Data Offloading and Sharing for Blockchain-based Healthcare Systems.",
+      "year": "2021",
+      "publisher": "CoRR",
+      "authors": [
+        "Dinh C. Nguyen",
+        "Pubudu N. Pathirana",
+        "Ming Ding 0001",
+        "Aruna Seneviratne"
+      ]
+    },
+    {
+      "type": "article",
       "key": "journals/corr/abs-2007-13346",
       "title": "Karl Marx and the Blockchain.",
       "year": "2020",
@@ -124202,6 +128854,20 @@ var papers = {
         "Sara Hosseinzadeh Kassani",
         "Kevin A. Schneider",
         "Ralph Deters"
+      ]
+    },
+    {
+      "type": "article",
+      "key": "journals/corr/abs-2103-02979",
+      "title": "Blockchain Based Accounts Payable Platform for Goods Trade.",
+      "year": "2021",
+      "publisher": "CoRR",
+      "authors": [
+        "Krishnasuri Narayanam",
+        "Seep Goel",
+        "Abhishek Singh",
+        "Yedendra Shrinivasan",
+        "Parameswaram Selvam"
       ]
     },
     {
@@ -124536,6 +129202,29 @@ var papers = {
         "Chris N. Bayer",
         "Paolo Tasca",
         "Jiahua Xu"
+      ]
+    },
+    {
+      "type": "article",
+      "key": "journals/corr/abs-2103-03209",
+      "title": "Requirement Analyses and Evaluations of Blockchain Platforms per Possible Use Cases.",
+      "year": "2021",
+      "publisher": "CoRR",
+      "authors": [
+        "Kenji Saito",
+        "Akimitsu Shiseki",
+        "Mitsuyasu Takada",
+        "Hiroki Yamamoto",
+        "Masaaki Saitoh",
+        "Hiroaki Ohkawa",
+        "Hirofumi Andou",
+        "Naotake Miyamoto",
+        "Kazuaki Yamakawa",
+        "Kiyoshi Kurakawa",
+        "Tomohiro Yabushita",
+        "Yuji Yamada",
+        "Go Masuda",
+        "Kazuyuki Masuda"
       ]
     },
     {
@@ -125179,6 +129868,17 @@ var papers = {
     },
     {
       "type": "article",
+      "key": "journals/corr/abs-2103-07655",
+      "title": "Lightweight Selective Disclosure for Verifiable Documents on Blockchain.",
+      "year": "2021",
+      "publisher": "CoRR",
+      "authors": [
+        "Kenji Saito",
+        "Satoki Watanabe"
+      ]
+    },
+    {
+      "type": "article",
       "key": "journals/corr/abs-1805-02818",
       "title": "Blockchain for the IoT: Opportunities and Challenges.",
       "year": "2018",
@@ -125359,7 +130059,7 @@ var papers = {
       "year": "2020",
       "publisher": "CoRR",
       "authors": [
-        "Alejandro Ranchal Pedrosa",
+        "Alejandro Ranchal-Pedrosa",
         "Vincent Gramoli"
       ]
     },
@@ -126278,6 +130978,18 @@ var papers = {
     },
     {
       "type": "article",
+      "key": "journals/corr/abs-2103-04681",
+      "title": "Why Do My Blockchain Transactions Fail? A Study of Hyperledger Fabric (Extended version).",
+      "year": "2021",
+      "publisher": "CoRR",
+      "authors": [
+        "Jeeta Ann Chacko",
+        "Ruben Mayer",
+        "Hans-Arno Jacobsen"
+      ]
+    },
+    {
+      "type": "article",
       "key": "journals/corr/abs-2101-08819",
       "title": "Saguaro: Efficient Processing of Transactions in Wide Area Networks using a Hierarchical Permissioned Blockchain.",
       "year": "2021",
@@ -126341,7 +131053,7 @@ var papers = {
         "Lei Zhang 0035",
         "Oluwakayode Onireti",
         "Yang Fang",
-        "William Bill Buchanan",
+        "William J. Buchanan",
         "Muhammad Ali Imran 0001"
       ]
     },
@@ -126471,6 +131183,17 @@ var papers = {
     },
     {
       "type": "article",
+      "key": "journals/corr/abs-2103-08442",
+      "title": "BLOFF: A Blockchain based Forensic Model in IoT.",
+      "year": "2021",
+      "publisher": "CoRR",
+      "authors": [
+        "Promise Agbedanu",
+        "Anca Delia Jurcut"
+      ]
+    },
+    {
+      "type": "article",
       "key": "journals/corr/abs-1911-09259",
       "title": "Who Are the Phishers? Phishing Scam Detection on Ethereum via Network Embedding.",
       "year": "2019",
@@ -126544,6 +131267,20 @@ var papers = {
     },
     {
       "type": "article",
+      "key": "journals/corr/abs-2102-13477",
+      "title": "B-ETS: A Trusted Blockchain-based Emissions Trading System for Vehicle-to-Vehicle Networks.",
+      "year": "2021",
+      "publisher": "CoRR",
+      "authors": [
+        "Lam Duc Nguyen",
+        "Amari N. Lewis",
+        "Israel Leyva Mayorga",
+        "Amelia Regan",
+        "Petar Popovski"
+      ]
+    },
+    {
+      "type": "article",
       "key": "journals/corr/abs-1912-05241",
       "title": "Performance Analysis of the Libra Blockchain: An Experimental Study.",
       "year": "2019",
@@ -126593,6 +131330,23 @@ var papers = {
         "Ting Chen 0002",
         "Xiapu Luo",
         "Chenxu Wang"
+      ]
+    },
+    {
+      "type": "article",
+      "key": "journals/corr/abs-2102-13364",
+      "title": "Building Blocks of Sharding Blockchain Systems: Concepts, Approaches, and Open Problems.",
+      "year": "2021",
+      "publisher": "CoRR",
+      "authors": [
+        "Yizhong Liu",
+        "Jianwei Liu",
+        "Marcos Antonio Vaz Salles",
+        "Zongyang Zhang",
+        "Tong Li",
+        "Bin Hu",
+        "Fritz Henglein",
+        "Rongxing Lu"
       ]
     },
     {
@@ -126825,6 +131579,18 @@ var papers = {
     },
     {
       "type": "article",
+      "key": "journals/corr/abs-2102-12774",
+      "title": "On the Estimation of the Number of Unreachable Peers in the Bitcoin P2P Network by Observation of Peer Announcements.",
+      "year": "2021",
+      "publisher": "CoRR",
+      "authors": [
+        "Matthias Grundmann",
+        "Hedwig Amberg",
+        "Hannes Hartenstein"
+      ]
+    },
+    {
+      "type": "article",
       "key": "journals/corr/abs-2002-07565",
       "title": "SURFACE: A Practical Blockchain Consensus Algorithm for Real-World Networks.",
       "year": "2020",
@@ -126846,6 +131612,22 @@ var papers = {
         "Nikolaos Pitropakis",
         "Sokratis K. Katsikas",
         "William J. Buchanan"
+      ]
+    },
+    {
+      "type": "article",
+      "key": "journals/corr/abs-2103-02873",
+      "title": "BLOCKEYE: Hunting For DeFi Attacks on Blockchain.",
+      "year": "2021",
+      "publisher": "CoRR",
+      "authors": [
+        "Bin Wang",
+        "Han Liu 0010",
+        "Chao Liu",
+        "Zhiqiang Yang",
+        "Qian Ren",
+        "Huixuan Zheng",
+        "Hong Lei"
       ]
     },
     {
@@ -127351,6 +132133,22 @@ var papers = {
     },
     {
       "type": "article",
+      "key": "journals/corr/abs-2102-13376",
+      "title": "IoTMalware: Android IoT Malware Detection based on Deep Neural Network and Blockchain Technology.",
+      "year": "2021",
+      "publisher": "CoRR",
+      "authors": [
+        "Rajesh Kumar",
+        "Wenyong Wang",
+        "Jay Kumar",
+        "Zakria",
+        "Ting Yang",
+        "Waqar Ali",
+        "Abubackar Sharif"
+      ]
+    },
+    {
+      "type": "article",
       "key": "journals/corr/abs-1909-12454",
       "title": "SoK: Blockchain Technology and Its Potential Use Cases.",
       "year": "2019",
@@ -127410,12 +132208,12 @@ var papers = {
       "year": "2021",
       "publisher": "CoRR",
       "authors": [
-        "S. H. Alsamhi",
-        "B. Lee",
-        "M. Guizani",
-        "N. Kumar",
-        "Y. Qiao",
-        "Xuan Liu"
+        "Saeed H. Alsamhi",
+        "Brian Lee",
+        "Mohsen Guizani",
+        "Neeraj Kumar 0001",
+        "Yuansong Qiao",
+        "Xuan Liu 0006"
       ]
     },
     {
@@ -128013,7 +132811,7 @@ var papers = {
       "publisher": "CoRR",
       "authors": [
         "Qing Yang",
-        "Hao Wang"
+        "Hao Wang 0016"
       ]
     },
     {
@@ -128447,6 +133245,19 @@ var papers = {
     },
     {
       "type": "article",
+      "key": "journals/corr/abs-2103-09113",
+      "title": "EtherSolve: Computing an Accurate Control-Flow Graph from Ethereum Bytecode.",
+      "year": "2021",
+      "publisher": "CoRR",
+      "authors": [
+        "Filippo Contro",
+        "Marco Crosara",
+        "Mariano Ceccato",
+        "Mila Dalla Preda"
+      ]
+    },
+    {
+      "type": "article",
       "key": "journals/corr/abs-1805-04439",
       "title": "IPchain: Securing IP Prefix Allocation and Delegation with Blockchain.",
       "year": "2018",
@@ -128678,6 +133489,18 @@ var papers = {
       "authors": [
         "A. K. M. Bahalul Haque",
         "Mahbubur Rahman"
+      ]
+    },
+    {
+      "type": "article",
+      "key": "journals/corr/abs-2103-01487",
+      "title": "The Difficulty in Scaling Blockchains: A Simple Explanation.",
+      "year": "2021",
+      "publisher": "CoRR",
+      "authors": [
+        "Maarten van Steen",
+        "Andrew Chien",
+        "Patrick Eugster"
       ]
     },
     {
@@ -128967,7 +133790,7 @@ var papers = {
         "Feng Li",
         "Kwok-Yan Lam",
         "Min Jia",
-        "Jun Zhao",
+        "Jun Zhao 0007",
         "Xiuhua Li",
         "Li Wang"
       ]
@@ -129231,7 +134054,7 @@ var papers = {
       "year": "2019",
       "publisher": "CoRR",
       "authors": [
-        "Alejandro Ranchal Pedrosa",
+        "Alejandro Ranchal-Pedrosa",
         "Vincent Gramoli"
       ]
     },
@@ -130428,6 +135251,19 @@ var papers = {
     },
     {
       "type": "article",
+      "key": "journals/inffus/MengLZ21",
+      "title": "Enhancing the security of blockchain-based software defined networking through trust-based traffic fusion and filtration.",
+      "year": "2021",
+      "doi": "https://doi.org/10.1016/j.inffus.2020.12.006",
+      "publisher": "Inf. Fusion",
+      "authors": [
+        "Weizhi Meng 0001",
+        "Wenjuan Li 0001",
+        "Jianying Zhou 0001"
+      ]
+    },
+    {
+      "type": "article",
       "key": "journals/inffus/Casado-VaraCPPC19",
       "title": "Non-linear adaptive closed-loop control system for improved efficiency in IoT-blockchain management.",
       "year": "2019",
@@ -130767,6 +135603,20 @@ var papers = {
     },
     {
       "type": "article",
+      "key": "journals/pe/AldweeshAMM21",
+      "title": "The OpBench Ethereum opcode benchmark framework: Design, implementation, validation and experiments.",
+      "year": "2021",
+      "doi": "https://doi.org/10.1016/j.peva.2020.102168",
+      "publisher": "Perform. Evaluation",
+      "authors": [
+        "Amjad Aldweesh",
+        "Maher Alharby",
+        "Maryam Mehrnezhad",
+        "Aad van Moorsel"
+      ]
+    },
+    {
+      "type": "article",
       "key": "journals/pe/NiuWGF20",
       "title": "Incentive analysis of Bitcoin-NG, revisited.",
       "year": "2020",
@@ -130811,6 +135661,40 @@ var papers = {
       "authors": [
         "Stephanie Robberson",
         "Mark McCoy"
+      ]
+    },
+    {
+      "type": "article",
+      "key": "journals/scpe/LoneM20",
+      "title": "Forgery Protection of Academic Certificates through Integrity Preservation at Scale using Ethereum Smart Contract.",
+      "year": "2020",
+      "publisher": "Scalable Comput. Pract. Exp.",
+      "authors": [
+        "Auqib Hamid Lone",
+        "Roohie Naaz Mir"
+      ]
+    },
+    {
+      "type": "article",
+      "key": "journals/scpe/KhanC20",
+      "title": "Security Challenges in Fog and IoT, Blockchain Technology and Cell Tree Solutions: A Review.",
+      "year": "2020",
+      "publisher": "Scalable Comput. Pract. Exp.",
+      "authors": [
+        "Neelam Saleem Khan",
+        "Mohammad Ahsan Chishti"
+      ]
+    },
+    {
+      "type": "article",
+      "key": "journals/scpe/DeepSM20",
+      "title": "Access Management of User and Cyber-Physical Device in DBaaS according to Indian IT Laws using Blockchain.",
+      "year": "2020",
+      "publisher": "Scalable Comput. Pract. Exp.",
+      "authors": [
+        "Gaurav Deep",
+        "Jagpreet Sidhu",
+        "Rajni Mohana"
       ]
     },
     {
@@ -130957,6 +135841,18 @@ var papers = {
     },
     {
       "type": "article",
+      "key": "journals/tjs/JeongA21",
+      "title": "An efficient management scheme of blockchain-based cloud user information using probabilistic weighting.",
+      "year": "2021",
+      "doi": "https://doi.org/10.1007/s11227-020-03396-7",
+      "publisher": "J. Supercomput.",
+      "authors": [
+        "Yoon-Su Jeong",
+        "Byeong-Tae Ahn"
+      ]
+    },
+    {
+      "type": "article",
       "key": "journals/tjs/MalomoRG18",
       "title": "Next-generation cybersecurity through a blockchain-enabled federated cloud framework.",
       "year": "2018",
@@ -130982,6 +135878,20 @@ var papers = {
         "HyunKyung Yoo",
         "Ji-Young Kwak",
         "Sunme Kim"
+      ]
+    },
+    {
+      "type": "article",
+      "key": "journals/tjs/FanMZZ21",
+      "title": "Analysis of blockchain system based on $\\hbox {M}/(\\hbox {M}_1, \\hbox {M}_2)/1$ vacation queueing model.",
+      "year": "2021",
+      "doi": "https://doi.org/10.1007/s11227-020-03408-6",
+      "publisher": "J. Supercomput.",
+      "authors": [
+        "Jiaqi Fan",
+        "Zhanyou Ma",
+        "Yang Zhang",
+        "Changzhen Zhang"
       ]
     },
     {
@@ -131220,6 +136130,19 @@ var papers = {
         "Pinjia He",
         "Yuren Zhou",
         "Jing Bian"
+      ]
+    },
+    {
+      "type": "article",
+      "key": "journals/jsw/SolatCN21",
+      "title": "Permissioned vs. Permissionless Blockchain: How and Why There Is Only One Right Choice.",
+      "year": "2021",
+      "doi": "https://doi.org/10.17706/jsw.16.3.95-106",
+      "publisher": "J. Softw.",
+      "authors": [
+        "Siamak Solat",
+        "Philippe Calvez",
+        "Farid Naït-Abdesselam"
       ]
     },
     {
@@ -131788,6 +136711,20 @@ var papers = {
     },
     {
       "type": "article",
+      "key": "journals/puc/MbarekJPY21",
+      "title": "MBS: Multilevel Blockchain System for IoT.",
+      "year": "2021",
+      "doi": "https://doi.org/10.1007/s00779-019-01339-5",
+      "publisher": "Pers. Ubiquitous Comput.",
+      "authors": [
+        "Bacem Mbarek",
+        "Nafaâ Jabeur",
+        "Tomás Pitner",
+        "Ansar-Ul-Haque Yasar"
+      ]
+    },
+    {
+      "type": "article",
       "key": "journals/wicomm/XuWYRZZ18",
       "title": "Towards Secure Network Computing Services for Lightweight Clients Using Blockchain.",
       "year": "2018",
@@ -131906,6 +136843,21 @@ var papers = {
     },
     {
       "type": "article",
+      "key": "journals/wicomm/YuanBWHS21",
+      "title": "Transaction Prediction in Blockchain: A Negative Link Prediction Algorithm Based on the Sentiment Analysis and Balance Theory.",
+      "year": "2021",
+      "doi": "https://doi.org/10.1155/2021/8871150",
+      "publisher": "Wirel. Commun. Mob. Comput.",
+      "authors": [
+        "Ling Yuan",
+        "JiaLi Bin",
+        "YinZhen Wei",
+        "Zhihua Hu",
+        "Ping Sun"
+      ]
+    },
+    {
+      "type": "article",
       "key": "journals/wicomm/WeiWL20",
       "title": "Research on Construction of a Cloud Platform for Tourism Information Intelligent Service Based on Blockchain Technology.",
       "year": "2020",
@@ -131915,6 +136867,24 @@ var papers = {
         "Cao Wei",
         "Qinan Wang",
         "Chengying Liu"
+      ]
+    },
+    {
+      "type": "article",
+      "key": "journals/wicomm/ZhangLXWLZZF21",
+      "title": "Blockchain-Based DNS Root Zone Management Decentralization for Internet of Things.",
+      "year": "2021",
+      "doi": "https://doi.org/10.1155/2021/6620236",
+      "publisher": "Wirel. Commun. Mob. Comput.",
+      "authors": [
+        "Yu Zhang 0036",
+        "Wenfeng Liu",
+        "Zhongda Xia",
+        "Zhongze Wang",
+        "Lu Liu",
+        "Weizhe Zhang",
+        "Hongli Zhang 0001",
+        "Binxing Fang"
       ]
     },
     {
@@ -131974,6 +136944,21 @@ var papers = {
     },
     {
       "type": "article",
+      "key": "journals/wicomm/GaoMLXW21",
+      "title": "BSSPD: A Blockchain-Based Security Sharing Scheme for Personal Data with Fine-Grained Access Control.",
+      "year": "2021",
+      "doi": "https://doi.org/10.1155/2021/6658920",
+      "publisher": "Wirel. Commun. Mob. Comput.",
+      "authors": [
+        "Hongmin Gao",
+        "Zhaofeng Ma",
+        "Shoushan Luo",
+        "Yanping Xu",
+        "Zheng Wu"
+      ]
+    },
+    {
+      "type": "article",
       "key": "journals/wicomm/ZhaoG20",
       "title": "Analysis of Influencing Factors of Academic Entrepreneurship Based on Blockchain.",
       "year": "2020",
@@ -131993,6 +136978,17 @@ var papers = {
       "publisher": "Wirel. Commun. Mob. Comput.",
       "authors": [
         "Ke Xu"
+      ]
+    },
+    {
+      "type": "article",
+      "key": "journals/wicomm/Wang21a",
+      "title": "Research on Supply Chain Financial Risk Assessment Based on Blockchain and Fuzzy Neural Networks.",
+      "year": "2021",
+      "doi": "https://doi.org/10.1155/2021/5565980",
+      "publisher": "Wirel. Commun. Mob. Comput.",
+      "authors": [
+        "Yijie Wang"
       ]
     },
     {
@@ -132444,6 +137440,21 @@ var papers = {
     },
     {
       "type": "article",
+      "key": "journals/scn/YavariSKKC20",
+      "title": "An Improved Blockchain-Based Authentication Protocol for IoT Network Management.",
+      "year": "2020",
+      "doi": "https://doi.org/10.1155/2020/8836214",
+      "publisher": "Secur. Commun. Networks",
+      "authors": [
+        "Mostafa Yavari",
+        "Masoumeh Safkhani",
+        "Saru Kumari",
+        "Sachin Kumar 0002",
+        "Chien-Ming Chen 0001"
+      ]
+    },
+    {
+      "type": "article",
       "key": "journals/scn/YuanXS17",
       "title": "Research on a New Signature Scheme on Blockchain.",
       "year": "2017",
@@ -132498,6 +137509,113 @@ var papers = {
     },
     {
       "type": "article",
+      "key": "journals/scn/AzeesVLKC21",
+      "title": "BBAAS: Blockchain-Based Anonymous Authentication Scheme for Providing Secure Communication in VANETs.",
+      "year": "2021",
+      "doi": "https://doi.org/10.1155/2021/6679882",
+      "publisher": "Secur. Commun. Networks",
+      "authors": [
+        "Maria Azees",
+        "Pandi Vijayakumar",
+        "Jeatha Deborah Lazarus",
+        "Marimuthu Karuppiah",
+        "Mary Subaja Christo"
+      ]
+    },
+    {
+      "type": "article",
+      "key": "journals/scn/WangLLT21",
+      "title": "Efficient Concurrent Execution of Smart Contracts in Blockchain Sharding.",
+      "year": "2021",
+      "doi": "https://doi.org/10.1155/2021/6688168",
+      "publisher": "Secur. Commun. Networks",
+      "authors": [
+        "Yan Wang",
+        "Jixin Li",
+        "Wansheng Liu",
+        "Aiping Tan"
+      ]
+    },
+    {
+      "type": "article",
+      "key": "journals/scn/LiCWWZZTYY20",
+      "title": "Rational Protocols and Attacks in Blockchain System.",
+      "year": "2020",
+      "doi": "https://doi.org/10.1155/2020/8839047",
+      "publisher": "Secur. Commun. Networks",
+      "authors": [
+        "Tao Li",
+        "Yuling Chen",
+        "Yanli Wang",
+        "Yilei Wang",
+        "Minghao Zhao",
+        "Haojia Zhu",
+        "Youliang Tian",
+        "Xiaomei Yu",
+        "Yixian Yang"
+      ]
+    },
+    {
+      "type": "article",
+      "key": "journals/scn/JinCLGZC20",
+      "title": "BNRDT: When Data Transmission Meets Blockchain.",
+      "year": "2020",
+      "doi": "https://doi.org/10.1155/2020/8828984",
+      "publisher": "Secur. Commun. Networks",
+      "authors": [
+        "Hongjian Jin",
+        "Xingshu Chen",
+        "Xiao Lan",
+        "Hui Guo",
+        "Hongxia Zhang",
+        "Qi Cao"
+      ]
+    },
+    {
+      "type": "article",
+      "key": "journals/scn/ChenWLXG21",
+      "title": "Blockchain-Enabled Public Key Encryption with Multi-Keyword Search in Cloud Computing.",
+      "year": "2021",
+      "doi": "https://doi.org/10.1155/2021/6619689",
+      "publisher": "Secur. Commun. Networks",
+      "authors": [
+        "Zhenwei Chen",
+        "Axin Wu",
+        "Yifei Li",
+        "Qixuan Xing",
+        "Shengling Geng"
+      ]
+    },
+    {
+      "type": "article",
+      "key": "journals/scn/LouDCS21",
+      "title": "SESCF: A Secure and Efficient Supply Chain Framework via Blockchain-Based Smart Contracts.",
+      "year": "2021",
+      "doi": "https://doi.org/10.1155/2021/8884478",
+      "publisher": "Secur. Commun. Networks",
+      "authors": [
+        "Menghui Lou",
+        "Xiaolei Dong",
+        "Zhenfu Cao",
+        "Jiachen Shen"
+      ]
+    },
+    {
+      "type": "article",
+      "key": "journals/scn/FengWLF21",
+      "title": "Secure Data Collaborative Computing Scheme Based on Blockchain.",
+      "year": "2021",
+      "doi": "https://doi.org/10.1155/2021/6630291",
+      "publisher": "Secur. Commun. Networks",
+      "authors": [
+        "Tao Feng",
+        "Xusheng Wang",
+        "Chunyan Liu",
+        "Junli Fang"
+      ]
+    },
+    {
+      "type": "article",
       "key": "journals/scn/NasirQTN18",
       "title": "Performance Analysis of Hyperledger Fabric Platforms.",
       "year": "2018",
@@ -132508,6 +137626,35 @@ var papers = {
         "Ilham A. Qasse",
         "Manar Wasif Abu Talib",
         "Ali Bou Nassif"
+      ]
+    },
+    {
+      "type": "article",
+      "key": "journals/scn/FuQHSLY20",
+      "title": "A Study on the Optimization of Blockchain Hashing Algorithm Based on PRCA.",
+      "year": "2020",
+      "doi": "https://doi.org/10.1155/2020/8876317",
+      "publisher": "Secur. Commun. Networks",
+      "authors": [
+        "Jinhua Fu",
+        "Sihai Qiao",
+        "Yongzhong Huang",
+        "Xueming Si",
+        "Bin Li 0023",
+        "Chao Yuan"
+      ]
+    },
+    {
+      "type": "article",
+      "key": "journals/scn/JiaFX20",
+      "title": "Privacy-Preserving Blockchain-Based Nonlinear SVM Classifier Training for Social Networks.",
+      "year": "2020",
+      "doi": "https://doi.org/10.1155/2020/8872853",
+      "publisher": "Secur. Commun. Networks",
+      "authors": [
+        "Nan Jia",
+        "Shaojing Fu",
+        "Ming Xu 0002"
       ]
     },
     {
@@ -132537,6 +137684,19 @@ var papers = {
         "Jie Zhang 0055",
         "Xiaoyu Hong",
         "Ruifen Yuan"
+      ]
+    },
+    {
+      "type": "article",
+      "key": "journals/scn/NohSR20",
+      "title": "PyRos: A State Channel-Based Access Control System for a Public Blockchain Network.",
+      "year": "2020",
+      "doi": "https://doi.org/10.1155/2020/8891183",
+      "publisher": "Secur. Commun. Networks",
+      "authors": [
+        "Si-Wan Noh",
+        "Sang-Uk Shin",
+        "Kyung-Hyune Rhee"
       ]
     },
     {
@@ -132580,6 +137740,52 @@ var papers = {
     },
     {
       "type": "article",
+      "key": "journals/scn/PrasharJSARBK21",
+      "title": "Blockchain-Based Automated System for Identification and Storage of Networks.",
+      "year": "2021",
+      "doi": "https://doi.org/10.1155/2021/6694281",
+      "publisher": "Secur. Commun. Networks",
+      "authors": [
+        "Deepak Prashar",
+        "Nishant Jha",
+        "Muhammad Shafiq 0003",
+        "Nazir Ahmad",
+        "Mamoon Rashid",
+        "Shoeib Amin Banday",
+        "Habib Ullah Khan"
+      ]
+    },
+    {
+      "type": "article",
+      "key": "journals/scn/QingGSLZZ20",
+      "title": "A Secure and Effective Construction Scheme for Blockchain Networks.",
+      "year": "2020",
+      "doi": "https://doi.org/10.1155/2020/8881881",
+      "publisher": "Secur. Commun. Networks",
+      "authors": [
+        "Chaoxia Qing",
+        "Bing Guo",
+        "Yan Shen",
+        "Tao Li",
+        "Yun Zhang",
+        "Zhen Zhang"
+      ]
+    },
+    {
+      "type": "article",
+      "key": "journals/scn/ChenWG21",
+      "title": "Bitcoin Theft Detection Based on Supervised Machine Learning Algorithms.",
+      "year": "2021",
+      "doi": "https://doi.org/10.1155/2021/6643763",
+      "publisher": "Secur. Commun. Networks",
+      "authors": [
+        "Binjie Chen",
+        "Fushan Wei",
+        "Chunxiang Gu"
+      ]
+    },
+    {
+      "type": "article",
       "key": "journals/scn/RantosDKIPF19",
       "title": "A Blockchain-Based Platform for Consent Management of Personal Data Processing in the IoT Ecosystem.",
       "year": "2019",
@@ -132604,6 +137810,51 @@ var papers = {
       "authors": [
         "Thein Than Thwin",
         "Sangsuree Vasupongayya"
+      ]
+    },
+    {
+      "type": "article",
+      "key": "journals/scn/KaurCSK21",
+      "title": "A Research Survey on Applications of Consensus Protocols in Blockchain.",
+      "year": "2021",
+      "doi": "https://doi.org/10.1155/2021/6693731",
+      "publisher": "Secur. Commun. Networks",
+      "authors": [
+        "Sivleen Kaur",
+        "Sheetal Chaturvedi",
+        "Aabha Sharma",
+        "Jayaprakash Kar"
+      ]
+    },
+    {
+      "type": "article",
+      "key": "journals/scn/LiGWWWW21",
+      "title": "A Blockchain-Based Public Auditing Protocol with Self-Certified Public Keys for Cloud Data.",
+      "year": "2021",
+      "doi": "https://doi.org/10.1155/2021/6623639",
+      "publisher": "Secur. Commun. Networks",
+      "authors": [
+        "Hongtao Li",
+        "Feng Guo",
+        "Lili Wang",
+        "Jie Wang",
+        "Bo Wang",
+        "Chuankun Wu"
+      ]
+    },
+    {
+      "type": "article",
+      "key": "journals/scn/LiZLZM21",
+      "title": "Blockchain-Based Fine-Grained Data Sharing for Multiple Groups in Internet of Things.",
+      "year": "2021",
+      "doi": "https://doi.org/10.1155/2021/6689448",
+      "publisher": "Secur. Commun. Networks",
+      "authors": [
+        "Teng Li 0003",
+        "Jiawei Zhang",
+        "Yangxu Lin",
+        "Shengkai Zhang",
+        "Jianfeng Ma 0001"
       ]
     },
     {
@@ -132674,6 +137925,19 @@ var papers = {
         "Meng Shen",
         "Xiaojiang Du",
         "Mohsen Guizani"
+      ]
+    },
+    {
+      "type": "article",
+      "key": "journals/chinaf/FuWS21",
+      "title": "A survey of Blockchain consensus algorithms: mechanism, design and applications.",
+      "year": "2021",
+      "doi": "https://doi.org/10.1007/s11432-019-2790-1",
+      "publisher": "Sci. China Inf. Sci.",
+      "authors": [
+        "Xiang Fu",
+        "Huaimin Wang",
+        "Peichang Shi"
       ]
     },
     {
@@ -132994,6 +138258,21 @@ var papers = {
     },
     {
       "type": "article",
+      "key": "journals/candie/AgrawalKPWC21",
+      "title": "Blockchain-based framework for supply chain traceability: A case example of textile and clothing industry.",
+      "year": "2021",
+      "doi": "https://doi.org/10.1016/j.cie.2021.107130",
+      "publisher": "Comput. Ind. Eng.",
+      "authors": [
+        "Tarun Kumar Agrawal",
+        "Vijay Kumar",
+        "Rudrajeet Pal",
+        "Lichuan Wang",
+        "Yan Chen 0011"
+      ]
+    },
+    {
+      "type": "article",
       "key": "journals/candie/GriloZ20",
       "title": "Preface for special issue on blockchain and tokenization for industry and services.",
       "year": "2020",
@@ -133131,6 +138410,20 @@ var papers = {
     },
     {
       "type": "article",
+      "key": "journals/candie/LimLWT21",
+      "title": "A literature review of blockchain technology applications in supply chains: A comprehensive analysis of themes, methodologies and industries.",
+      "year": "2021",
+      "doi": "https://doi.org/10.1016/j.cie.2021.107133",
+      "publisher": "Comput. Ind. Eng.",
+      "authors": [
+        "Ming K. Lim 0001",
+        "Yan Li",
+        "Chao Wang",
+        "Ming-Lang Tseng"
+      ]
+    },
+    {
+      "type": "article",
       "key": "journals/candie/LongoNPdF19",
       "title": "Blockchain-enabled supply chain: An experimental study.",
       "year": "2019",
@@ -133166,6 +138459,20 @@ var papers = {
         "Justin Sunny",
         "Naveen Undralla",
         "V. Madhusudanan Pillai"
+      ]
+    },
+    {
+      "type": "article",
+      "key": "journals/candie/MaityTST21",
+      "title": "Stochastic batch dispersion model to optimize traceability and enhance transparency using Blockchain.",
+      "year": "2021",
+      "doi": "https://doi.org/10.1016/j.cie.2021.107134",
+      "publisher": "Comput. Ind. Eng.",
+      "authors": [
+        "Meghna Maity",
+        "Ali Tolooie",
+        "Ashesh Kumar Sinha",
+        "Manoj Kumar Tiwari"
       ]
     },
     {
@@ -133742,6 +139049,57 @@ var papers = {
     },
     {
       "type": "book",
+      "key": "books/ws/LoWL21",
+      "title": "Blockchain and Smart Contracts - Design Thinking and Programming for FinTech",
+      "year": "2021",
+      "doi": "https://doi.org/10.1142/11919",
+      "publisher": "Blockchain and Smart Contracts",
+      "authors": [
+        "Swee-Won Lo",
+        "Yu Wang",
+        "David Kuo Chuen Lee"
+      ]
+    },
+    {
+      "type": "book",
+      "key": "books/ws/SwanSW20",
+      "title": "Quantum Computing - Physics, Blockchains, and Deep Learning Smart Networks",
+      "year": "2020",
+      "doi": "https://doi.org/10.1142/q0243",
+      "publisher": "Quantum Computing",
+      "authors": [
+        "Melanie Swan",
+        "Renato P. dos Santos",
+        "Frank Witte"
+      ]
+    },
+    {
+      "type": "book",
+      "key": "books/ws/LiptonT21",
+      "title": "Blockchain and Distributed Ledgers - Mathematics, Technology, and Economics",
+      "year": "2021",
+      "doi": "https://doi.org/10.1142/11857",
+      "publisher": "Blockchain and Distributed Ledgers",
+      "authors": [
+        "Alexander Lipton",
+        "Adrien Treccani"
+      ]
+    },
+    {
+      "type": "book",
+      "key": "books/ws/YanWZ21",
+      "title": "Blockchain - Empowering Digital Economy",
+      "year": "2021",
+      "doi": "https://doi.org/10.1142/12264",
+      "publisher": "Blockchain",
+      "authors": [
+        "Yang Yan",
+        "Bin Wang",
+        "Jun Zou"
+      ]
+    },
+    {
+      "type": "book",
       "key": "books/daglib/0040621",
       "title": "Bitcoin and Cryptocurrency Technologies - A Comprehensive Introduction.",
       "year": "2016",
@@ -133966,6 +139324,19 @@ var papers = {
       "doi": "https://doi.org/10.1007/978-3-030-36899-9",
       "authors": [
         "Arthur M. Langer"
+      ]
+    },
+    {
+      "type": "incollection",
+      "key": "books/sp/21/TorkyDH21",
+      "title": "Blockchain Use Cases for COVID-19: Management, Surveillance, Tracking and Security.",
+      "year": "2021",
+      "doi": "https://doi.org/10.1007/978-3-030-63307-3_17",
+      "publisher": "Digital Transformation and Emerging Technologies for Fighting COVID-19 Pandemic",
+      "authors": [
+        "Mohamed Torky",
+        "Ashraf Darwish",
+        "Aboul Ella Hassanien"
       ]
     },
     {
@@ -134205,16 +139576,16 @@ var papers = {
     }
   ],
   "stats": {
-    "blockchain": 8270,
-    "merkle": 183,
-    "bitcoin": 1192,
-    "ethereum": 458,
-    "hyperledger": 155,
-    "monero": 35,
+    "blockchain": 8624,
+    "merkle": 184,
+    "bitcoin": 1220,
+    "ethereum": 470,
+    "hyperledger": 164,
+    "monero": 38,
     "eosio": 9,
     "algorand": 15,
-    "zcash": 17,
+    "zcash": 18,
     "filecoin": 2
   },
-  "filename": "dblp-2021-03-01.xml"
+  "filename": "dblp-2021-04-01.xml"
 }
