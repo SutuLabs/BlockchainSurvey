@@ -109,7 +109,7 @@
               <small>@{{ props.row.year }}</small>
             </p>
             <b-taglist>
-              <b-tag v-for="author in props.row.authors" type="is-primary is-light">
+              <b-tag v-for="(author,idx) in props.row.authors" :key="idx" type="is-primary is-light">
                 <b-icon icon="human-male" size="is-small"></b-icon>
                 {{author}}
               </b-tag>
