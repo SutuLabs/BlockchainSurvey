@@ -33,6 +33,7 @@ var app = new Vue({
         let notes = JSON.parse(localStorage.getItem("NOTES") || JSON.stringify({}));
         let search = JSON.parse(localStorage.getItem("SEARCH") || JSON.stringify({
             perPage: 10,
+            noteExist: false,
             filters: [],
         }));
         let columns = [{
@@ -116,6 +117,7 @@ var app = new Vue({
             filename: papers.filename,
             ccfcats,
             perPage: search.perPage,
+            noteExist: search.noteExist,
             isKeywordOpen: false,
             isOutputOpen: false,
             notes,
@@ -160,6 +162,7 @@ var app = new Vue({
         saveSearch() {
             const search = {
                 perPage: this.perPage,
+                noteExist: this.noteExist,
                 filters: this.columns.map(_ => ({
                     field: _.field,
                     filter: _.filter
@@ -186,6 +189,7 @@ var app = new Vue({
         filterPapers() {
             this.saveSearch();
             return this.papers.filter(item => {
+                if (this.noteExist && (!this.notes[item.doi] || Object.keys(this.notes[item.doi]).length === 0)) return false;
                 for (let i = 0; i < this.columns.length; i++) {
                     const col = this.columns[i];
                     if (col.isSearchable) {

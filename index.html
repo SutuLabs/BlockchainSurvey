@@ -63,6 +63,10 @@
           <option value="50">50 per page</option>
           <option value="90">90 per page</option>
         </b-select>
+
+        <b-checkbox v-model="noteExist" size="is-small">
+          Note Exist?
+        </b-checkbox>
       </b-field>
 
       <b-table :data="filterPapers" :narrowed="true" :paginated="true" :per-page="perPage" detailed
