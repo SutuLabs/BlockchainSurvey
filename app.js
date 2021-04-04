@@ -18,14 +18,17 @@ var app = new Vue({
                 name: _,
             }));
         };
-        let years = generateOptions(papers.map(_ => _.year).filter((val, idx, self) => self.indexOf(val) === idx).sort().reverse());
+        let years = generateOptions(papers.records.map(_ => _.year).filter((val, idx, self) => self.indexOf(val) === idx).sort().reverse());
         let simplifyPublisher = function (name) {
             if (!name) return name;
             let ss = name.split(' ');
             return ss.map(_ => _[0]).join('');
         };
-        let pps = papers.map(_ => Object.assign({}, {
-            pub: simplifyPublisher(_.publisher)
+        let findccf = (key) => ccf.find(_ => key.startsWith(_.crossref)) || {};
+        let pps = papers.records.map(_ => Object.assign({}, {
+            pub: simplifyPublisher(_.publisher),
+            rank: findccf(_.key).rank,
+            category: findccf(_.key).category,
         }, _))
         let notes = JSON.parse(localStorage.getItem("NOTES") || JSON.stringify({}));
         let search = JSON.parse(localStorage.getItem("SEARCH") || JSON.stringify({
@@ -109,6 +112,8 @@ var app = new Vue({
 
         return {
             papers: pps,
+            stats: papers.stats,
+            filename: papers.filename,
             ccfcats,
             perPage: search.perPage,
             isKeywordOpen: false,
