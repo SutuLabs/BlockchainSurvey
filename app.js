@@ -26,13 +26,14 @@ var app = new Vue({
             filename: null,
             perPage: null,
             noteExist: null,
-            activeTab: 0,
+            activeTab: 1,
+            patents: null,
+            patent: null,
         }
     },
     mounted: function () {
         this.loadScript("papers.js")
             .then(() => {
-                console.log("loaded")
                 let generateOptions = function (array) {
                     return array.map(_ => ({
                         value: _,
@@ -138,6 +139,52 @@ var app = new Vue({
                 this.perPage = search.perPage;
                 this.noteExist = search.noteExist;
             });
+        this.loadScript("patents.js")
+            .then(() => {
+                let columns = [{
+                        field: 'title',
+                        label: 'Title',
+                        width: 100,
+                        isSearchable: true,
+                        sortable: true,
+                        customSearch: function (a, input) {
+                            input = input || '';
+                            let ss = input.split(' ');
+                            a.highlight = a.title;
+                            for (let i = 0; i < ss.length; i++) {
+                                const str = ss[i];
+                                if (str == '') continue;
+                                if (a.title.search(new RegExp(str, "i")) == -1)
+                                    return false;
+
+                                a.highlight = a.highlight.replace(new RegExp(`(${str})`, 'ig'), '<mark>$1</mark>');
+                            }
+                            return true;
+                        },
+                    },
+                    {
+                        field: 'pubdate',
+                        label: 'Date',
+                        centered: true,
+                        numeric: true,
+                        width: 20,
+                        isSearchable: true,
+                        sortable: true,
+                    },
+                    {
+                        field: 'type',
+                        label: 'Type',
+                        centered: true,
+                        width: 20,
+                        isSearchable: true,
+                        sortable: true,
+                    },
+                ];
+                this.patents = patents;
+                this.patent = {
+                    columns
+                };
+            });
     },
     methods: {
         loadScript(src) {
@@ -232,6 +279,26 @@ var app = new Vue({
                 if (this.noteExist && (!this.notes[item.doi] || Object.keys(this.notes[item.doi]).length === 0)) return false;
                 for (let i = 0; i < this.columns.length; i++) {
                     const col = this.columns[i];
+                    if (col.isSearchable) {
+                        if (col.customSearch) {
+                            if (!col.customSearch(item, col.filter)) return false;
+                        } else if (typeof item[col.field] === 'number') {
+                            if (col.filter && item[col.field] != col.filter) return false;
+                        } else {
+                            if (col.filter && (item[col.field] == null || item[col.field].indexOf(col.filter) == -1)) return false;
+                        }
+                    }
+                }
+                return true;
+            });
+        },
+        filterPatents() {
+            if (!this.patents) return null;
+            // this.saveSearch();
+            return this.patents.filter(item => {
+                // if (this.noteExist && (!this.notes[item.doi] || Object.keys(this.notes[item.doi]).length === 0)) return false;
+                for (let i = 0; i < this.patent.columns.length; i++) {
+                    const col = this.patent.columns[i];
                     if (col.isSearchable) {
                         if (col.customSearch) {
                             if (!col.customSearch(item, col.filter)) return false;

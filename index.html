@@ -172,6 +172,104 @@
         </b-tab-item>
 
         <b-tab-item label="Patent" icon="script-text-outline" :disabled="!patents">
+          <template v-if="patents">
+
+            <b-field grouped group-multiline>
+              <template v-for="column in patent.columns">
+                <template v-if="column.isSearchable">
+                  <template v-if="column.options">
+                    <b-select v-model="column.filter" size="is-small">
+                      <option value=""></option>
+                      <option v-for="option in column.options" :value="option.value">
+                        {{ option.name }}
+                      </option>
+                    </b-select>
+                  </template>
+                  <template v-else>
+                    <b-input :placeholder="column.label" v-model="column.filter" size="is-small"
+                      icon-right="close-circle" icon-right-clickable @icon-right-click="column.filter = ''"></b-input>
+                  </template>
+                </template>
+              </template>
+
+              <b-tag>{{filterPatents.length}}</b-tag>
+
+              <b-select v-model="patent.perPage" size="is-small">
+                <option value="10">10 per page</option>
+                <option value="20">20 per page</option>
+                <option value="50">50 per page</option>
+                <option value="90">90 per page</option>
+              </b-select>
+            </b-field>
+
+            <b-table :data="filterPatents" :narrowed="true" :paginated="true" :per-page="patent.perPage" detailed
+              :show-detail-icon="false">
+              <template v-for="column in patent.columns">
+                <b-table-column :key="column.id" v-bind="column">
+                  <template v-slot="props">
+                    <template v-if="column.field == 'title'">
+                      <!-- <a :href="props.row['doi']" target="_blank">
+                        <b-icon icon="file-document-outline" size="is-small"></b-icon>
+                      </a> -->
+                      <a :href="'http://epub.sipo.gov.cn/' + props.row['qr']" target="_blank">
+                        <b-icon icon="qrcode" size="is-small"></b-icon>
+                      </a>
+                      <a :href="'http://epub.sipo.gov.cn/' + props.row['img']" target="_blank">
+                        <b-icon icon="select-search" size="is-small"></b-icon>
+                      </a>
+                      <span v-html="props.row['highlight']"
+                        @click="props.toggleDetails(props.row)"></span>
+                      <!-- <b-tooltip :label="props.row['publisher']">
+                        <b-tag type="is-light is-info">{{props.row['pub']}}</b-tag>
+                      </b-tooltip> -->
+                    </template>
+                    <!-- <template v-else-if="column.field == 'category'">
+                      <template v-if="props.row[column.field] && ccfcats[props.row[column.field]-1]">
+                        <b-tooltip :label="ccfcats[props.row[column.field]-1].title">
+                          {{ ccfcats[props.row[column.field]-1].icon }}
+                        </b-tooltip>
+                      </template>
+                    </template> -->
+                    <template v-else>
+                      {{ props.row[column.field] }}
+                    </template>
+                  </template>
+                </b-table-column>
+
+              </template>
+
+              <template #detail="props">
+                <div class="content">
+                  <p>
+                    <strong>{{ props.row.title }}</strong>
+                    <small>{{ props.row.pubdate }}</small>
+                  </p>
+                  <b-taglist>
+                    <b-tag v-for="(author,idx) in props.row.inventors" :key="idx" type="is-primary is-light">
+                      <b-icon icon="human-male" size="is-small"></b-icon>
+                      {{author}}
+                    </b-tag>
+                  </b-taglist>
+                  <b-taglist>
+                    <b-tag v-for="(author,idx) in props.row.patentees" :key="idx" type="is-primary is-light">
+                      <b-icon icon="office-building-outline" size="is-small"></b-icon>
+                      {{author}}
+                    </b-tag>
+                  </b-taglist>
+                  <p>
+                    {{props.row.desc}}
+                  </p>
+                </div>
+              </template>
+            </b-table>
+          </template>
+          <div v-else>
+            <b-skeleton width="60%" :animated="true"></b-skeleton>
+            <b-skeleton width="80%" :animated="true"></b-skeleton>
+            <b-skeleton width="20%" :animated="true"></b-skeleton>
+            <b-skeleton width="40%" :animated="true"></b-skeleton>
+            <b-skeleton width="100%" :animated="true"></b-skeleton>
+          </div>
         </b-tab-item>
       </b-tabs>
 
