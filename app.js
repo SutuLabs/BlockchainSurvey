@@ -26,10 +26,10 @@ var app = new Vue({
             filename: null,
             perPage: null,
             noteExist: null,
+            activeTab: 0,
         }
     },
     mounted: function () {
-        console.log("mounted");
         this.loadScript("papers.js")
             .then(() => {
                 console.log("loaded")

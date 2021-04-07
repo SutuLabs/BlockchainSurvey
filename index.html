@@ -12,152 +12,169 @@
 
 <body>
   <div id="app">
-    <div v-if="papers" class="container">
-
-      <b-collapse class="card" v-model="isKeywordOpen" animation="slide">
-        <template #trigger="props">
-          <div class="card-header" role="button">
-            <p class="card-header-title">
-              Keywords
-            </p>
-            <a class="card-header-icon">
-              <b-icon :icon="props.open ? 'menu-down' : 'menu-up'">
-              </b-icon>
-            </a>
-          </div>
-        </template>
-
-        <div class="card-content">
-          <div v-if="isKeywordOpen" class="buttons">
-            <b-button v-for="word in words" :key="word.Word" type="is-light" size="is-small" @click="search(word.Word)">
-              {{word.Word}}
-              <b-tag type="is-light is-info">{{word.Count}}</b-tag>
-            </b-button>
-          </div>
-        </div>
-      </b-collapse>
-
-      <b-field grouped group-multiline>
-        <template v-for="column in columns">
-          <template v-if="column.isSearchable">
-            <template v-if="column.options">
-              <b-select v-model="column.filter" size="is-small">
-                <option value=""></option>
-                <option v-for="option in column.options" :value="option.value">
-                  {{ option.name }}
-                </option>
-              </b-select>
-            </template>
-            <template v-else>
-              <b-input :placeholder="column.label" v-model="column.filter" size="is-small" icon-right="close-circle"
-                icon-right-clickable @icon-right-click="column.filter = ''"></b-input>
-            </template>
-          </template>
-        </template>
-
-        <b-tag>{{filterPapers.length}}</b-tag>
-
-        <b-select v-model="perPage" size="is-small">
-          <option value="10">10 per page</option>
-          <option value="20">20 per page</option>
-          <option value="50">50 per page</option>
-          <option value="90">90 per page</option>
-        </b-select>
-
-        <b-checkbox v-model="noteExist" size="is-small">
-          Note Exist?
-        </b-checkbox>
-      </b-field>
-
-      <b-table :data="filterPapers" :narrowed="true" :paginated="true" :per-page="perPage" detailed
-        :show-detail-icon="false">
-        <template v-for="column in columns">
-          <b-table-column :key="column.id" v-bind="column">
-            <template v-slot="props">
-              <template v-if="column.field == 'title'">
-                <a :href="props.row['doi']" target="_blank">
-                  <b-icon icon="file-document-outline" size="is-small"></b-icon>
-                </a>
-                <a :href="'https://dblp.uni-trier.de/search?q=' + props.row[column.field]" target="_blank">
-                  <b-icon icon="select-search" size="is-small"></b-icon>
-                </a>
-                <span v-html="props.row['highlight']"
-                  @click="expandNote(props.row);props.toggleDetails(props.row)"></span>
-                <b-tooltip :label="props.row['publisher']">
-                  <b-tag type="is-light is-info">{{props.row['pub']}}</b-tag>
-                </b-tooltip>
+    <div class="container">
+      <b-tabs v-model="activeTab">
+        <b-tab-item label="Papers" icon="file-document-multiple-outline" :disabled="!papers">
+          <template v-if="papers">
+            <b-collapse class="card" v-model="isKeywordOpen" animation="slide">
+              <template #trigger="props">
+                <div class="card-header" role="button">
+                  <p class="card-header-title">
+                    Keywords
+                  </p>
+                  <a class="card-header-icon">
+                    <b-icon :icon="props.open ? 'menu-down' : 'menu-up'">
+                    </b-icon>
+                  </a>
+                </div>
               </template>
-              <template v-else-if="column.field == 'category'">
-                <template v-if="props.row[column.field] && ccfcats[props.row[column.field]-1]">
-                  <b-tooltip :label="ccfcats[props.row[column.field]-1].title">
-                    {{ ccfcats[props.row[column.field]-1].icon }}
-                  </b-tooltip>
+
+              <div class="card-content">
+                <div v-if="isKeywordOpen" class="buttons">
+                  <b-button v-for="word in words" :key="word.Word" type="is-light" size="is-small"
+                    @click="search(word.Word)">
+                    {{word.Word}}
+                    <b-tag type="is-light is-info">{{word.Count}}</b-tag>
+                  </b-button>
+                </div>
+              </div>
+            </b-collapse>
+
+            <b-field grouped group-multiline>
+              <template v-for="column in columns">
+                <template v-if="column.isSearchable">
+                  <template v-if="column.options">
+                    <b-select v-model="column.filter" size="is-small">
+                      <option value=""></option>
+                      <option v-for="option in column.options" :value="option.value">
+                        {{ option.name }}
+                      </option>
+                    </b-select>
+                  </template>
+                  <template v-else>
+                    <b-input :placeholder="column.label" v-model="column.filter" size="is-small"
+                      icon-right="close-circle" icon-right-clickable @icon-right-click="column.filter = ''"></b-input>
+                  </template>
                 </template>
               </template>
-              <template v-else>
-                {{ props.row[column.field] }}
+
+              <b-tag>{{filterPapers.length}}</b-tag>
+
+              <b-select v-model="perPage" size="is-small">
+                <option value="10">10 per page</option>
+                <option value="20">20 per page</option>
+                <option value="50">50 per page</option>
+                <option value="90">90 per page</option>
+              </b-select>
+
+              <b-checkbox v-model="noteExist" size="is-small">
+                Note Exist?
+              </b-checkbox>
+            </b-field>
+
+            <b-table :data="filterPapers" :narrowed="true" :paginated="true" :per-page="perPage" detailed
+              :show-detail-icon="false">
+              <template v-for="column in columns">
+                <b-table-column :key="column.id" v-bind="column">
+                  <template v-slot="props">
+                    <template v-if="column.field == 'title'">
+                      <a :href="props.row['doi']" target="_blank">
+                        <b-icon icon="file-document-outline" size="is-small"></b-icon>
+                      </a>
+                      <a :href="'https://dblp.uni-trier.de/search?q=' + props.row[column.field]" target="_blank">
+                        <b-icon icon="select-search" size="is-small"></b-icon>
+                      </a>
+                      <span v-html="props.row['highlight']"
+                        @click="expandNote(props.row);props.toggleDetails(props.row)"></span>
+                      <b-tooltip :label="props.row['publisher']">
+                        <b-tag type="is-light is-info">{{props.row['pub']}}</b-tag>
+                      </b-tooltip>
+                    </template>
+                    <template v-else-if="column.field == 'category'">
+                      <template v-if="props.row[column.field] && ccfcats[props.row[column.field]-1]">
+                        <b-tooltip :label="ccfcats[props.row[column.field]-1].title">
+                          {{ ccfcats[props.row[column.field]-1].icon }}
+                        </b-tooltip>
+                      </template>
+                    </template>
+                    <template v-else>
+                      {{ props.row[column.field] }}
+                    </template>
+                  </template>
+                </b-table-column>
+
               </template>
-            </template>
-          </b-table-column>
 
-        </template>
-
-        <template #detail="props">
-          <div class="content">
-            <p>
-              <strong>{{ props.row.title }}</strong>
-              <small>@{{ props.row.year }}</small>
-            </p>
-            <b-taglist>
-              <b-tag v-for="(author,idx) in props.row.authors" :key="idx" type="is-primary is-light">
-                <b-icon icon="human-male" size="is-small"></b-icon>
-                {{author}}
-              </b-tag>
-            </b-taglist>
-            <b-field label="Title" label-position="on-border">
-              <b-input v-model="notes[props.row.doi].title" size="is-small"></b-input>
-            </b-field>
-            <b-field label="Highlight" label-position="on-border">
-              <b-input v-model="notes[props.row.doi].highlight" type="textarea" size="is-small"></b-input>
-            </b-field>
-            <b-field label="Note" label-position="on-border">
-              <b-input v-model="notes[props.row.doi].note" type="textarea" size="is-small"></b-input>
-            </b-field>
-            <b-field label="Tags" label-position="on-border">
-              <b-taginput v-model="notes[props.row.doi].tags" ellipsis icon="label" size="is-small"
-                placeholder="Add a tag" aria-close-label="Delete this tag">
-              </b-taginput>
-            </b-field>
-            <b-taglist>
-              <template v-for="tag in tags">
-                <b-tag type="is-info is-light">{{tag.tag}}</b-tag>
+              <template #detail="props">
+                <div class="content">
+                  <p>
+                    <strong>{{ props.row.title }}</strong>
+                    <small>@{{ props.row.year }}</small>
+                  </p>
+                  <b-taglist>
+                    <b-tag v-for="(author,idx) in props.row.authors" :key="idx" type="is-primary is-light">
+                      <b-icon icon="human-male" size="is-small"></b-icon>
+                      {{author}}
+                    </b-tag>
+                  </b-taglist>
+                  <b-field label="Title" label-position="on-border">
+                    <b-input v-model="notes[props.row.doi].title" size="is-small"></b-input>
+                  </b-field>
+                  <b-field label="Highlight" label-position="on-border">
+                    <b-input v-model="notes[props.row.doi].highlight" type="textarea" size="is-small"></b-input>
+                  </b-field>
+                  <b-field label="Note" label-position="on-border">
+                    <b-input v-model="notes[props.row.doi].note" type="textarea" size="is-small"></b-input>
+                  </b-field>
+                  <b-field label="Tags" label-position="on-border">
+                    <b-taginput v-model="notes[props.row.doi].tags" ellipsis icon="label" size="is-small"
+                      placeholder="Add a tag" aria-close-label="Delete this tag">
+                    </b-taginput>
+                  </b-field>
+                  <b-taglist>
+                    <template v-for="tag in tags">
+                      <b-tag type="is-info is-light">{{tag.tag}}</b-tag>
+                    </template>
+                  </b-taglist>
+                </div>
               </template>
-            </b-taglist>
-          </div>
-        </template>
-      </b-table>
+            </b-table>
 
-      <b-collapse class="card" v-model="isOutputOpen" animation="slide">
-        <template #trigger="props">
-          <div class="card-header" role="button">
-            <p class="card-header-title">
-              Output
-            </p>
-            <a class="card-header-icon">
-              <b-icon :icon="props.open ? 'menu-down' : 'menu-up'">
-              </b-icon>
-            </a>
-          </div>
-        </template>
+            <b-collapse class="card" v-model="isOutputOpen" animation="slide">
+              <template #trigger="props">
+                <div class="card-header" role="button">
+                  <p class="card-header-title">
+                    Output
+                  </p>
+                  <a class="card-header-icon">
+                    <b-icon :icon="props.open ? 'menu-down' : 'menu-up'">
+                    </b-icon>
+                  </a>
+                </div>
+              </template>
 
-        <div class="card-content">
-          <div v-if="isOutputOpen">
-            <b-field label="Output" label-position="on-border">
-              <b-input type="textarea" readonly :value="JSON.stringify(notes)"></b-input>
-            </b-field>
+              <div class="card-content">
+                <div v-if="isOutputOpen">
+                  <b-field label="Output" label-position="on-border">
+                    <b-input type="textarea" readonly :value="JSON.stringify(notes)"></b-input>
+                  </b-field>
+                </div>
+              </div>
+            </b-collapse>
+          </template>
+          <div v-else>
+            <b-skeleton width="60%" :animated="true"></b-skeleton>
+            <b-skeleton width="80%" :animated="true"></b-skeleton>
+            <b-skeleton width="20%" :animated="true"></b-skeleton>
+            <b-skeleton width="40%" :animated="true"></b-skeleton>
+            <b-skeleton width="100%" :animated="true"></b-skeleton>
           </div>
-        </div>
-      </b-collapse>
+        </b-tab-item>
+
+        <b-tab-item label="Patent" icon="script-text-outline" :disabled="!patents">
+        </b-tab-item>
+      </b-tabs>
+
     </div>
     <footer class="footer">
       <div class="content has-text-centered">
@@ -185,7 +202,6 @@
   <!-- <script src="vue.global.js"></script> -->
   <script src="vue.js"></script>
   <script src="buefy.min.js"></script>
-  <!-- <script src="papers.js"></script> -->
   <script src="ccfcats.js"></script>
   <script src="ccf.js"></script>
   <script src="app.js"></script>
