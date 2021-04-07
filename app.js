@@ -41,14 +41,9 @@ var app = new Vue({
                     }));
                 };
                 let years = generateOptions(papers.records.map(_ => _.year).filter((val, idx, self) => self.indexOf(val) === idx).sort().reverse());
-                let simplifyPublisher = function (name) {
-                    if (!name) return name;
-                    let ss = name.split(' ');
-                    return ss.map(_ => _[0]).join('');
-                };
                 let findccf = (key) => ccf.find(_ => key.startsWith(_.crossref)) || {};
                 let pps = papers.records.map(_ => Object.assign({}, {
-                    pub: simplifyPublisher(_.publisher),
+                    pub: (_.publisher || '').replace(/[^A-Z]/g, ''),
                     rank: findccf(_.key).rank,
                     category: findccf(_.key).category,
                 }, _))
