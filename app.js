@@ -12,120 +12,159 @@ Array.prototype.groupBy = function () {
 var app = new Vue({
     el: '#app',
     data: function () {
-        let generateOptions = function (array) {
-            return array.map(_ => ({
-                value: _,
-                name: _,
-            }));
-        };
-        let years = generateOptions(papers.records.map(_ => _.year).filter((val, idx, self) => self.indexOf(val) === idx).sort().reverse());
-        let simplifyPublisher = function (name) {
-            if (!name) return name;
-            let ss = name.split(' ');
-            return ss.map(_ => _[0]).join('');
-        };
-        let findccf = (key) => ccf.find(_ => key.startsWith(_.crossref)) || {};
-        let pps = papers.records.map(_ => Object.assign({}, {
-            pub: simplifyPublisher(_.publisher),
-            rank: findccf(_.key).rank,
-            category: findccf(_.key).category,
-        }, _))
         let notes = JSON.parse(localStorage.getItem("NOTES") || JSON.stringify({}));
-        let search = JSON.parse(localStorage.getItem("SEARCH") || JSON.stringify({
-            perPage: 10,
-            noteExist: false,
-            filters: [],
-        }));
-        let columns = [{
-                field: 'title',
-                label: 'Title',
-                width: 100,
-                isSearchable: true,
-                sortable: true,
-                customSearch: function (a, input) {
-                    input = input || '';
-                    let ss = input.split(' ');
-                    a.highlight = a.title;
-                    for (let i = 0; i < ss.length; i++) {
-                        const str = ss[i];
-                        if (str == '') continue;
-                        if (a.title.search(new RegExp(str, "i")) == -1)
-                            return false;
-
-                        a.highlight = a.highlight.replace(new RegExp(`(${str})`, 'ig'), '<mark>$1</mark>');
-                    }
-                    return true;
-                },
-            },
-            {
-                field: 'year',
-                label: 'Year',
-                centered: true,
-                numeric: true,
-                width: 20,
-                isSearchable: true,
-                sortable: true,
-                options: years,
-            },
-            {
-                field: 'rank',
-                label: 'Rank',
-                centered: true,
-                width: 20,
-                isSearchable: true,
-                sortable: true,
-                options: generateOptions(['Any', 'ABC', 'A', 'B', 'C', 'NotABC']),
-                customSearch: function (a, input) {
-                    if (input == "A" || input == "B" || input == "C") {
-                        if (a.rank == input) return true;
-                        return false;
-                    } else if (input == "Any") {
-                        return true;
-                    } else if (input == "NotABC") {
-                        return !a.rank;
-                    } else if (input == "ABC") {
-                        return a.rank ? true : false;
-                    } else {
-                        return true;
-                    }
-                },
-            },
-            {
-                field: 'category',
-                label: 'Category',
-                centered: true,
-                width: 20,
-                isSearchable: true,
-                sortable: true,
-                options: ccfcats.map(_ => ({
-                    value: _.id.toString(),
-                    name: _.title,
-                })),
-                customSearch: function (a, input) {
-                    if (!input) return true;
-                    return a.category == input;
-                },
-            },
-        ];
-        search.filters.forEach(f => {
-            columns.find(_ => _.field === f.field).filter = f.filter;
-        });
 
         return {
-            papers: pps,
-            stats: papers.stats,
-            filename: papers.filename,
+            papers: null,
             ccfcats,
-            perPage: search.perPage,
-            noteExist: search.noteExist,
             isKeywordOpen: false,
             isOutputOpen: false,
             notes,
             tags: [],
-            columns,
+            columns: [],
+            stats: null,
+            filename: null,
+            perPage: null,
+            noteExist: null,
         }
     },
+    mounted: function () {
+        console.log("mounted");
+        this.loadScript("papers.js")
+            .then(() => {
+                console.log("loaded")
+                let generateOptions = function (array) {
+                    return array.map(_ => ({
+                        value: _,
+                        name: _,
+                    }));
+                };
+                let years = generateOptions(papers.records.map(_ => _.year).filter((val, idx, self) => self.indexOf(val) === idx).sort().reverse());
+                let simplifyPublisher = function (name) {
+                    if (!name) return name;
+                    let ss = name.split(' ');
+                    return ss.map(_ => _[0]).join('');
+                };
+                let findccf = (key) => ccf.find(_ => key.startsWith(_.crossref)) || {};
+                let pps = papers.records.map(_ => Object.assign({}, {
+                    pub: simplifyPublisher(_.publisher),
+                    rank: findccf(_.key).rank,
+                    category: findccf(_.key).category,
+                }, _))
+                let columns = [{
+                        field: 'title',
+                        label: 'Title',
+                        width: 100,
+                        isSearchable: true,
+                        sortable: true,
+                        customSearch: function (a, input) {
+                            input = input || '';
+                            let ss = input.split(' ');
+                            a.highlight = a.title;
+                            for (let i = 0; i < ss.length; i++) {
+                                const str = ss[i];
+                                if (str == '') continue;
+                                if (a.title.search(new RegExp(str, "i")) == -1)
+                                    return false;
+
+                                a.highlight = a.highlight.replace(new RegExp(`(${str})`, 'ig'), '<mark>$1</mark>');
+                            }
+                            return true;
+                        },
+                    },
+                    {
+                        field: 'year',
+                        label: 'Year',
+                        centered: true,
+                        numeric: true,
+                        width: 20,
+                        isSearchable: true,
+                        sortable: true,
+                        options: years,
+                    },
+                    {
+                        field: 'rank',
+                        label: 'Rank',
+                        centered: true,
+                        width: 20,
+                        isSearchable: true,
+                        sortable: true,
+                        options: generateOptions(['Any', 'ABC', 'A', 'B', 'C', 'NotABC']),
+                        customSearch: function (a, input) {
+                            if (input == "A" || input == "B" || input == "C") {
+                                if (a.rank == input) return true;
+                                return false;
+                            } else if (input == "Any") {
+                                return true;
+                            } else if (input == "NotABC") {
+                                return !a.rank;
+                            } else if (input == "ABC") {
+                                return a.rank ? true : false;
+                            } else {
+                                return true;
+                            }
+                        },
+                    },
+                    {
+                        field: 'category',
+                        label: 'Category',
+                        centered: true,
+                        width: 20,
+                        isSearchable: true,
+                        sortable: true,
+                        options: ccfcats.map(_ => ({
+                            value: _.id.toString(),
+                            name: _.title,
+                        })),
+                        customSearch: function (a, input) {
+                            if (!input) return true;
+                            return a.category == input;
+                        },
+                    },
+                ];
+                let search = JSON.parse(localStorage.getItem("SEARCH") || JSON.stringify({
+                    perPage: 10,
+                    noteExist: false,
+                    filters: [],
+                }));
+                search.filters.forEach(f => {
+                    columns.find(_ => _.field === f.field).filter = f.filter;
+                });
+
+                this.columns = columns;
+                this.stats = papers.stats;
+                this.filename = papers.filename;
+                this.papers = pps;
+                this.perPage = search.perPage;
+                this.noteExist = search.noteExist;
+            });
+    },
     methods: {
+        loadScript(src) {
+            return new Promise(function (resolve, reject) {
+                let shouldAppend = false;
+                let el = document.querySelector('script[src="' + src + '"]');
+                if (!el) {
+                    el = document.createElement('script');
+                    el.type = 'text/javascript';
+                    el.async = true;
+                    el.src = src;
+                    shouldAppend = true;
+                } else if (el.hasAttribute('data-loaded')) {
+                    resolve(el);
+                    return;
+                }
+
+                el.addEventListener('error', reject);
+                el.addEventListener('abort', reject);
+                el.addEventListener('load', function loadScriptHandler() {
+                    el.setAttribute('data-loaded', true);
+                    resolve(el);
+                });
+
+                if (shouldAppend) document.head.appendChild(el);
+            });
+        },
         search(word) {
             let col = this.columns.find(_ => _.field == 'title');
             Vue.set(col, 'filter', word);
@@ -187,6 +226,7 @@ var app = new Vue({
     },
     computed: {
         filterPapers() {
+            if (!this.papers) return null;
             this.saveSearch();
             return this.papers.filter(item => {
                 if (this.noteExist && (!this.notes[item.doi] || Object.keys(this.notes[item.doi]).length === 0)) return false;

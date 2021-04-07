@@ -12,7 +12,7 @@
 
 <body>
   <div id="app">
-    <div class="container">
+    <div v-if="papers" class="container">
 
       <b-collapse class="card" v-model="isKeywordOpen" animation="slide">
         <template #trigger="props">
@@ -164,26 +164,28 @@
         <p>
           <strong>Blockchain Survey</strong> by <a href="https://icerdesign.com">Liang Shuang(Icer)</a>
           @<a href="https://www.sjtu.edu.cn/">SJTU</a>.
-          Data generated from <a href="https://dblp.org/xml/release/">{{filename}}</a>.
-          <br>
-          Using filter:
-          <span v-for="(count, word, idx) in stats">
-            <b-tooltip :label="count.toString()" type="is-light" position="is-top">
-              <span class="is-size-6 has-text-primary">{{word}}</span>
-            </b-tooltip>
-            <span v-if="idx != Object.keys(stats).length - 1">/</span>
-          </span>
-          .
-        </p>
+          <span v-if="papers">
+            Data generated from <a href="https://dblp.org/xml/release/">{{filename}}</a>.
+            <br>
+            Using filter:
+            <span v-for="(count, word, idx) in stats">
+              <b-tooltip :label="count.toString()" type="is-light" position="is-top">
+                <span class="is-size-6 has-text-primary">{{word}}</span>
+              </b-tooltip>
+              <span v-if="idx != Object.keys(stats).length - 1">/</span>
+            </span>
+            .
       </div>
-    </footer>
+      </p>
+  </div>
+  </footer>
 
   </div>
   <!-- <script src="vue.global.prod.js"></script> -->
   <!-- <script src="vue.global.js"></script> -->
   <script src="vue.js"></script>
   <script src="buefy.min.js"></script>
-  <script src="papers.js"></script>
+  <!-- <script src="papers.js"></script> -->
   <script src="ccfcats.js"></script>
   <script src="ccf.js"></script>
   <script src="app.js"></script>
