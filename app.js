@@ -26,7 +26,7 @@ var app = new Vue({
             filename: null,
             perPage: null,
             noteExist: null,
-            activeTab: 1,
+            activeTab: 0,
             patents: null,
             patent: null,
         }
@@ -60,6 +60,15 @@ var app = new Vue({
                             for (let i = 0; i < ss.length; i++) {
                                 const str = ss[i];
                                 if (str == '') continue;
+                                if (str.startsWith('-')) {
+                                    const kw = str.substr(1);
+                                    if (kw == '') continue;
+                                    if (a.title.search(new RegExp(kw, "i")) > -1)
+                                        return false;
+
+                                    continue;
+                                }
+
                                 if (a.title.search(new RegExp(str, "i")) == -1)
                                     return false;
 
@@ -311,7 +320,7 @@ var app = new Vue({
             const NotCountWords = ["based", "using", "enabled", "via", "novel", ];
             const NonLexicalWords = ["the", "of", "and", "to", "a", "in", "for", "is", "on", "that", "by", "this", "with", "i", "you", "it", "not", "or", "be", "are", "from", "at", "as", "your", "all", "have", "new", "more", "an", "was", "we", "will", "home", "can", "us", "about", "if", "page", "my", "has", "free", "but", "our", "one", "other", "do", "no", "information", "time", "they", "site", "he", "up", "may", "what", "which", "their", "news", "out", "use", "any", "there", "see", "only", "so", "his", "when", "contact", "here", "business", "who", "web", "also", "now", "help", "get", "pm", "view", "online", "c", "e", "first", "am", "been", "would", "how", "were", "me", "s", "services", "some", "these", "click", "its", "like", "service", "x", "than", "find", "price", "date", "back", "top", "people", "had", "list", "name", "just", "over", "state", "year", "day", "into", "email", "two", "health", "n", "world", "re", "next", "used", "go", "b", "work", "last", "most", "products", "music", "buy", "make", "them", "should", "product", "post", "her", "city", "t", "add", "policy", "number", "such", "please", "available", "copyright", "support", "message", "after", "best", "software", "then", "jan", "good", "video", "well", "d", "where", "info", "rights", "public", "books", "high", "school", "through", "m", "each", "links", "she", "review", "years", "order", "very", "privacy", "book", "items", "company", "r", "read", "group", "sex", "need", "many", "user", "said", "de", "does", "set", "under", "general", "research", "university", "january", "mail", "full", "map", "reviews", "program", "life"];
             let split = (input) => input.match(/\b[\w']+\b/g);
-            let ws = this.filterPapers.map(_ => split(_.title)).reduce((a, b) => a.concat(b));
+            let ws = this.filterPapers.map(_ => split(_.title)).reduce((a, b) => a.concat(b), []);
             let cleanWords = ws.map(_ => _.toLowerCase())
                 .filter(_ => _)
                 .filter(_ => NonLexicalWords.indexOf(_) == -1)
