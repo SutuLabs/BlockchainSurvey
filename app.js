@@ -9,6 +9,48 @@ Array.prototype.groupBy = function () {
             values: dict[_]
         }))
 };
+
+function CsvtoArray(text) {
+
+    // https://stackoverflow.com/a/8497474
+    // Return array of string values, or NULL if CSV string not well formed.
+    function CsvLinetoArray(text) {
+        var re_valid =
+            /^\s*(?:'[^'\\]*(?:\\[\S\s][^'\\]*)*'|"[^"\\]*(?:\\[\S\s][^"\\]*)*"|[^,'"\s\\]*(?:\s+[^,'"\s\\]+)*)\s*(?:,\s*(?:'[^'\\]*(?:\\[\S\s][^'\\]*)*'|"[^"\\]*(?:\\[\S\s][^"\\]*)*"|[^,'"\s\\]*(?:\s+[^,'"\s\\]+)*)\s*)*$/;
+        var re_value =
+            /(?!\s*$)\s*(?:'([^'\\]*(?:\\[\S\s][^'\\]*)*)'|"([^"\\]*(?:\\[\S\s][^"\\]*)*)"|([^,'"\s\\]*(?:\s+[^,'"\s\\]+)*))\s*(?:,|$)/g;
+        // Return NULL if input string is not well formed CSV string.
+        if (!re_valid.test(text)) return null;
+        var a = []; // Initialize array to receive values.
+        text.replace(re_value, // "Walk" the string using replace with callback.
+            function (m0, m1, m2, m3) {
+                // Remove backslash from \' in single quoted values.
+                if (m1 !== undefined) a.push(m1.replace(/\\'/g, "'"));
+                // Remove backslash from \" in double quoted values.
+                else if (m2 !== undefined) a.push(m2.replace(/\\"/g, '"'));
+                else if (m3 !== undefined) a.push(m3);
+                return ''; // Return empty string.
+            });
+        // Handle special case of empty last value.
+        if (/,\s*$/.test(text)) a.push('');
+        return a;
+    };
+
+    const lines = text.split('\n');
+    let ops = [];
+    for (var i = 0; i < lines.length; i++) {
+        const line = lines[i].trim();
+        if (line.trim() == '') continue;
+
+        const carr = CsvLinetoArray(line);
+        if (carr == null) {
+            console.error("malformat of csv: ", line);
+        }
+
+        ops.push(carr);
+    }
+    return ops;
+}
 var app = new Vue({
     el: '#app',
     data: function () {
@@ -16,7 +58,8 @@ var app = new Vue({
 
         return {
             papers: null,
-            ccfcats,
+            ccfcats: [],
+            ccf: [],
             isKeywordOpen: false,
             isOutputOpen: false,
             notes,
@@ -31,7 +74,37 @@ var app = new Vue({
             patent: null,
         }
     },
-    mounted: function () {
+    mounted: async function () {
+        const categoryCsv = await fetch("category.csv");
+        this.ccfcats = CsvtoArray(await categoryCsv.text()).map(_ => ({
+            id: _[0],
+            icon: _[1],
+            title: _[2],
+            url: _[3],
+        })).slice(1);
+        const ccf2019Csv = await fetch("ccf2019.csv");
+        const reDblp = /http[s]?:\/\/dblp\.uni-trier\.de\/db\/((conf|journals){1}\/.*?(\/|$))(index.html)?/;
+        const getCrossRef = function (url) {
+            const m1 = url.match(reDblp);
+            if (m1) {
+                return m1[1];
+            }
+
+            // console.error("cannot parse url: ", url);
+            return undefined;
+        }
+        this.ccf = CsvtoArray(await ccf2019Csv.text()).map(_ => ({
+            id: _[0],
+            title: _[1],
+            fulname: _[2],
+            publisher: _[3],
+            url: _[4],
+            rank: _[5],
+            type: _[6],
+            category: _[7],
+            crossref: getCrossRef(_[4]),
+        })).slice(1);
+
         this.loadScript("papers.js")
             .then(() => {
                 let generateOptions = function (array) {
@@ -41,7 +114,7 @@ var app = new Vue({
                     }));
                 };
                 let years = generateOptions(papers.records.map(_ => _.year).filter((val, idx, self) => self.indexOf(val) === idx).sort().reverse());
-                let findccf = (key) => ccf.find(_ => key.startsWith(_.crossref)) || {};
+                let findccf = (key) => this.ccf.find(_ => key.startsWith(_.crossref)) || {};
                 let pps = papers.records.map(_ => Object.assign({}, {
                     pub: (_.publisher || '').replace(/[^A-Z]/g, ''),
                     rank: findccf(_.key).rank,
@@ -117,7 +190,7 @@ var app = new Vue({
                         width: 20,
                         isSearchable: true,
                         sortable: true,
-                        options: ccfcats.map(_ => ({
+                        options: this.ccfcats.map(_ => ({
                             value: _.id.toString(),
                             name: _.title,
                         })),
