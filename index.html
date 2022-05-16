@@ -14,6 +14,94 @@
   <div id="app">
     <div class="container">
       <b-tabs v-model="activeTab">
+        <b-tab-item label="Papers(Online)" icon="file-document-multiple-outline">
+          <template>
+            <b-field grouped group-multiline>
+              <template v-for="column in online.columns">
+                <template v-if="column.isSearchable">
+                  <template v-if="column.options">
+                    <b-select v-model="column.filter" size="is-small" @input="onFilterChange()">
+                      <option value=""></option>
+                      <option v-for="option in column.options" :value="option.value">
+                        {{ option.name }}
+                      </option>
+                    </b-select>
+                  </template>
+                  <template v-else>
+                    <b-input :placeholder="column.label" v-model="column.filter" size="is-small"
+                      icon-right="close-circle" icon-right-clickable @icon-right-click="column.filter = ''"
+                      @input="onFilterChange()"></b-input>
+                  </template>
+                </template>
+              </template>
+
+              <b-tag>{{online.total}}</b-tag>
+
+              <b-select v-model="perPage" size="is-small">
+                <option value="10">10 per page</option>
+                <option value="20">20 per page</option>
+                <option value="50">50 per page</option>
+                <option value="90">90 per page</option>
+              </b-select>
+            </b-field>
+
+            <b-table :data="online.papers" :narrowed="true" :paginated="true" :per-page="perPage" detailed
+              :loading="online.loading" :backend-pagination="true" :total="online.total" @page-change="onPageChange"
+              backend-sorting :default-sort-direction="online.defaultSortOrder"
+              :default-sort="[online.sortField, online.sortOrder]" @sort="onSort" :show-detail-icon="false">
+              <template v-for="column in online.columns">
+                <b-table-column :key="column.id" v-bind="column">
+                  <template v-slot="props">
+                    <template v-if="column.field == 'title'">
+                      <a :href="props.row['doi']" target="_blank">
+                        <b-icon icon="file-document-outline" size="is-small"></b-icon>
+                      </a>
+                      <a :href="'https://dblp.uni-trier.de/search?q=' + props.row[column.field]" target="_blank">
+                        <b-icon icon="select-search" size="is-small"></b-icon>
+                      </a>
+                      <span v-html="props.row['highlight']" @click="props.toggleDetails(props.row)"></span>
+                      <b-tooltip :label="props.row['publisher']">
+                        <b-tag type="is-light is-info">{{props.row['pub']}}</b-tag>
+                      </b-tooltip>
+                    </template>
+                    <template v-else-if="column.field == 'category'">
+                      <template v-if="props.row[column.field] && ccfcats[props.row[column.field]-1]">
+                        <b-tooltip :label="ccfcats[props.row[column.field]-1].title">
+                          {{ ccfcats[props.row[column.field]-1].icon }}
+                        </b-tooltip>
+                      </template>
+                    </template>
+                    <template v-else>
+                      {{ props.row[column.field] }}
+                    </template>
+                  </template>
+                </b-table-column>
+
+              </template>
+
+              <template #detail="props">
+                <div class="content">
+                  <p>
+                    <strong>{{ props.row.title }}</strong>
+                    <small>@{{ props.row.year }}</small>
+                  </p>
+                  <b-taglist>
+                    <b-tag v-for="(author,idx) in props.row.authors" :key="idx" type="is-primary is-light">
+                      <b-icon icon="human-male" size="is-small"></b-icon>
+                      {{author}}
+                    </b-tag>
+                  </b-taglist>
+                  <b-taglist>
+                    <template v-for="tag in tags">
+                      <b-tag type="is-info is-light">{{tag.tag}}</b-tag>
+                    </template>
+                  </b-taglist>
+                </div>
+              </template>
+            </b-table>
+          </template>
+        </b-tab-item>
+
         <b-tab-item label="Papers" icon="file-document-multiple-outline" :disabled="!papers">
           <template v-if="papers">
             <b-collapse class="card" v-model="isKeywordOpen" animation="slide">
@@ -217,8 +305,7 @@
                       <a :href="'http://epub.sipo.gov.cn/' + props.row['img']" target="_blank">
                         <b-icon icon="select-search" size="is-small"></b-icon>
                       </a>
-                      <span v-html="props.row['highlight']"
-                        @click="props.toggleDetails(props.row)"></span>
+                      <span v-html="props.row['highlight']" @click="props.toggleDetails(props.row)"></span>
                       <!-- <b-tooltip :label="props.row['publisher']">
                         <b-tag type="is-light is-info">{{props.row['pub']}}</b-tag>
                       </b-tooltip> -->
@@ -301,6 +388,7 @@
   <script src="vue.js"></script>
   <script src="buefy.min.js"></script>
   <script src="msgpack.min.js"></script>
+  <script src="graphql.min.js"></script>
   <script src="app.js"></script>
 </body>
 

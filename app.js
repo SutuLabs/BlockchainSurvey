@@ -67,11 +67,22 @@ var app = new Vue({
             columns: [],
             stats: null,
             filename: null,
-            perPage: null,
+            perPage: 10,
             noteExist: null,
             activeTab: 0,
             patents: null,
             patent: null,
+            online: {
+                papers: [],
+                total: 0,
+                loading: false,
+                sortField: 'title',
+                sortOrder: 'desc',
+                defaultSortOrder: 'desc',
+                page: 1,
+                inputTimeout: 0,
+                columns: [],
+            }
         }
     },
     mounted: async function () {
@@ -105,121 +116,178 @@ var app = new Vue({
             crossref: getCrossRef(_[4]),
         })).slice(1);
 
-        const response = await fetch("paper.bin");
-        const paperbin = (await response.blob()).stream();
-        const records = await MessagePack.decodeAsync(paperbin);
-        const papers = {
-            records
-        };
-
+        const paperType = "remote";
+        let findccf = (key) => this.ccf.find(_ => key && key.startsWith(_.crossref)) || {};
         let generateOptions = function (array) {
             return array.map(_ => ({
                 value: _,
                 name: _,
             }));
         };
-        let years = generateOptions(papers.records.map(_ => _.year).filter((val, idx, self) => self.indexOf(val) === idx).sort().reverse());
-        let findccf = (key) => this.ccf.find(_ => key && key.startsWith(_.crossref)) || {};
-        let pps = papers.records.map(_ => Object.assign({}, {
-            pub: (_.publisher || '').replace(/[^A-Z]/g, ''),
-            rank: findccf(_.key).rank,
-            category: findccf(_.key).category,
-        }, _))
-        let columns = [{
-                field: 'title',
-                label: 'Title',
-                width: 100,
-                isSearchable: true,
-                sortable: true,
-                customSearch: function (a, input) {
-                    input = input || '';
-                    let ss = input.split(' ');
-                    a.highlight = a.title;
-                    for (let i = 0; i < ss.length; i++) {
-                        const str = ss[i];
-                        if (str == '') continue;
-                        if (str.startsWith('-')) {
-                            const kw = str.substr(1);
-                            if (kw == '') continue;
-                            if (a.title.search(new RegExp(kw, "i")) > -1)
+        if (paperType == "local") {
+            const response = await fetch("paper.bin");
+            const paperbin = (await response.blob()).stream();
+            const records = await MessagePack.decodeAsync(paperbin);
+            const papers = {
+                records
+            };
+
+            let years = generateOptions(papers.records.map(_ => _.year).filter((val, idx, self) => self.indexOf(val) === idx).sort().reverse());
+            let pps = papers.records.map(_ => Object.assign({}, {
+                pub: (_.publisher || '').replace(/[^A-Z]/g, ''),
+                rank: findccf(_.key).rank,
+                category: findccf(_.key).category,
+            }, _))
+            let columns = [{
+                    field: 'title',
+                    label: 'Title',
+                    width: 100,
+                    isSearchable: true,
+                    sortable: true,
+                    customSearch: function (a, input) {
+                        input = input || '';
+                        let ss = input.split(' ');
+                        a.highlight = a.title;
+                        for (let i = 0; i < ss.length; i++) {
+                            const str = ss[i];
+                            if (str == '') continue;
+                            if (str.startsWith('-')) {
+                                const kw = str.substr(1);
+                                if (kw == '') continue;
+                                if (a.title.search(new RegExp(kw, "i")) > -1)
+                                    return false;
+
+                                continue;
+                            }
+
+                            if (a.title && a.title.search(new RegExp(str, "i")) == -1)
                                 return false;
 
-                            continue;
+                            a.highlight = a.highlight && a.highlight.replace(new RegExp(`(${str})`, 'ig'), '<mark>$1</mark>');
                         }
-
-                        if (a.title && a.title.search(new RegExp(str, "i")) == -1)
+                        return true;
+                    },
+                },
+                {
+                    field: 'year',
+                    label: 'Year',
+                    centered: true,
+                    numeric: true,
+                    width: 20,
+                    isSearchable: true,
+                    sortable: true,
+                    options: years,
+                },
+                {
+                    field: 'rank',
+                    label: 'Rank',
+                    centered: true,
+                    width: 20,
+                    isSearchable: true,
+                    sortable: true,
+                    options: generateOptions(['Any', 'ABC', 'A', 'B', 'C', 'NotABC']),
+                    customSearch: function (a, input) {
+                        if (input == "A" || input == "B" || input == "C") {
+                            if (a.rank == input) return true;
                             return false;
+                        } else if (input == "Any") {
+                            return true;
+                        } else if (input == "NotABC") {
+                            return !a.rank;
+                        } else if (input == "ABC") {
+                            return a.rank ? true : false;
+                        } else {
+                            return true;
+                        }
+                    },
+                },
+                {
+                    field: 'category',
+                    label: 'Category',
+                    centered: true,
+                    width: 20,
+                    isSearchable: true,
+                    sortable: true,
+                    options: this.ccfcats.map(_ => ({
+                        value: _.id.toString(),
+                        name: _.title,
+                    })),
+                    customSearch: function (a, input) {
+                        if (!input) return true;
+                        return a.category == input;
+                    },
+                },
+            ];
+            let search = JSON.parse(localStorage.getItem("SEARCH") || JSON.stringify({
+                perPage: 10,
+                noteExist: false,
+                filters: [],
+            }));
+            search.filters.forEach(f => {
+                columns.find(_ => _.field === f.field).filter = f.filter;
+            });
 
-                        a.highlight = a.highlight && a.highlight.replace(new RegExp(`(${str})`, 'ig'), '<mark>$1</mark>');
-                    }
-                    return true;
-                },
-            },
-            {
-                field: 'year',
-                label: 'Year',
-                centered: true,
-                numeric: true,
-                width: 20,
-                isSearchable: true,
-                sortable: true,
-                options: years,
-            },
-            {
-                field: 'rank',
-                label: 'Rank',
-                centered: true,
-                width: 20,
-                isSearchable: true,
-                sortable: true,
-                options: generateOptions(['Any', 'ABC', 'A', 'B', 'C', 'NotABC']),
-                customSearch: function (a, input) {
-                    if (input == "A" || input == "B" || input == "C") {
-                        if (a.rank == input) return true;
-                        return false;
-                    } else if (input == "Any") {
-                        return true;
-                    } else if (input == "NotABC") {
-                        return !a.rank;
-                    } else if (input == "ABC") {
-                        return a.rank ? true : false;
-                    } else {
-                        return true;
-                    }
-                },
-            },
-            {
-                field: 'category',
-                label: 'Category',
-                centered: true,
-                width: 20,
-                isSearchable: true,
-                sortable: true,
-                options: this.ccfcats.map(_ => ({
-                    value: _.id.toString(),
-                    name: _.title,
-                })),
-                customSearch: function (a, input) {
-                    if (!input) return true;
-                    return a.category == input;
-                },
-            },
-        ];
-        let search = JSON.parse(localStorage.getItem("SEARCH") || JSON.stringify({
-            perPage: 10,
-            noteExist: false,
-            filters: [],
-        }));
-        search.filters.forEach(f => {
-            columns.find(_ => _.field === f.field).filter = f.filter;
-        });
+            this.columns = columns;
+            this.stats = papers.stats;
+            this.filename = papers.filename;
+            this.papers = pps;
+            this.perPage = search.perPage;
+            this.noteExist = search.noteExist;
+        }
 
-        this.columns = columns;
-        this.stats = papers.stats;
-        this.filename = papers.filename;
-        this.papers = pps;
-        this.perPage = search.perPage;
-        this.noteExist = search.noteExist;
+        if (paperType == "remote") {
+            let years = [...Array(12).keys()].map(_ => _ + 2011);
+            let columns = [{
+                    field: 'title',
+                    label: 'Title',
+                    width: 300,
+                    isSearchable: true,
+                    sortable: true,
+                },
+                {
+                    field: 'year',
+                    label: 'Year',
+                    centered: true,
+                    numeric: true,
+                    width: 20,
+                    isSearchable: true,
+                    sortable: true,
+                    options: generateOptions(years),
+                },
+                {
+                    field: 'rank',
+                    label: 'Rank',
+                    centered: true,
+                    width: 10,
+                    isSearchable: true,
+                    sortable: true,
+                    options: generateOptions(['Any', 'ABC', 'A', 'B', 'C', 'NotABC']),
+                },
+                {
+                    field: 'category',
+                    label: 'Category',
+                    centered: true,
+                    width: 10,
+                    isSearchable: true,
+                    sortable: true,
+                    options: this.ccfcats.map(_ => ({
+                        value: _.id.toString(),
+                        name: _.title,
+                    })),
+                },
+            ];
+            let search = JSON.parse(localStorage.getItem("SEARCH") || JSON.stringify({
+                perPage: 10,
+                filters: [],
+            }));
+            search.filters.forEach(f => {
+                columns.find(_ => _.field === f.field).filter = f.filter;
+            });
+
+            this.online.columns = columns;
+            this.perPage = search.perPage;
+            this.loadAsyncData();
+        }
 
         this.loadScript("patents.js")
             .then(() => {
@@ -351,6 +419,89 @@ var app = new Vue({
                 .sort((a, b) => a.count > b.count ? -1 : 1)
                 .slice(0, 8);
             return fts;
+        },
+        loadAsyncData() {
+            this.online.loading = true
+            var graph = graphql("http://localhost:5293/graphql", {
+                asJSON: true,
+                fragments: {
+                    paper: "on ExportPaper { title doi type year publisher key authors }",
+                }
+            })
+
+            let q = "";
+            const bounds = [];
+            for (let i = 0; i < this.online.columns.length; i++) {
+                const col = this.online.columns[i];
+                if (col.isSearchable && col.filter) {
+                    if (col.field == "title") {
+                        q = col.filter;
+                    } else {
+                        bounds.push(`${col.field}:${col.filter}`);
+                    }
+                }
+            }
+            const request = graph(`query ($q:String!,$b:String!,$start:Int!,$pagesize:Int!){
+                papers(query: $q bound: $b start: $start pagesize: $pagesize) {
+                  total
+                  start
+                  papers {
+                    ...paper
+                  }
+                }
+              }`);
+
+            const highlightKeys = q.split(" ");
+            request({
+                q,
+                b: bounds.join(" "),
+                start: (this.online.page - 1) * this.perPage,
+                pagesize: Number(this.perPage),
+            }).then((response) => {
+                const data = response.papers;
+
+                this.online.papers = []
+                this.online.total = data.total;
+                let findccf = (key) => this.ccf.find(_ => key && key.startsWith(_.crossref)) || {};
+                let pps = data.papers.map(_ => Object.assign({}, {
+                    pub: (_.publisher || '').replace(/[^A-Z]/g, ''),
+                    rank: findccf(_.key).rank,
+                    category: findccf(_.key).category,
+                    highlight: _.title && highlightKeys.reduce((pv, cv) => pv.replace(new RegExp(`(${cv})`, 'ig'), '<mark>$1</mark>'), _.title),
+                }, _))
+                this.online.papers = pps;
+
+                this.online.loading = false
+            }).catch((error) => {
+                console.warn(error)
+                this.online.papers = []
+                this.online.total = 0
+                this.online.loading = false
+                throw error
+            })
+        },
+        onFilterChange() {
+            const search = {
+                perPage: this.perPage,
+                filters: this.online.columns.map(_ => ({
+                    field: _.field,
+                    filter: _.filter
+                })),
+            };
+            localStorage.setItem("SEARCH", JSON.stringify(search));
+            clearTimeout(this.online.inputTimeout)
+            this.online.inputTimeout = setTimeout(() => {
+                this.loadAsyncData();
+            }, 400)
+        },
+        onPageChange(page) {
+            this.online.page = page
+            this.loadAsyncData()
+        },
+        onSort(field, order) {
+            this.online.sortField = field
+            this.online.sortOrder = order
+            this.loadAsyncData()
         },
     },
     computed: {
