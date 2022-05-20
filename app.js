@@ -467,7 +467,7 @@ var app = new Vue({
                     pub: (_.publisher || '').replace(/[^A-Z]/g, ''),
                     rank: findccf(_.key).rank,
                     category: findccf(_.key).category,
-                    highlight: _.title && highlightKeys.reduce((pv, cv) => pv.replace(new RegExp(`(${cv})`, 'ig'), '<mark>$1</mark>'), _.title),
+                    highlight: _.title && highlightKeys.reduce((pv, cv) => pv.replace(new RegExp(`(${cv.replace(/[\+-]/g,'')})`, 'ig'), '<mark>$1</mark>'), _.title),
                 }, _))
                 this.online.papers = pps;
 
