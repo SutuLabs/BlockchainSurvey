@@ -63,6 +63,9 @@
                       <b-tooltip :label="props.row['publisher']">
                         <b-tag type="is-light is-info">{{props.row['pub']}}</b-tag>
                       </b-tooltip>
+                      <a href="javascript:void(0)" @click="copy(`${props.row.title} ${props.row.publisher}@${props.row.year}. ${props.row.doi}`)">
+                        <b-icon icon="content-copy" size="is-small"></b-icon>
+                      </a>
                     </template>
                     <template v-else-if="column.field == 'category'">
                       <template v-if="props.row[column.field] && ccfcats[props.row[column.field]-1]">

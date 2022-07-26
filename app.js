@@ -139,84 +139,84 @@ var app = new Vue({
                 category: findccf(_.key).category,
             }, _))
             let columns = [{
-                    field: 'title',
-                    label: 'Title',
-                    width: 100,
-                    isSearchable: true,
-                    sortable: true,
-                    customSearch: function (a, input) {
-                        input = input || '';
-                        let ss = input.split(' ');
-                        a.highlight = a.title;
-                        for (let i = 0; i < ss.length; i++) {
-                            const str = ss[i];
-                            if (str == '') continue;
-                            if (str.startsWith('-')) {
-                                const kw = str.substr(1);
-                                if (kw == '') continue;
-                                if (a.title.search(new RegExp(kw, "i")) > -1)
-                                    return false;
-
-                                continue;
-                            }
-
-                            if (a.title && a.title.search(new RegExp(str, "i")) == -1)
+                field: 'title',
+                label: 'Title',
+                width: 100,
+                isSearchable: true,
+                sortable: true,
+                customSearch: function (a, input) {
+                    input = input || '';
+                    let ss = input.split(' ');
+                    a.highlight = a.title;
+                    for (let i = 0; i < ss.length; i++) {
+                        const str = ss[i];
+                        if (str == '') continue;
+                        if (str.startsWith('-')) {
+                            const kw = str.substr(1);
+                            if (kw == '') continue;
+                            if (a.title.search(new RegExp(kw, "i")) > -1)
                                 return false;
 
-                            a.highlight = a.highlight && a.highlight.replace(new RegExp(`(${str})`, 'ig'), '<mark>$1</mark>');
+                            continue;
                         }
-                        return true;
-                    },
-                },
-                {
-                    field: 'year',
-                    label: 'Year',
-                    centered: true,
-                    numeric: true,
-                    width: 20,
-                    isSearchable: true,
-                    sortable: true,
-                    options: years,
-                },
-                {
-                    field: 'rank',
-                    label: 'Rank',
-                    centered: true,
-                    width: 20,
-                    isSearchable: true,
-                    sortable: true,
-                    options: generateOptions(['Any', 'ABC', 'A', 'B', 'C', 'NotABC']),
-                    customSearch: function (a, input) {
-                        if (input == "A" || input == "B" || input == "C") {
-                            if (a.rank == input) return true;
+
+                        if (a.title && a.title.search(new RegExp(str, "i")) == -1)
                             return false;
-                        } else if (input == "Any") {
-                            return true;
-                        } else if (input == "NotABC") {
-                            return !a.rank;
-                        } else if (input == "ABC") {
-                            return a.rank ? true : false;
-                        } else {
-                            return true;
-                        }
-                    },
+
+                        a.highlight = a.highlight && a.highlight.replace(new RegExp(`(${str})`, 'ig'), '<mark>$1</mark>');
+                    }
+                    return true;
                 },
-                {
-                    field: 'category',
-                    label: 'Category',
-                    centered: true,
-                    width: 20,
-                    isSearchable: true,
-                    sortable: true,
-                    options: this.ccfcats.map(_ => ({
-                        value: _.id.toString(),
-                        name: _.title,
-                    })),
-                    customSearch: function (a, input) {
-                        if (!input) return true;
-                        return a.category == input;
-                    },
+            },
+            {
+                field: 'year',
+                label: 'Year',
+                centered: true,
+                numeric: true,
+                width: 20,
+                isSearchable: true,
+                sortable: true,
+                options: years,
+            },
+            {
+                field: 'rank',
+                label: 'Rank',
+                centered: true,
+                width: 20,
+                isSearchable: true,
+                sortable: true,
+                options: generateOptions(['Any', 'ABC', 'A', 'B', 'C', 'NotABC']),
+                customSearch: function (a, input) {
+                    if (input == "A" || input == "B" || input == "C") {
+                        if (a.rank == input) return true;
+                        return false;
+                    } else if (input == "Any") {
+                        return true;
+                    } else if (input == "NotABC") {
+                        return !a.rank;
+                    } else if (input == "ABC") {
+                        return a.rank ? true : false;
+                    } else {
+                        return true;
+                    }
                 },
+            },
+            {
+                field: 'category',
+                label: 'Category',
+                centered: true,
+                width: 20,
+                isSearchable: true,
+                sortable: true,
+                options: this.ccfcats.map(_ => ({
+                    value: _.id.toString(),
+                    name: _.title,
+                })),
+                customSearch: function (a, input) {
+                    if (!input) return true;
+                    return a.category == input;
+                },
+            },
             ];
             let search = JSON.parse(localStorage.getItem("SEARCH") || JSON.stringify({
                 perPage: 10,
@@ -238,43 +238,43 @@ var app = new Vue({
         if (paperType == "remote") {
             let years = [...Array(12).keys()].map(_ => _ + 2011);
             let columns = [{
-                    field: 'title',
-                    label: 'Title',
-                    width: 300,
-                    isSearchable: true,
-                    sortable: true,
-                },
-                {
-                    field: 'year',
-                    label: 'Year',
-                    centered: true,
-                    numeric: true,
-                    width: 20,
-                    isSearchable: true,
-                    sortable: true,
-                    options: generateOptions(years),
-                },
-                {
-                    field: 'rank',
-                    label: 'Rank',
-                    centered: true,
-                    width: 10,
-                    isSearchable: true,
-                    sortable: true,
-                    options: generateOptions(['Any', 'ABC', 'A', 'B', 'C', 'NotABC']),
-                },
-                {
-                    field: 'category',
-                    label: 'Category',
-                    centered: true,
-                    width: 10,
-                    isSearchable: true,
-                    sortable: true,
-                    options: this.ccfcats.map(_ => ({
-                        value: _.id.toString(),
-                        name: _.title,
-                    })),
-                },
+                field: 'title',
+                label: 'Title',
+                width: 300,
+                isSearchable: true,
+                sortable: true,
+            },
+            {
+                field: 'year',
+                label: 'Year',
+                centered: true,
+                numeric: true,
+                width: 20,
+                isSearchable: true,
+                sortable: true,
+                options: generateOptions(years),
+            },
+            {
+                field: 'rank',
+                label: 'Rank',
+                centered: true,
+                width: 10,
+                isSearchable: true,
+                sortable: true,
+                options: generateOptions(['Any', 'ABC', 'A', 'B', 'C', 'NotABC']),
+            },
+            {
+                field: 'category',
+                label: 'Category',
+                centered: true,
+                width: 10,
+                isSearchable: true,
+                sortable: true,
+                options: this.ccfcats.map(_ => ({
+                    value: _.id.toString(),
+                    name: _.title,
+                })),
+            },
             ];
             let search = JSON.parse(localStorage.getItem("SEARCH") || JSON.stringify({
                 perPage: 10,
@@ -292,43 +292,43 @@ var app = new Vue({
         this.loadScript("patents.js")
             .then(() => {
                 let columns = [{
-                        field: 'title',
-                        label: 'Title',
-                        width: 100,
-                        isSearchable: true,
-                        sortable: true,
-                        customSearch: function (a, input) {
-                            input = input || '';
-                            let ss = input.split(' ');
-                            a.highlight = a.title;
-                            for (let i = 0; i < ss.length; i++) {
-                                const str = ss[i];
-                                if (str == '') continue;
-                                if (a.title.search(new RegExp(str, "i")) == -1)
-                                    return false;
+                    field: 'title',
+                    label: 'Title',
+                    width: 100,
+                    isSearchable: true,
+                    sortable: true,
+                    customSearch: function (a, input) {
+                        input = input || '';
+                        let ss = input.split(' ');
+                        a.highlight = a.title;
+                        for (let i = 0; i < ss.length; i++) {
+                            const str = ss[i];
+                            if (str == '') continue;
+                            if (a.title.search(new RegExp(str, "i")) == -1)
+                                return false;
 
-                                a.highlight = a.highlight.replace(new RegExp(`(${str})`, 'ig'), '<mark>$1</mark>');
-                            }
-                            return true;
-                        },
+                            a.highlight = a.highlight.replace(new RegExp(`(${str})`, 'ig'), '<mark>$1</mark>');
+                        }
+                        return true;
                     },
-                    {
-                        field: 'pubdate',
-                        label: 'Date',
-                        centered: true,
-                        numeric: true,
-                        width: 20,
-                        isSearchable: true,
-                        sortable: true,
-                    },
-                    {
-                        field: 'type',
-                        label: 'Type',
-                        centered: true,
-                        width: 20,
-                        isSearchable: true,
-                        sortable: true,
-                    },
+                },
+                {
+                    field: 'pubdate',
+                    label: 'Date',
+                    centered: true,
+                    numeric: true,
+                    width: 20,
+                    isSearchable: true,
+                    sortable: true,
+                },
+                {
+                    field: 'type',
+                    label: 'Type',
+                    centered: true,
+                    width: 20,
+                    isSearchable: true,
+                    sortable: true,
+                },
                 ];
                 this.patents = patents;
                 this.patent = {
@@ -451,7 +451,7 @@ var app = new Vue({
                 }
               }`);
 
-            const highlightKeys = q.split(" ");
+            const highlightKeys = q.split(" ").map(_ => _.trim()).filter(_ => _);
             request({
                 q,
                 b: bounds.join(" "),
@@ -467,7 +467,7 @@ var app = new Vue({
                     pub: (_.publisher || '').replace(/[^A-Z]/g, ''),
                     rank: findccf(_.key).rank,
                     category: findccf(_.key).category,
-                    highlight: _.title && highlightKeys.reduce((pv, cv) => pv.replace(new RegExp(`(${cv.replace(/[\+-]/g,'')})`, 'ig'), '<mark>$1</mark>'), _.title),
+                    highlight: _.title && highlightKeys.reduce((pv, cv) => pv.replace(new RegExp(`(${cv.replace(/[\+-]/g, '')})`, 'ig'), '<mark>$1</mark>'), _.title),
                 }, _))
                 this.online.papers = pps;
 
@@ -502,6 +502,34 @@ var app = new Vue({
             this.online.sortField = field
             this.online.sortOrder = order
             this.loadAsyncData()
+        },
+        copy(copyText) {
+            console.log(copyText);
+            const textArea = document.createElement("textarea");
+            textArea.value = copyText;
+
+            textArea.style.top = "0";
+            textArea.style.left = "0";
+            textArea.style.position = "fixed";
+
+            document.body.appendChild(textArea);
+            textArea.focus();
+            textArea.select();
+
+            try {
+                document.execCommand("copy");
+                this.$buefy.notification.open({
+                    message: "Copy success",
+                    type: "is-primary",
+                });
+            } catch (err) {
+                this.$buefy.notification.open({
+                    message: "Copy failed",
+                    type: "is-danger",
+                });
+            }
+
+            document.body.removeChild(textArea);
         },
     },
     computed: {
@@ -546,7 +574,7 @@ var app = new Vue({
             });
         },
         words() {
-            const NotCountWords = ["based", "using", "enabled", "via", "novel", ];
+            const NotCountWords = ["based", "using", "enabled", "via", "novel",];
             const NonLexicalWords = ["the", "of", "and", "to", "a", "in", "for", "is", "on", "that", "by", "this", "with", "i", "you", "it", "not", "or", "be", "are", "from", "at", "as", "your", "all", "have", "new", "more", "an", "was", "we", "will", "home", "can", "us", "about", "if", "page", "my", "has", "free", "but", "our", "one", "other", "do", "no", "information", "time", "they", "site", "he", "up", "may", "what", "which", "their", "news", "out", "use", "any", "there", "see", "only", "so", "his", "when", "contact", "here", "business", "who", "web", "also", "now", "help", "get", "pm", "view", "online", "c", "e", "first", "am", "been", "would", "how", "were", "me", "s", "services", "some", "these", "click", "its", "like", "service", "x", "than", "find", "price", "date", "back", "top", "people", "had", "list", "name", "just", "over", "state", "year", "day", "into", "email", "two", "health", "n", "world", "re", "next", "used", "go", "b", "work", "last", "most", "products", "music", "buy", "make", "them", "should", "product", "post", "her", "city", "t", "add", "policy", "number", "such", "please", "available", "copyright", "support", "message", "after", "best", "software", "then", "jan", "good", "video", "well", "d", "where", "info", "rights", "public", "books", "high", "school", "through", "m", "each", "links", "she", "review", "years", "order", "very", "privacy", "book", "items", "company", "r", "read", "group", "sex", "need", "many", "user", "said", "de", "does", "set", "under", "general", "research", "university", "january", "mail", "full", "map", "reviews", "program", "life"];
             let split = (input) => input.match(/\b[\w']+\b/g);
             let ws = this.filterPapers.map(_ => split(_.title)).reduce((a, b) => a.concat(b), []);
